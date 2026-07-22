@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>teachkw.ai — منشورات الفيد المربّعة</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/tokens.css">
+<style>
+  html, body { margin: 0; background: #DEE6EC; }
+  .strip { display: flex; gap: 28px; padding: 40px; overflow-x: auto; align-items: flex-start; }
+  .canvas.post {
+    width: 1080px; height: 1080px; flex: none;
+    background: var(--paper);
+    padding: 88px;
+    display: flex; flex-direction: column;
+  }
+  .canvas.post.dark { background: var(--blue-deep); }
+
+  .eyebrow { font-family: var(--f-display); font-weight: 700; font-size: 28px; color: var(--blue); letter-spacing: 0.02em; display:flex; align-items:center; gap:14px; }
+  .dark .eyebrow { color: #8FC1E6; }
+
+  /* --- quote card --- */
+  .quote-mark { font-family: var(--f-display); font-weight: 900; font-size: 160px; color: var(--blue-mist); line-height: 1; margin-top: -10px; }
+  .quote-text { font-family: var(--f-display); font-weight: 900; font-size: 78px; line-height: 1.28; color: var(--ink); text-wrap: balance; margin-top: 8px; }
+  .quote-attr { font-family: var(--f-body); font-weight: 500; font-size: 30px; color: var(--ink-faint); margin-top: 20px; }
+
+  /* --- stat card --- */
+  .stat-number { font-family: var(--f-display); font-weight: 900; font-size: 260px; color: var(--paper); line-height: 1; direction: ltr; margin-top: 40px; }
+  .stat-text { font-family: var(--f-body); font-weight: 400; font-size: 36px; line-height: 1.6; color: #C9DCE9; max-width: 760px; margin-top: 24px; }
+  .stat-tag { font-family: var(--f-body); font-weight: 500; font-size: 26px; color: #7C93A3; margin-top: 8px; }
+
+  /* --- tool spotlight --- */
+  .tool-tile {
+    margin-top: 56px;
+    width: 220px; height: 220px; border-radius: 32px;
+    background: var(--blue);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--f-display); font-weight: 900; font-size: 84px; color: var(--paper);
+  }
+  .tool-name { font-family: var(--f-display); font-weight: 900; font-size: 84px; color: var(--ink); margin-top: 36px; direction: ltr; text-align: right; }
+  .tool-desc { font-family: var(--f-body); font-weight: 400; font-size: 36px; line-height: 1.6; color: var(--ink-soft); max-width: 780px; margin-top: 20px; }
+  .tool-chip { margin-top: 28px; display: inline-flex; align-self: flex-start; background: var(--blue-mist); border-radius: 999px; padding: 14px 28px; font-family: var(--f-body); font-weight: 500; font-size: 28px; color: var(--blue); }
+
+  .spacer { flex: 1; }
+  .foot-row { margin-top: 40px; display: flex; align-items: center; justify-content: space-between; }
+  .wordmark.sz { font-size: 30px; }
+</style>
+</head>
+<body>
+<div class="strip">
+
+  <!-- Post A — quote -->
+  <div class="canvas post">
+    <div class="eyebrow"><span class="tag-sq" style="width:14px;height:14px;"></span>قاعدة تشتغل بها</div>
+    <div class="quote-mark">"</div>
+    <div class="quote-text">الذكاء الاصطناعي ما يفكّر بدالك، هو يفكّر وياك.</div>
+    <div class="spacer"></div>
+    <div class="foot-row">
+      <div class="wordmark sz">teachkw<span class="dot-ai">.ai</span></div>
+      <div class="quote-attr">قاعدة يومية</div>
+    </div>
+  </div>
+
+  <!-- Post B — stat -->
+  <div class="canvas post dark">
+    <div class="eyebrow">إحصائية اليوم</div>
+    <div class="stat-number">70%</div>
+    <div class="stat-text">من مستخدمي الذكاء الاصطناعي يستخدمون أقل من ١٠٪ فقط من قدراته الفعلية.</div>
+    <div class="spacer"></div>
+    <div class="foot-row">
+      <div class="wordmark sz on-dark">teachkw<span class="dot-ai">.ai</span></div>
+      <div class="stat-tag">المصدر: تحليل استخدام داخلي</div>
+    </div>
+  </div>
+
+  <!-- Post C — tool spotlight -->
+  <div class="canvas post">
+    <div class="eyebrow"><span class="tag-sq" style="width:14px;height:14px;"></span>أداة اليوم</div>
+    <div class="tool-tile">P</div>
+    <div class="tool-name">Perplexity</div>
+    <div class="tool-desc">أفضل من محرك بحث عادي لما تحتاج إجابة بمصادر ومراجع محدّثة، مو بس نص جاهز.</div>
+    <div class="tool-chip">بديل ذكي لعمليات البحث اليومية</div>
+    <div class="spacer"></div>
+    <div class="foot-row">
+      <div class="wordmark sz">teachkw<span class="dot-ai">.ai</span></div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>teachkw.ai — دليل الهوية البصرية</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/tokens.css">
+<style>
+  html, body { margin: 0; background: #DEE6EC; }
+  .page {
+    max-width: 980px;
+    margin: 0 auto;
+    background: var(--paper);
+    padding: 72px 64px 96px;
+  }
+  .kicker {
+    font-family: var(--f-display);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    color: var(--blue);
+    text-transform: uppercase;
+  }
+  h1.title {
+    font-family: var(--f-display);
+    font-weight: 900;
+    font-size: 44px;
+    color: var(--ink);
+    margin-top: 10px;
+    text-wrap: balance;
+  }
+  .lede {
+    font-family: var(--f-body);
+    font-size: 18px;
+    line-height: 1.9;
+    color: var(--ink-soft);
+    max-width: 640px;
+    margin-top: 14px;
+  }
+  section { margin-top: 88px; }
+  h2.section-title {
+    font-family: var(--f-display);
+    font-weight: 900;
+    font-size: 24px;
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  h2.section-title .tag-sq { width: 12px; height: 12px; }
+  .section-sub {
+    font-family: var(--f-body);
+    font-size: 15px;
+    color: var(--ink-soft);
+    line-height: 1.8;
+    margin-top: 8px;
+    max-width: 620px;
+  }
+
+  /* palette */
+  .swatch-grid {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .swatch {
+    border: 1px solid var(--blue-line);
+    border-radius: 14px;
+    overflow: hidden;
+    background: var(--paper-raised);
+  }
+  .swatch-fill { height: 96px; }
+  .swatch-meta { padding: 14px 16px; }
+  .swatch-name { font-family: var(--f-display); font-weight: 700; font-size: 15px; }
+  .swatch-hex { font-family: var(--f-body); font-size: 13px; color: var(--ink-faint); direction: ltr; text-align: right; margin-top: 2px; }
+  .swatch-use { font-family: var(--f-body); font-size: 13px; color: var(--ink-soft); margin-top: 8px; line-height: 1.6; }
+
+  /* type specimen */
+  .specimen { margin-top: 32px; display: flex; flex-direction: column; gap: 28px; }
+  .specimen-row {
+    border-top: 1px solid var(--blue-line);
+    padding-top: 22px;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 24px;
+    align-items: baseline;
+  }
+  .specimen-label { font-family: var(--f-body); font-size: 12px; color: var(--ink-faint); direction: ltr; text-align: right; letter-spacing: 0.04em; }
+  .spec-display-black { font-family: var(--f-display); font-weight: 900; font-size: 42px; color: var(--ink); text-wrap: balance; }
+  .spec-display-semi { font-family: var(--f-display); font-weight: 600; font-size: 26px; color: var(--ink); }
+  .spec-body { font-family: var(--f-body); font-weight: 400; font-size: 18px; color: var(--ink-soft); line-height: 1.9; max-width: 560px; }
+  .spec-caption { font-family: var(--f-body); font-weight: 500; font-size: 13px; color: var(--blue); letter-spacing: 0.04em; }
+
+  /* wordmark */
+  .lockup-demo {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .lockup-card {
+    border-radius: 16px;
+    padding: 40px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .lockup-card.light { background: var(--paper-raised); border: 1px solid var(--blue-line); }
+  .lockup-card.dark { background: var(--blue-deep); }
+  .wordmark-lg { font-size: 34px; }
+
+  /* rules list */
+  .rules { margin-top: 28px; display: flex; flex-direction: column; gap: 18px; }
+  .rule { display: flex; gap: 14px; align-items: flex-start; }
+  .rule .tag-sq { width: 9px; height: 9px; margin-top: 8px; flex: none; }
+  .rule-text { font-family: var(--f-body); font-size: 16px; color: var(--ink-soft); line-height: 1.8; }
+  .rule-text b { color: var(--ink); font-weight: 700; }
+
+  /* canvas sizes */
+  .size-grid { margin-top: 32px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .size-card { text-align: center; }
+  .size-shape { background: var(--blue-mist); border: 1px solid var(--blue-line); border-radius: 10px; margin: 0 auto; }
+  .size-name { font-family: var(--f-display); font-weight: 700; font-size: 15px; margin-top: 14px; }
+  .size-dim { font-family: var(--f-body); font-size: 13px; color: var(--ink-faint); direction: ltr; margin-top: 2px; }
+
+  /* do / dont */
+  .dd-grid { margin-top: 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .dd-card { border-radius: 14px; padding: 22px 24px; }
+  .dd-card.do { background: var(--blue-mist); }
+  .dd-card.dont { background: var(--paper-raised); border: 1px dashed var(--ink-faint); }
+  .dd-label { font-family: var(--f-display); font-weight: 900; font-size: 13px; letter-spacing: 0.05em; }
+  .dd-card.do .dd-label { color: var(--blue); }
+  .dd-card.dont .dd-label { color: var(--ink-faint); }
+  .dd-text { font-family: var(--f-body); font-size: 14px; color: var(--ink-soft); margin-top: 8px; line-height: 1.7; }
+
+  footer.page-footer {
+    margin-top: 96px;
+    padding-top: 24px;
+    border-top: 1px solid var(--blue-line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-footer .wordmark { font-size: 16px; }
+  .page-footer .meta { font-family: var(--f-body); font-size: 12px; color: var(--ink-faint); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="kicker">دليل الهوية البصرية — نسخة ٠١</div>
+  <h1 class="title">هوية teachkw.ai البصرية</h1>
+  <p class="lede">
+    نظام تصميم واحد لكل ما يُنشر على الحساب — بوستات الكاروسيل، منشورات الفيد، وأغلفة الفيديو/الريلز.
+    أبيض هادئ، أزرق واحد ثابت، وخط أسود سميك للعناوين. اللون محدود عمدًا حتى تُعرف المنشورات
+    من أول لمحة قبل حتى قراءة الكلام.
+  </p>
+
+  <section>
+    <h2 class="section-title"><span class="tag-sq"></span>الألوان</h2>
+    <p class="section-sub">ثلاث طبقات فقط: ورقة بيضاء، حبر أسود، وأزرق هادئ واحد بدرجتين. لا يُضاف لون رابع لأي منشور.</p>
+    <div class="swatch-grid">
+      <div class="swatch">
+        <div class="swatch-fill" style="background:var(--paper)"></div>
+        <div class="swatch-meta">
+          <div class="swatch-name">Paper — الورقة</div>
+          <div class="swatch-hex">#F6F8FA</div>
+          <div class="swatch-use">خلفية كل المنشورات الفاتحة. أبيض بميل رمادي-أزرق خفيف جدًا، مو أبيض ناصع بارد.</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-fill" style="background:var(--ink)"></div>
+        <div class="swatch-meta">
+          <div class="swatch-name">Ink — الحبر</div>
+          <div class="swatch-hex">#0B0F13</div>
+          <div class="swatch-use">لون العناوين والنصوص الأساسية. أسود دافئ قريب من الأسود الحقيقي، تُبنى عليه كل الكتابة السميكة.</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-fill" style="background:var(--blue)"></div>
+        <div class="swatch-meta">
+          <div class="swatch-name">Blue — الأزرق الهادئ</div>
+          <div class="swatch-hex">#2E6C99</div>
+          <div class="swatch-use">لون العلامة. يُستخدم بحدود: كلمة واحدة في العنوان، تاق، أو خط تحت. لا يُملأ فيه نص كامل.</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-fill" style="background:var(--blue-deep)"></div>
+        <div class="swatch-meta">
+          <div class="swatch-name">Blue Deep — الأزرق الغامق</div>
+          <div class="swatch-hex">#12293D</div>
+          <div class="swatch-use">خلفية أغلفة الفيديو ومنشور واحد من كل ثلاثة في الفيد، لكسر رتابة الأبيض بالشبكة.</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-fill" style="background:var(--blue-mist)"></div>
+        <div class="swatch-meta">
+          <div class="swatch-name">Blue Mist</div>
+          <div class="swatch-hex">#E2ECF3</div>
+          <div class="swatch-use">خلفيات التاقات والشرائح الثانوية داخل الكاروسيل — تباين هادئ بدون كسر النظام.</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-fill" style="background:var(--ink-faint)"></div>
+        <div class="swatch-meta">
+          <div class="swatch-name">Ink Faint</div>
+          <div class="swatch-hex">#8695A1</div>
+          <div class="swatch-use">تسميات ثانوية، أرقام الشرائح، والتعليقات الصغيرة فقط.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title"><span class="tag-sq"></span>الخط</h2>
+    <p class="section-sub">Cairo للعناوين بوزن Black — سميك وواضح على الموبايل من أول نظرة. Tajawal للنص التفصيلي — يريح العين في الفقرات الطويلة.</p>
+    <div class="specimen">
+      <div class="specimen-row">
+        <div class="specimen-label">Cairo / 900<br>العناوين</div>
+        <div class="spec-display-black">٣ أخطاء تسرق نتائج الذكاء الاصطناعي</div>
+      </div>
+      <div class="specimen-row">
+        <div class="specimen-label">Cairo / 600<br>عناوين فرعية</div>
+        <div class="spec-display-semi">الخطأ الأول: طلب غامض بدون سياق</div>
+      </div>
+      <div class="specimen-row">
+        <div class="specimen-label">Tajawal / 400<br>نص أساسي</div>
+        <div class="spec-body">تكتب "اكتب بوست عن القهوة" بدون تحديد النبرة أو الطول أو الجمهور، فتطلع النتيجة عامة ولا تشبه أسلوبك أبدًا.</div>
+      </div>
+      <div class="specimen-row">
+        <div class="specimen-label">Tajawal / 500<br>تسميات وتاقات</div>
+        <div class="spec-caption">الخطأ ٠١ · TEACHKW.AI</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title"><span class="tag-sq"></span>الشعار الكتابي</h2>
+    <p class="section-sub">لا يوجد رمز/أيقونة منفصلة — الاسم نفسه هو العلامة. حرفا ".ai" دائمًا بالأزرق، والباقي بالأسود. هذا التلوين الثابت هو ما يُعرّف الحساب بصريًا أكثر من أي شكل زخرفي.</p>
+    <div class="lockup-demo">
+      <div class="lockup-card light">
+        <div class="wordmark wordmark-lg">teachkw<span class="dot-ai">.ai</span></div>
+      </div>
+      <div class="lockup-card dark">
+        <div class="wordmark wordmark-lg on-dark">teachkw<span class="dot-ai">.ai</span></div>
+      </div>
+    </div>
+    <div class="dd-grid">
+      <div class="dd-card do">
+        <div class="dd-label">✓ افعل</div>
+        <div class="dd-text">اكتب الاسم بحروف صغيرة دائمًا، بدون مسافات، وبنفس وزن Cairo 900 في كل مكان يظهر فيه.</div>
+      </div>
+      <div class="dd-card dont">
+        <div class="dd-label">✕ تجنّب</div>
+        <div class="dd-text">لا تُلوّن غير ".ai"، ولا تضف تأثيرات ظل أو تدرّج على الشعار، ولا تكتبه بأحرف كبيرة.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title"><span class="tag-sq"></span>مقاسات القوالب</h2>
+    <p class="section-sub">ثلاث لوحات تصميم ثابتة تغطي كل أنواع المنشورات، بنفس الهوامش الآمنة (٦٪ من كل جهة تقريبًا).</p>
+    <div class="size-grid">
+      <div class="size-card">
+        <div class="size-shape" style="width:96px; height:120px;"></div>
+        <div class="size-name">كاروسيل / فيد رأسي</div>
+        <div class="size-dim">1080 × 1350</div>
+      </div>
+      <div class="size-card">
+        <div class="size-shape" style="width:110px; height:110px;"></div>
+        <div class="size-name">منشور مربّع</div>
+        <div class="size-dim">1080 × 1080</div>
+      </div>
+      <div class="size-card">
+        <div class="size-shape" style="width:76px; height:135px;"></div>
+        <div class="size-name">غلاف ريلز / فيديو</div>
+        <div class="size-dim">1080 × 1920</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title"><span class="tag-sq"></span>قواعد الاستخدام</h2>
+    <div class="rules">
+      <div class="rule"><span class="tag-sq"></span><div class="rule-text"><b>عنوان واحد قوي لكل شريحة.</b> لا تكرار للفكرة بجملتين، عنوان Cairo Black واحد يكفي ويُقرأ من أول ثانية.</div></div>
+      <div class="rule"><span class="tag-sq"></span><div class="rule-text"><b>الأزرق للتمييز لا للتزيين.</b> كلمة مفتاحية، رقم شريحة، أو تاق — أبدًا خلفية كاملة لنص طويل.</div></div>
+      <div class="rule"><span class="tag-sq"></span><div class="rule-text"><b>كل ثالث منشور في الشبكة بخلفية Blue Deep.</b> يكسر تكرار الأبيض ويحافظ على إيقاع بصري ثابت في البروفايل.</div></div>
+      <div class="rule"><span class="tag-sq"></span><div class="rule-text"><b>الشعار في نفس الزاوية دائمًا.</b> أسفل يسار كل شريحة كاروسيل، وأسفل منتصف كل غلاف فيديو.</div></div>
+    </div>
+  </section>
+
+  <footer class="page-footer">
+    <div class="wordmark">teachkw<span class="dot-ai">.ai</span></div>
+    <div class="meta">دليل الهوية — نُسخّن القوالب من هذا الملف نفسه</div>
+  </footer>
+
+</div>
+</body>
+</html>

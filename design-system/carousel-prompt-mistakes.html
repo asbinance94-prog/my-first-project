@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>teachkw.ai — كاروسيل: ٣ أخطاء تسرق نتائج الذكاء الاصطناعي</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/tokens.css">
+<style>
+  html, body { margin: 0; background: #DEE6EC; }
+  .strip {
+    display: flex;
+    gap: 28px;
+    padding: 40px;
+    overflow-x: auto;
+    align-items: flex-start;
+  }
+  .canvas.slide {
+    width: 1080px;
+    height: 1350px;
+    flex: none;
+    background: var(--paper);
+    padding: 96px 88px;
+    display: flex;
+    flex-direction: column;
+  }
+  .canvas.slide.dark { background: var(--blue-deep); }
+
+  .eyebrow-row { display: flex; align-items: center; gap: 16px; }
+  .num-chip {
+    width: 56px; height: 56px; border-radius: 14px;
+    background: var(--blue);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--f-display); font-weight: 900; font-size: 26px; color: var(--paper);
+    flex: none;
+  }
+  .dark .num-chip { background: var(--paper); color: var(--blue-deep); }
+  .eyebrow {
+    font-family: var(--f-display); font-weight: 700; font-size: 26px;
+    letter-spacing: 0.02em; color: var(--blue);
+  }
+  .dark .eyebrow { color: #8FC1E6; }
+
+  .headline {
+    font-family: var(--f-display); font-weight: 900;
+    color: var(--ink); text-wrap: balance;
+    margin-top: 48px;
+  }
+  .dark .headline { color: var(--paper); }
+  .headline.xl { font-size: 88px; line-height: 1.18; }
+  .headline.lg { font-size: 74px; line-height: 1.2; }
+
+  .sub {
+    font-family: var(--f-body); font-weight: 400; font-size: 38px; line-height: 1.65;
+    color: var(--ink-soft); margin-top: 28px; max-width: 860px;
+  }
+  .dark .sub { color: #C9DCE9; }
+
+  .fix-box {
+    margin-top: auto;
+    background: var(--blue-mist);
+    border-radius: 20px;
+    padding: 40px 44px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .dark .fix-box { background: #1C3A52; }
+  .fix-mark {
+    font-family: var(--f-display); font-weight: 900; font-size: 32px; color: var(--blue);
+    flex: none;
+  }
+  .dark .fix-mark { color: #8FC1E6; }
+  .fix-text {
+    font-family: var(--f-body); font-weight: 500; font-size: 34px; line-height: 1.55; color: var(--ink);
+  }
+  .dark .fix-text { color: var(--paper); }
+
+  .spacer { flex: 1; }
+
+  .foot-row {
+    margin-top: 56px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .dots { display: flex; gap: 12px; }
+  .dot { width: 14px; height: 14px; border-radius: 50%; background: var(--blue-line); }
+  .dark .dot { background: var(--blue-line-deep); }
+  .dot.active { background: var(--blue); width: 34px; border-radius: 7px; }
+  .dark .dot.active { background: var(--paper); }
+  .next-tag { font-family: var(--f-body); font-weight: 500; font-size: 26px; color: var(--ink-faint); }
+  .dark .next-tag { color: #7C93A3; }
+
+  .cover-word { font-size: 30px; }
+  .cta-word { font-size: 46px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="strip">
+
+  <!-- Slide 1 — cover -->
+  <div class="canvas slide">
+    <div class="eyebrow-row">
+      <span class="tag-sq" style="width:16px;height:16px;"></span>
+      <div class="eyebrow">لكل من يستخدم ChatGPT يوميًا</div>
+    </div>
+    <div class="headline xl">٣ أخطاء تسرق نتائج الذكاء الاصطناعي منك</div>
+    <div class="sub">وكيف تصلحها في أول Prompt تكتبه اليوم</div>
+    <div class="spacer"></div>
+    <div class="foot-row">
+      <div class="wordmark cover-word">teachkw<span class="dot-ai">.ai</span></div>
+      <div style="display:flex; align-items:center; gap:18px;">
+        <div class="next-tag">التالي ←</div>
+        <div class="dots">
+          <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 2 — mistake 1 (light) -->
+  <div class="canvas slide">
+    <div class="eyebrow-row">
+      <div class="num-chip">١</div>
+      <div class="eyebrow">الخطأ الأول</div>
+    </div>
+    <div class="headline lg">طلب غامض بدون سياق</div>
+    <div class="sub">تكتب: «اكتب لي بوست عن القهوة» — بدون تحديد النبرة، الطول، أو الجمهور. النتيجة تطلع عامة، وما تشبه أسلوبك أبدًا.</div>
+    <div class="spacer"></div>
+    <div class="fix-box">
+      <div class="fix-mark">✓</div>
+      <div class="fix-text">الحل: حدّد الدور، الجمهور، الطول، والنبرة داخل نفس الطلب.</div>
+    </div>
+    <div class="foot-row">
+      <div class="wordmark cover-word">teachkw<span class="dot-ai">.ai</span></div>
+      <div class="dots">
+        <span class="dot"></span><span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 3 — mistake 2 (dark) -->
+  <div class="canvas slide dark">
+    <div class="eyebrow-row">
+      <div class="num-chip">٢</div>
+      <div class="eyebrow">الخطأ الثاني</div>
+    </div>
+    <div class="headline lg">تجاهل الهدف من المحتوى</div>
+    <div class="sub">الذكاء الاصطناعي ما يعرف إذا كنت تبي تبيع، تشرح، أو تسلّي — إلا إذا قلت له صراحة من البداية.</div>
+    <div class="spacer"></div>
+    <div class="fix-box">
+      <div class="fix-mark">✓</div>
+      <div class="fix-text">الحل: ابدأ كل طلب بجملة تحدد الهدف: بيع، تعليم، أو تفاعل.</div>
+    </div>
+    <div class="foot-row">
+      <div class="wordmark cover-word on-dark">teachkw<span class="dot-ai">.ai</span></div>
+      <div class="dots">
+        <span class="dot"></span><span class="dot"></span><span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 4 — mistake 3 (light) -->
+  <div class="canvas slide">
+    <div class="eyebrow-row">
+      <div class="num-chip">٣</div>
+      <div class="eyebrow">الخطأ الثالث</div>
+    </div>
+    <div class="headline lg">الاكتفاء بأول نتيجة</div>
+    <div class="sub">أول إجابة نادرًا ما تكون الأفضل. أغلب المحترفين يعدّلون على الناتج مرتين أو ثلاث قبل ما يستخدمونه.</div>
+    <div class="spacer"></div>
+    <div class="fix-box">
+      <div class="fix-mark">✓</div>
+      <div class="fix-text">الحل: اطلب "اختصرها"، "غيّر النبرة"، أو "أعطني نسخة ثانية" قبل ما توقف.</div>
+    </div>
+    <div class="foot-row">
+      <div class="wordmark cover-word">teachkw<span class="dot-ai">.ai</span></div>
+      <div class="dots">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot active"></span><span class="dot"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 5 — CTA (dark) -->
+  <div class="canvas slide dark" style="align-items:center; text-align:center;">
+    <div class="spacer"></div>
+    <span class="tag-sq" style="width:16px;height:16px; background:var(--paper);"></span>
+    <div class="headline lg" style="margin-top:36px;">جرّب هالثلاث تعديلات بأول Prompt تكتبه اليوم</div>
+    <div class="sub" style="text-align:center;">تابعني لمزيد من نصائح الذكاء الاصطناعي بالعربي</div>
+    <div class="spacer"></div>
+    <div class="wordmark cta-word on-dark">teachkw<span class="dot-ai">.ai</span></div>
+    <div class="foot-row" style="width:100%; margin-top:36px;">
+      <div class="next-tag" style="margin:0 auto;">شارك المنشور مع صديق يستخدم ChatGPT</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

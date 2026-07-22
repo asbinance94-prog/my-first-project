@@ -1,0 +1,59 @@
+/* ============================================================
+   teachkw.ai — design tokens
+   Palette: warm-white paper, calm steel blue, near-black ink.
+   Two colors + ink, used with discipline across every asset.
+   ============================================================ */
+
+:root {
+  /* paper */
+  --paper: #F6F8FA;        /* page ground: white with a whisper of blue-grey */
+  --paper-raised: #FFFFFF; /* cards / raised surfaces sitting on --paper */
+
+  /* ink */
+  --ink: #0B0F13;          /* near-black, cool bias — display type, headlines */
+  --ink-soft: #45525E;     /* body copy, secondary text */
+  --ink-faint: #8695A1;    /* captions, meta, placeholders */
+
+  /* calm blue */
+  --blue: #2E6C99;         /* primary accent — links, marks, tags */
+  --blue-deep: #12293D;    /* dark panels, cover backgrounds, contrast slides */
+  --blue-mist: #E2ECF3;    /* soft tint — chips, section backgrounds */
+  --blue-line: #C3D7E3;    /* hairlines, borders on paper */
+  --blue-line-deep: #2C4A61; /* hairlines on --blue-deep panels */
+
+  /* type */
+  --f-display: "Cairo", "Segoe UI", Tahoma, Arial, sans-serif;
+  --f-body: "Tajawal", "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+.canvas {
+  font-family: var(--f-body);
+  color: var(--ink);
+  direction: rtl;
+  overflow: hidden;
+  position: relative;
+}
+
+.canvas p, .canvas h1, .canvas h2, .canvas h3, .canvas span { margin: 0; padding: 0; }
+
+/* recurring brand device: a solid blue square tag — used as bullets,
+   corner tabs, slide-number chips. Stands in for a literal logo icon. */
+.tag-sq {
+  display: inline-block;
+  background: var(--blue);
+  border-radius: 6px;
+}
+
+.wordmark {
+  font-family: var(--f-display);
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  direction: ltr;
+  unicode-bidi: bidi-override;
+}
+.wordmark .dot-ai { color: var(--blue); }
+.wordmark.on-dark { color: var(--paper); }
+.wordmark.on-dark .dot-ai { color: #7FB2D8; }
