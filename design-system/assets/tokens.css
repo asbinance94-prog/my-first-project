@@ -57,3 +57,48 @@
 .wordmark .dot-ai { color: var(--blue); }
 .wordmark.on-dark { color: var(--paper); }
 .wordmark.on-dark .dot-ai { color: #7FB2D8; }
+
+/* ---- illustration icons: colors follow the tokens automatically ---- */
+.icon-auto svg { width: 100%; height: 100%; display: block; }
+.dark .icon-auto { --ink: #F6F8FA; --paper: #12293D; --blue: #7FB2D8; }
+
+/* ---- background patterns / decoration ---- */
+.pat-dots {
+  background-image: radial-gradient(var(--blue-line) 2.5px, transparent 2.5px);
+  background-size: 34px 34px;
+}
+.dark.pat-dots {
+  background-image: radial-gradient(var(--blue-line-deep) 2.5px, transparent 2.5px);
+}
+.pat-grid {
+  background-image:
+    linear-gradient(var(--blue-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--blue-line) 1px, transparent 1px);
+  background-size: 54px 54px;
+}
+.dark.pat-grid {
+  background-image:
+    linear-gradient(var(--blue-line-deep) 1px, transparent 1px),
+    linear-gradient(90deg, var(--blue-line-deep) 1px, transparent 1px);
+}
+
+.blob {
+  position: absolute;
+  border-radius: 44% 56% 58% 42% / 48% 44% 56% 52%;
+  background: var(--blue-mist);
+  z-index: 0;
+}
+.dark .blob { background: var(--blue-line-deep); opacity: 0.5; }
+
+.ghost-num {
+  position: absolute;
+  font-family: var(--f-display);
+  font-weight: 900;
+  color: var(--blue-mist);
+  line-height: 1;
+  z-index: 0;
+  user-select: none;
+}
+.dark .ghost-num { color: var(--blue-line-deep); }
+
+.stage { position: relative; z-index: 1; }
