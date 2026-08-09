@@ -4,24 +4,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>رشيز — رادار أخبار الذكاء الاصطناعي</title>
-<meta name="theme-color" content="#14110F">
+<meta name="theme-color" content="#FAF7F1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#14110F;
-  --surface:#1C1815;
-  --surface-2:#231E1A;
-  --line:#332C25;
-  --line-soft:#241F1B;
-  --paper:#EDE6DA;
-  --dim:#96897A;
-  --dimmer:#6B6055;
-  --gold:#C9A227;
-  --gold-deep:#8A701A;
-  --teal:#4FA88B;
-  --rust:#B5563A;
+  --ink:#FAF7F1;
+  --surface:#FFFFFF;
+  --surface-2:#FBF2E0;
+  --line:#E8DECB;
+  --line-soft:#F1E9DA;
+  --paper:#241E17;
+  --dim:#5B5148;
+  --dimmer:#8F8474;
+  --gold:#B8860B;
+  --gold-deep:#8C6A0A;
+  --teal:#12805F;
+  --rust:#A6402A;
 
   --display:'Tajawal',system-ui,sans-serif;
   --body:'IBM Plex Sans Arabic','Tajawal',system-ui,sans-serif;
@@ -29,12 +29,15 @@
 
   --pad:clamp(16px,4vw,40px);
   --rail:56px;
+  --r:14px;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%}
 body{
-  background:var(--ink);
+  background:
+    radial-gradient(1100px 420px at 85% -10%, rgba(184,134,11,.07), transparent 60%),
+    var(--ink);
   color:var(--paper);
   font-family:var(--body);
   font-size:15px;
@@ -44,21 +47,23 @@ body{
 }
 a{color:inherit}
 button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
-:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+:focus-visible{outline:2px solid var(--gold-deep);outline-offset:3px;border-radius:4px}
 
 /* ---------- الشريط العلوي ---------- */
 .topbar{
   position:sticky;top:0;z-index:50;
-  background:rgba(20,17,15,.88);
+  background:rgba(250,247,241,.86);
   backdrop-filter:blur(14px);
   border-bottom:1px solid var(--line);
-  padding:12px var(--pad);
+  padding:13px var(--pad);
   display:flex;align-items:center;gap:16px;flex-wrap:wrap;
 }
 .brand{display:flex;align-items:baseline;gap:10px;margin-inline-end:auto}
 .brand h1{
   font-family:var(--display);font-weight:800;font-size:20px;
   letter-spacing:-.01em;line-height:1;
+  background:linear-gradient(90deg,var(--paper),var(--gold-deep));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
 }
 .brand .sub{
   font-family:var(--mono);font-size:10px;color:var(--dimmer);
@@ -68,58 +73,51 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 .pulse{display:inline-flex;align-items:center;gap:6px}
 .pulse i{
   width:6px;height:6px;border-radius:50%;background:var(--teal);
-  box-shadow:0 0 0 0 rgba(79,168,139,.6);animation:beat 2.6s infinite;
+  box-shadow:0 0 0 0 rgba(18,128,95,.5);animation:beat 2.6s infinite;
 }
 @keyframes beat{
-  0%{box-shadow:0 0 0 0 rgba(79,168,139,.5)}
-  70%{box-shadow:0 0 0 7px rgba(79,168,139,0)}
-  100%{box-shadow:0 0 0 0 rgba(79,168,139,0)}
+  0%{box-shadow:0 0 0 0 rgba(18,128,95,.45)}
+  70%{box-shadow:0 0 0 7px rgba(18,128,95,0)}
+  100%{box-shadow:0 0 0 0 rgba(18,128,95,0)}
 }
 
 /* ---------- تنبيه البيانات التجريبية ---------- */
 .notice{
-  margin:14px var(--pad) 0;padding:12px 16px;
-  border:1px solid var(--gold-deep);
+  margin:16px var(--pad) 0;padding:13px 16px;
+  border:1px solid var(--line);
   border-inline-start:3px solid var(--gold);
-  background:rgba(201,162,39,.06);
-  font-size:13.5px;color:#E4D6AE;border-radius:3px;
+  background:var(--surface-2);
+  font-size:13.5px;color:#5B4A12;border-radius:10px;
+  box-shadow:0 1px 2px rgba(140,106,10,.05);
 }
-.notice code{font-family:var(--mono);font-size:12px;color:var(--gold)}
+.notice code{font-family:var(--mono);font-size:12px;color:var(--gold-deep)}
 .notice[hidden]{display:none}
 
 /* ---------- رشيز اليوم ---------- */
-.reel{padding:26px var(--pad) 6px}
+.reel{padding:28px var(--pad) 8px}
 .eyebrow{
   font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;
   text-transform:uppercase;color:var(--dimmer);
-  display:flex;align-items:center;gap:12px;margin-bottom:14px;
+  display:flex;align-items:center;gap:12px;margin-bottom:16px;
 }
 .eyebrow::after{content:"";flex:1;height:1px;background:var(--line)}
 
 .strip{
-  display:grid;gap:2px;
+  display:grid;gap:14px;
   grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-  border-block:1px solid var(--line);
-  background:var(--line-soft);
-  /* ثقوب الفيلم — العنصر التوقيعي */
-  position:relative;padding-block:9px;
 }
-.strip::before,.strip::after{
-  content:"";position:absolute;inset-inline:0;height:9px;
-  background-image:repeating-linear-gradient(to left,var(--ink) 0 7px,transparent 7px 15px);
-  opacity:.85;pointer-events:none;
-}
-.strip::before{top:0}
-.strip::after{bottom:0}
 
 .frame{
-  background:var(--surface);padding:18px 18px 16px;
+  background:var(--surface);padding:19px 19px 17px;
   display:flex;flex-direction:column;gap:9px;min-height:100%;
-  border:none;text-align:start;transition:background .18s ease;
+  border:1px solid var(--line);border-top:3px solid var(--gold);
+  border-radius:var(--r);text-align:start;
+  box-shadow:0 1px 2px rgba(36,30,23,.04);
+  transition:box-shadow .18s ease,transform .18s ease;
 }
-.frame:hover{background:var(--surface-2)}
+.frame:hover{box-shadow:0 10px 26px rgba(36,30,23,.09);transform:translateY(-2px)}
 .frame .no{
-  font-family:var(--mono);font-size:10px;color:var(--gold);
+  font-family:var(--mono);font-size:10px;color:var(--gold-deep);
   letter-spacing:.16em;
 }
 .frame h2{
@@ -130,46 +128,50 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 
 /* ---------- أدوات التحكم ---------- */
 .controls{
-  padding:22px var(--pad) 0;display:flex;flex-direction:column;gap:12px;
+  padding:24px var(--pad) 0;display:flex;flex-direction:column;gap:12px;
 }
-.tabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.tabs{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
 .tabs::-webkit-scrollbar{display:none}
 .tab{
-  white-space:nowrap;padding:6px 13px;border:1px solid var(--line);
-  border-radius:2px;font-size:13px;color:var(--dim);
+  white-space:nowrap;padding:7px 15px;border:1px solid var(--line);
+  border-radius:999px;font-size:13px;color:var(--dim);background:var(--surface);
   transition:all .16s ease;
 }
-.tab:hover{border-color:var(--dimmer);color:var(--paper)}
+.tab:hover{border-color:var(--gold-deep);color:var(--paper)}
 .tab[aria-selected="true"]{
-  background:var(--gold);border-color:var(--gold);color:#1A1509;font-weight:500;
+  background:var(--gold);border-color:var(--gold);color:#FFFBF2;font-weight:600;
 }
-.tab .n{font-family:var(--mono);font-size:10.5px;opacity:.6;margin-inline-start:5px}
+.tab .n{font-family:var(--mono);font-size:10.5px;opacity:.7;margin-inline-start:5px}
 
 .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .search{
   flex:1;min-width:200px;background:var(--surface);
-  border:1px solid var(--line);border-radius:2px;
-  padding:9px 13px;color:var(--paper);font-family:var(--body);font-size:14px;
+  border:1px solid var(--line);border-radius:999px;
+  padding:10px 16px;color:var(--paper);font-family:var(--body);font-size:14px;
+  box-shadow:0 1px 2px rgba(36,30,23,.03);
 }
 .search::placeholder{color:var(--dimmer)}
 .search:focus{border-color:var(--gold-deep);outline:none}
 .action{
-  padding:9px 16px;border:1px solid var(--gold-deep);border-radius:2px;
-  color:var(--gold);font-size:13.5px;font-weight:500;
+  padding:10px 18px;border:1px solid var(--gold-deep);border-radius:999px;
+  color:var(--gold-deep);font-size:13.5px;font-weight:600;background:var(--surface);
   transition:all .16s ease;white-space:nowrap;
 }
-.action:hover{background:var(--gold);color:#1A1509;border-color:var(--gold)}
-.action.done{background:var(--teal);border-color:var(--teal);color:#0E1A16}
+.action:hover{background:var(--gold);color:#FFFBF2;border-color:var(--gold)}
+.action.done{background:var(--teal);border-color:var(--teal);color:#F1FFF9}
 
 /* ---------- الخلاصة ---------- */
-.feed{padding:8px var(--pad) 0;position:relative}
+.feed{padding:10px var(--pad) 0;position:relative;display:flex;flex-direction:column;gap:14px}
 .item{
   display:grid;grid-template-columns:var(--rail) 1fr;
-  border-bottom:1px solid var(--line-soft);
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  box-shadow:0 1px 2px rgba(36,30,23,.03);
+  transition:box-shadow .18s ease;
+  overflow:hidden;
 }
-.item:last-child{border-bottom:none}
+.item:hover{box-shadow:0 8px 22px rgba(36,30,23,.07)}
 
-/* ريل التوقيت — العنصر التوقيعي الثاني */
+/* ريل التوقيت */
 .rail{
   position:relative;padding-top:22px;
   display:flex;flex-direction:column;align-items:center;gap:7px;
@@ -179,7 +181,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
   inset-inline-start:calc(50% - .5px);width:1px;background:var(--line);
 }
 .rail .tick{
-  position:relative;z-index:1;background:var(--ink);
+  position:relative;z-index:1;background:var(--surface);
   font-family:var(--mono);font-size:10px;color:var(--dimmer);
   padding-block:4px;letter-spacing:.02em;
 }
@@ -190,10 +192,10 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 .item.fresh .rail .dot{background:var(--teal);border-color:var(--teal)}
 .item.fresh .rail .tick{color:var(--teal)}
 
-.card{padding:20px 4px 24px}
+.card{padding:20px 18px 22px 6px}
 .card h3{
   font-family:var(--display);font-weight:700;font-size:18.5px;
-  line-height:1.5;letter-spacing:-.012em;margin-bottom:8px;
+  line-height:1.5;letter-spacing:-.012em;margin-bottom:8px;color:var(--paper);
 }
 .card .orig{
   font-family:var(--mono);font-size:11.5px;line-height:1.55;
@@ -202,46 +204,49 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
   border-inline-start:1px solid var(--line);
 }
 .card .sum{color:var(--dim);font-size:14.5px;line-height:1.75;margin-bottom:13px}
-.card .sum b{color:var(--paper)}
+.card .sum b{color:var(--paper);font-weight:600}
 .ents{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:11px}
 .ent{
   font-family:var(--mono);font-size:11px;direction:ltr;
-  padding:2px 8px;border-radius:2px;
-  background:rgba(201,162,39,.09);color:var(--gold);
-  border:1px solid rgba(201,162,39,.22);
+  padding:2px 9px;border-radius:999px;
+  background:rgba(184,134,11,.08);color:var(--gold-deep);
+  border:1px solid rgba(184,134,11,.24);
 }
-.chip.review{border-color:var(--rust);color:var(--rust)}
-.chip.unver{border-color:var(--rust);color:var(--rust)}
-.tab.alt{border-style:dashed}
-.tab.alt[aria-selected="true"]{background:var(--teal);border-color:var(--teal);color:#0E1A16}
-.tsep{width:1px;background:var(--line);margin-inline:6px;flex:none}
-.card .sum b{color:var(--paper);font-weight:500}
 
 .chips{display:flex;flex-wrap:wrap;gap:7px;align-items:center}
 .chip{
   font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;
-  padding:3px 8px;border:1px solid var(--line);border-radius:2px;color:var(--dim);
+  padding:4px 10px;border:1px solid var(--line);border-radius:999px;color:var(--dim);
 }
-.chip.cat{border-color:var(--gold-deep);color:var(--gold)}
+.chip.cat{border-color:var(--gold-deep);color:var(--gold-deep)}
 .chip.cluster{border-color:var(--teal);color:var(--teal)}
 .chip.sample{border-color:var(--rust);color:var(--rust)}
+.chip.review{border-color:var(--rust);color:var(--rust)}
+.chip.unver{border-color:var(--rust);color:var(--rust)}
 .chip.src{border:none;padding-inline:0;color:var(--dimmer)}
 .chip.src a{text-decoration:none;border-bottom:1px solid var(--line)}
-.chip.src a:hover{color:var(--gold);border-color:var(--gold)}
+.chip.src a:hover{color:var(--gold-deep);border-color:var(--gold-deep)}
+.chip.xlate{cursor:pointer;border-color:var(--teal);color:var(--teal);font-weight:600}
+.chip.xlate:hover{background:var(--teal);color:#F1FFF9}
+.chip.xlate:disabled{cursor:progress;opacity:.65}
+
+.tab.alt{border-style:dashed}
+.tab.alt[aria-selected="true"]{background:var(--teal);border-color:var(--teal);color:#F1FFF9}
+.tsep{width:1px;background:var(--line);margin-inline:6px;flex:none}
 
 .angle{
-  margin-top:13px;padding:11px 14px;border-radius:2px;
-  background:rgba(201,162,39,.055);
-  border-inline-start:2px solid var(--gold);
+  margin-top:13px;padding:12px 15px;border-radius:10px;
+  background:rgba(184,134,11,.07);
+  border-inline-start:3px solid var(--gold);
   display:flex;gap:12px;align-items:flex-start;
   width:100%;text-align:start;transition:background .16s ease;
 }
-.angle:hover{background:rgba(201,162,39,.11)}
+.angle:hover{background:rgba(184,134,11,.13)}
 .angle .lbl{
   font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;
-  color:var(--gold);white-space:nowrap;padding-top:4px;
+  color:var(--gold-deep);white-space:nowrap;padding-top:4px;
 }
-.angle .txt{font-size:13.5px;color:#E4D6AE;line-height:1.6}
+.angle .txt{font-size:13.5px;color:#5B4A12;line-height:1.6}
 
 .empty{
   padding:70px 20px;text-align:center;color:var(--dimmer);
@@ -249,13 +254,14 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 .empty strong{display:block;font-family:var(--display);font-size:17px;color:var(--dim);margin-bottom:6px}
 
 footer{
-  margin-top:40px;padding:20px var(--pad);border-top:1px solid var(--line-soft);
+  margin-top:44px;padding:20px var(--pad);border-top:1px solid var(--line);
   font-family:var(--mono);font-size:10.5px;color:var(--dimmer);
   display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
 }
 
 @media(max-width:600px){
   :root{--rail:44px}
+  .card{padding:18px 14px 20px 4px}
   .card h3{font-size:17px}
   .brand h1{font-size:18px}
   .meta{font-size:10px;gap:10px}
@@ -478,6 +484,7 @@ function renderFeed(){
           ${it.needs_review ? `<span class="chip review">بلا أسماء — راجعي الأصل</span>`:''}
           ${it.unverified ? `<span class="chip unver">رصد صفحة — غير مؤكد</span>`:''}
           ${DATA.sample ? `<span class="chip sample">أرشيف</span>`:''}
+          <button class="chip xlate" data-xlate="${esc(it.id)}" type="button">⟲ ترجمة</button>
           ${srcs}
         </div>
         ${it.content_angle ? `
@@ -492,6 +499,57 @@ function renderFeed(){
 
 function render(){ renderHeader(); renderStrip(); renderTabs(); renderFeed(); }
 
+/* ---------- الترجمة الفورية لأي مقالة ---------- */
+async function translateText(text){
+  if(!text || !text.trim()) return text;
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 7000);
+  try{
+    const r = await fetch(
+      `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ar&dt=t&q=${encodeURIComponent(text)}`,
+      {signal: controller.signal}
+    );
+    if(!r.ok) throw new Error('translate-failed');
+    const j = await r.json();
+    return j[0].map(seg => seg[0]).join('');
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+async function toggleTranslate(btn){
+  const item = btn.closest('.item');
+  const h3 = item.querySelector('h3');
+  const sum = item.querySelector('.sum');
+
+  if(btn.dataset.state === 'translated'){
+    h3.textContent = btn.dataset.origTitle;
+    sum.textContent = btn.dataset.origSum;
+    btn.textContent = '⟲ ترجمة';
+    btn.dataset.state = '';
+    return;
+  }
+
+  btn.dataset.origTitle = h3.textContent;
+  btn.dataset.origSum = sum.textContent;
+  btn.textContent = 'جارِ الترجمة…';
+  btn.disabled = true;
+  try{
+    const [t, s] = await Promise.all([translateText(h3.textContent), translateText(sum.textContent)]);
+    h3.textContent = t;
+    sum.textContent = s;
+    btn.textContent = '⟲ عرض الأصل';
+    btn.dataset.state = 'translated';
+  }catch(err){
+    const link = item.querySelector('.chip.src a');
+    const target = link ? link.href : location.href;
+    window.open(`https://translate.google.com/translate?sl=auto&tl=ar&u=${encodeURIComponent(target)}`, '_blank', 'noopener');
+    btn.textContent = '⟲ ترجمة';
+  }finally{
+    btn.disabled = false;
+  }
+}
+
 /* ---------- التفاعل ---------- */
 document.addEventListener('click', e=>{
   const tab = e.target.closest('.tab');
@@ -505,6 +563,9 @@ document.addEventListener('click', e=>{
       ?.scrollIntoView({behavior:'smooth', block:'center'});
     return;
   }
+
+  const xbtn = e.target.closest('[data-xlate]');
+  if(xbtn){ toggleTranslate(xbtn); return; }
 
   const angle = e.target.closest('[data-copy]');
   if(angle){ copy(angle.dataset.copy, angle, 'نُسخت'); }
