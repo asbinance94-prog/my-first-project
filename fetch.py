@@ -83,6 +83,28 @@ def entry_time(e):
 
 # ---------- التحليل (قابل للاختبار بلا شبكة) ----------
 
+def extract_image(e) -> str:
+    """يلتقط رابط صورة معبّرة عن الخبر إن وُجدت — media:thumbnail أو
+    enclosure أو أول <img> في المحتوى. لا يخترع رابطاً — يرجع فارغاً بلا صورة."""
+    for key in ("media_thumbnail", "media_content"):
+        for v in getattr(e, key, None) or []:
+            url = (v or {}).get("url")
+            if url:
+                return url
+    for link in getattr(e, "links", None) or []:
+        if link.get("rel") == "enclosure" and str(link.get("type", "")).startswith("image"):
+            href = link.get("href", "")
+            if href:
+                return href
+    html = ""
+    if getattr(e, "content", None):
+        html = e.content[0].get("value", "") or ""
+    if not html:
+        html = getattr(e, "summary", "") or ""
+    m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', html)
+    return m.group(1) if m else ""
+
+
 def parse_feed_bytes(content: bytes, source: dict, now=None) -> list:
     """يحوّل بايتات فيد إلى عناصر خام. دالة نقية — تُختبر بدون إنترنت."""
     now = now or datetime.now(timezone.utc)
@@ -117,6 +139,7 @@ def parse_feed_bytes(content: bytes, source: dict, now=None) -> list:
             "source_weight": source.get("weight", 5),
             "track": source.get("_track", "general"),
             "norm": normalize_title(title),
+            "image": extract_image(e),
         })
         if len(out) >= MAX_PER_FEED:
             break
@@ -151,8 +174,10 @@ def cluster(items: list, threshold: float = 0.45) -> list:
     merged = []
     for g in groups:
         lead = g[0]
+        image = lead.get("image") or next((m.get("image") for m in g if m.get("image")), "")
         merged.append({
             **lead,
+            "image": image,
             "cluster_count": len(g),
             "sources": [{"name": m["source_name"], "url": m["link"]} for m in g],
             "member_fps": [m["fp"] for m in g],
