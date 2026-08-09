@@ -255,6 +255,7 @@ def main():
             "source_weight": it["source_weight"],
             "track": it.get("track", "general"),
             "unverified": it.get("unverified", False),
+            "image": it.get("image", ""),
             "_recency": max(0.0, 1 - age_h / 48),
         }
         merged["score"] = score(merged)

@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>رشيز — رادار أخبار الذكاء الاصطناعي</title>
+<title>رادار أسماء العتيبي — أخبار الذكاء الاصطناعي</title>
 <meta name="theme-color" content="#FAF7F1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --ink:#FAF7F1;
@@ -15,8 +15,8 @@
   --surface-2:#FBF2E0;
   --line:#E8DECB;
   --line-soft:#F1E9DA;
-  --paper:#241E17;
-  --dim:#5B5148;
+  --paper:#201A13;
+  --dim:#584E43;
   --dimmer:#8F8474;
   --gold:#B8860B;
   --gold-deep:#8C6A0A;
@@ -28,48 +28,60 @@
   --mono:'IBM Plex Mono',ui-monospace,monospace;
 
   --pad:clamp(16px,4vw,40px);
-  --rail:56px;
-  --r:14px;
+  --r:16px;
+  --r-lg:20px;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%}
 body{
   background:
-    radial-gradient(1100px 420px at 85% -10%, rgba(184,134,11,.07), transparent 60%),
+    radial-gradient(1100px 460px at 88% -8%, rgba(184,134,11,.09), transparent 60%),
+    radial-gradient(900px 380px at 6% 8%, rgba(18,128,95,.05), transparent 55%),
     var(--ink);
   color:var(--paper);
   font-family:var(--body);
-  font-size:15px;
-  line-height:1.7;
+  font-size:15.5px;
+  line-height:1.75;
   min-height:100vh;
   padding-bottom:64px;
 }
 a{color:inherit}
 button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+img{max-width:100%;display:block}
 :focus-visible{outline:2px solid var(--gold-deep);outline-offset:3px;border-radius:4px}
+
+/* ---------- زجاجي عام ---------- */
+.glass{
+  background:rgba(255,255,255,.6);
+  -webkit-backdrop-filter:blur(14px) saturate(160%);
+  backdrop-filter:blur(14px) saturate(160%);
+  border:1px solid rgba(255,255,255,.55);
+}
 
 /* ---------- الشريط العلوي ---------- */
 .topbar{
   position:sticky;top:0;z-index:50;
-  background:rgba(250,247,241,.86);
-  backdrop-filter:blur(14px);
+  background:rgba(250,247,241,.72);
+  -webkit-backdrop-filter:blur(16px) saturate(160%);
+  backdrop-filter:blur(16px) saturate(160%);
   border-bottom:1px solid var(--line);
-  padding:13px var(--pad);
+  padding:14px var(--pad);
   display:flex;align-items:center;gap:16px;flex-wrap:wrap;
 }
 .brand{display:flex;align-items:baseline;gap:10px;margin-inline-end:auto}
 .brand h1{
-  font-family:var(--display);font-weight:800;font-size:20px;
-  letter-spacing:-.01em;line-height:1;
-  background:linear-gradient(90deg,var(--paper),var(--gold-deep));
+  font-family:var(--display);font-weight:900;font-size:21px;
+  letter-spacing:-.01em;line-height:1.2;
+  background:linear-gradient(90deg,var(--paper) 30%,var(--gold-deep));
   -webkit-background-clip:text;background-clip:text;color:transparent;
 }
 .brand .sub{
-  font-family:var(--mono);font-size:10px;color:var(--dimmer);
+  font-family:var(--mono);font-size:10.5px;color:var(--dimmer);
   letter-spacing:.14em;text-transform:uppercase;
+  border:1px solid var(--line);border-radius:999px;padding:2px 9px;
 }
-.meta{display:flex;align-items:center;gap:14px;font-family:var(--mono);font-size:11px;color:var(--dim)}
+.meta{display:flex;align-items:center;gap:14px;font-family:var(--mono);font-size:11.5px;color:var(--dim)}
 .pulse{display:inline-flex;align-items:center;gap:6px}
 .pulse i{
   width:6px;height:6px;border-radius:50%;background:var(--teal);
@@ -84,16 +96,14 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 /* ---------- تنبيه البيانات التجريبية ---------- */
 .notice{
   margin:16px var(--pad) 0;padding:13px 16px;
-  border:1px solid var(--line);
+  border:1px solid rgba(255,255,255,.6);
   border-inline-start:3px solid var(--gold);
-  background:var(--surface-2);
-  font-size:13.5px;color:#5B4A12;border-radius:10px;
-  box-shadow:0 1px 2px rgba(140,106,10,.05);
+  font-size:13.5px;color:#5B4A12;border-radius:var(--r);
 }
 .notice code{font-family:var(--mono);font-size:12px;color:var(--gold-deep)}
 .notice[hidden]{display:none}
 
-/* ---------- رشيز اليوم ---------- */
+/* ---------- الأهم الآن ---------- */
 .reel{padding:28px var(--pad) 8px}
 .eyebrow{
   font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;
@@ -103,51 +113,58 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 .eyebrow::after{content:"";flex:1;height:1px;background:var(--line)}
 
 .strip{
-  display:grid;gap:14px;
-  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  display:grid;gap:16px;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 }
 
 .frame{
-  background:var(--surface);padding:19px 19px 17px;
-  display:flex;flex-direction:column;gap:9px;min-height:100%;
-  border:1px solid var(--line);border-top:3px solid var(--gold);
-  border-radius:var(--r);text-align:start;
-  box-shadow:0 1px 2px rgba(36,30,23,.04);
+  background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--r-lg);
+  text-align:start;overflow:hidden;
+  box-shadow:0 1px 2px rgba(36,30,23,.05);
   transition:box-shadow .18s ease,transform .18s ease;
+  display:flex;flex-direction:column;
 }
-.frame:hover{box-shadow:0 10px 26px rgba(36,30,23,.09);transform:translateY(-2px)}
-.frame .no{
-  font-family:var(--mono);font-size:10px;color:var(--gold-deep);
-  letter-spacing:.16em;
+.frame:hover{box-shadow:0 14px 32px rgba(36,30,23,.12);transform:translateY(-3px)}
+.frame .hero{
+  position:relative;height:120px;display:flex;align-items:center;justify-content:center;
+  color:#fff;
 }
+.frame .hero svg{width:38px;height:38px;filter:drop-shadow(0 2px 5px rgba(0,0,0,.18))}
+.frame .rank{
+  position:absolute;top:10px;inset-inline-start:10px;
+  font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.06em;
+  padding:4px 10px;border-radius:999px;color:#fff;
+}
+.frame .body{padding:15px 17px 17px;display:flex;flex-direction:column;gap:8px}
 .frame h2{
-  font-family:var(--display);font-weight:700;font-size:17px;
-  line-height:1.45;letter-spacing:-.01em;
+  font-family:var(--display);font-weight:700;font-size:16.5px;
+  line-height:1.5;letter-spacing:-.01em;
 }
 .frame p{font-size:13px;color:var(--dim);line-height:1.65}
 
 /* ---------- أدوات التحكم ---------- */
 .controls{
-  padding:24px var(--pad) 0;display:flex;flex-direction:column;gap:12px;
+  padding:26px var(--pad) 0;display:flex;flex-direction:column;gap:12px;
 }
 .tabs{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
 .tabs::-webkit-scrollbar{display:none}
 .tab{
   white-space:nowrap;padding:7px 15px;border:1px solid var(--line);
-  border-radius:999px;font-size:13px;color:var(--dim);background:var(--surface);
+  border-radius:999px;font-size:13.5px;color:var(--dim);background:var(--surface);
   transition:all .16s ease;
 }
 .tab:hover{border-color:var(--gold-deep);color:var(--paper)}
 .tab[aria-selected="true"]{
   background:var(--gold);border-color:var(--gold);color:#FFFBF2;font-weight:600;
 }
-.tab .n{font-family:var(--mono);font-size:10.5px;opacity:.7;margin-inline-start:5px}
+.tab .n{font-family:var(--mono);font-size:10.5px;opacity:.75;margin-inline-start:5px}
 
 .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .search{
   flex:1;min-width:200px;background:var(--surface);
   border:1px solid var(--line);border-radius:999px;
-  padding:10px 16px;color:var(--paper);font-family:var(--body);font-size:14px;
+  padding:10px 16px;color:var(--paper);font-family:var(--body);font-size:14.5px;
   box-shadow:0 1px 2px rgba(36,30,23,.03);
 }
 .search::placeholder{color:var(--dimmer)}
@@ -160,52 +177,70 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 .action:hover{background:var(--gold);color:#FFFBF2;border-color:var(--gold)}
 .action.done{background:var(--teal);border-color:var(--teal);color:#F1FFF9}
 
-/* ---------- الخلاصة ---------- */
-.feed{padding:10px var(--pad) 0;position:relative;display:flex;flex-direction:column;gap:14px}
+/* ---------- الخلاصة — شبكة ---------- */
+.feed{
+  padding:16px var(--pad) 0;
+  display:grid;align-items:start;
+  grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+  gap:20px;
+}
 .item{
-  display:grid;grid-template-columns:var(--rail) 1fr;
-  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  display:flex;flex-direction:column;
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);
   box-shadow:0 1px 2px rgba(36,30,23,.03);
-  transition:box-shadow .18s ease;
+  transition:box-shadow .2s ease,transform .2s ease;
   overflow:hidden;
 }
-.item:hover{box-shadow:0 8px 22px rgba(36,30,23,.07)}
+.item:hover{box-shadow:0 16px 34px rgba(36,30,23,.1);transform:translateY(-3px)}
+.item.fresh{outline:2px solid rgba(184,134,11,.35);outline-offset:-1px}
 
-/* ريل التوقيت */
-.rail{
-  position:relative;padding-top:22px;
-  display:flex;flex-direction:column;align-items:center;gap:7px;
+/* ---------- رأس الصورة/الغلاف ---------- */
+.media{
+  position:relative;height:150px;flex:none;
+  display:flex;align-items:center;justify-content:center;color:#fff;
+  overflow:hidden;
 }
-.rail::before{
-  content:"";position:absolute;top:0;bottom:0;
-  inset-inline-start:calc(50% - .5px);width:1px;background:var(--line);
+.media svg{width:36px;height:36px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.2));opacity:.95}
+.media img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
 }
-.rail .tick{
-  position:relative;z-index:1;background:var(--surface);
-  font-family:var(--mono);font-size:10px;color:var(--dimmer);
-  padding-block:4px;letter-spacing:.02em;
+.media .time{
+  position:absolute;top:10px;inset-inline-end:10px;
+  font-family:var(--mono);font-size:10.5px;color:#241B0A;
+  padding:4px 9px;border-radius:999px;
+  background:rgba(255,255,255,.72);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
 }
-.rail .dot{
-  position:relative;z-index:1;width:7px;height:7px;border-radius:50%;
-  background:var(--surface);border:1px solid var(--dimmer);
+.media .hot{
+  position:absolute;top:10px;inset-inline-start:10px;
+  font-size:10.5px;font-weight:700;color:#fff;
+  padding:4px 10px;border-radius:999px;
+  background:rgba(166,64,42,.85);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  display:flex;align-items:center;gap:4px;
 }
-.item.fresh .rail .dot{background:var(--teal);border-color:var(--teal)}
-.item.fresh .rail .tick{color:var(--teal)}
+.media .cat-tag{
+  position:absolute;bottom:10px;inset-inline-start:10px;
+  font-family:var(--mono);font-size:10px;letter-spacing:.04em;color:#fff;
+  padding:4px 10px;border-radius:999px;
+  background:rgba(0,0,0,.28);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+}
 
-.card{padding:20px 18px 22px 6px}
+.card{padding:17px 18px 19px;display:flex;flex-direction:column;gap:9px;flex:1}
 .card h3{
-  font-family:var(--display);font-weight:700;font-size:18.5px;
-  line-height:1.5;letter-spacing:-.012em;margin-bottom:8px;color:var(--paper);
+  font-family:var(--display);font-weight:700;font-size:18px;
+  line-height:1.5;letter-spacing:-.012em;color:var(--paper);
 }
 .card .orig{
   font-family:var(--mono);font-size:11.5px;line-height:1.55;
   color:var(--dimmer);direction:ltr;text-align:left;
-  margin:-2px 0 11px;padding-inline-start:9px;
+  padding-inline-start:9px;
   border-inline-start:1px solid var(--line);
 }
-.card .sum{color:var(--dim);font-size:14.5px;line-height:1.75;margin-bottom:13px}
+.card .sum{color:var(--dim);font-size:14.5px;line-height:1.75}
 .card .sum b{color:var(--paper);font-weight:600}
-.ents{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:11px}
+.ents{display:flex;flex-wrap:wrap;gap:6px}
 .ent{
   font-family:var(--mono);font-size:11px;direction:ltr;
   padding:2px 9px;border-radius:999px;
@@ -213,7 +248,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
   border:1px solid rgba(184,134,11,.24);
 }
 
-.chips{display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-top:2px}
 .chip{
   font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;
   padding:4px 10px;border:1px solid var(--line);border-radius:999px;color:var(--dim);
@@ -235,13 +270,14 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 .tsep{width:1px;background:var(--line);margin-inline:6px;flex:none}
 
 .angle{
-  margin-top:13px;padding:12px 15px;border-radius:10px;
-  background:rgba(184,134,11,.07);
+  margin-top:2px;padding:12px 15px;border-radius:12px;
+  background:rgba(184,134,11,.08);
+  border:1px solid rgba(184,134,11,.2);
   border-inline-start:3px solid var(--gold);
   display:flex;gap:12px;align-items:flex-start;
   width:100%;text-align:start;transition:background .16s ease;
 }
-.angle:hover{background:rgba(184,134,11,.13)}
+.angle:hover{background:rgba(184,134,11,.15)}
 .angle .lbl{
   font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;
   color:var(--gold-deep);white-space:nowrap;padding-top:4px;
@@ -249,6 +285,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 .angle .txt{font-size:13.5px;color:#5B4A12;line-height:1.6}
 
 .empty{
+  grid-column:1/-1;
   padding:70px 20px;text-align:center;color:var(--dimmer);
 }
 .empty strong{display:block;font-family:var(--display);font-size:17px;color:var(--dim);margin-bottom:6px}
@@ -260,8 +297,8 @@ footer{
 }
 
 @media(max-width:600px){
-  :root{--rail:44px}
-  .card{padding:18px 14px 20px 4px}
+  .feed{grid-template-columns:1fr}
+  .card{padding:16px 15px 18px}
   .card h3{font-size:17px}
   .brand h1{font-size:18px}
   .meta{font-size:10px;gap:10px}
@@ -275,8 +312,8 @@ footer{
 
 <header class="topbar">
   <div class="brand">
-    <h1>رشيز</h1>
-    <span class="sub">AI Radar</span>
+    <h1>رادار أسماء العتيبي</h1>
+    <span class="sub">AI RADAR</span>
   </div>
   <div class="meta">
     <span id="today"></span>
@@ -285,14 +322,14 @@ footer{
   </div>
 </header>
 
-<div class="notice" id="notice" hidden>
+<div class="notice glass" id="notice" hidden>
   <strong>أرشيف، وليست أخبار اليوم.</strong>
   لم يُربط <code>data/news.json</code> بعد. ما تشوفينه أخبار حقيقية سبق نشرها، معروضة لتقييم الشكل — لا لمتابعتها.
   شغّلي <code>validate_feeds.py</code> ثم <code>fetch.py</code> وستُستبدل تلقائياً.
 </div>
 
 <section class="reel">
-  <div class="eyebrow">رشيز اليوم — الأعلى أثراً</div>
+  <div class="eyebrow">الأهم الآن — الأعلى أثراً</div>
   <div class="strip" id="strip"></div>
 </section>
 
@@ -324,6 +361,27 @@ const CATS = {
   other:          'أخرى'
 };
 const TRACK_TABS = { arabic:'عربي', watch:'رصد صفحات', newsletter:'نشرات' };
+
+/* ---------- هوية بصرية لكل تصنيف — تدرّج + أيقونة تعبّر عن الخبر ---------- */
+const CAT_ART = {
+  video_models: { grad:'linear-gradient(135deg,#F59E0B,#DC2626)',
+    icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8Z"/><path d="M4 8 6 4h3l-2 4M9 8l2-4h3l-2 4M14 8l2-4h3l-2 4"/><path d="m10.5 12.3 3.6 2-3.6 2v-4Z" fill="currentColor" stroke="none"/></svg>' },
+  image_models: { grad:'linear-gradient(135deg,#EC4899,#7C3AED)',
+    icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="8.5" cy="9.5" r="1.5" fill="currentColor" stroke="none"/><path d="m21 16.5-5.7-5.7a1 1 0 0 0-1.4 0L9 15.7"/></svg>' },
+  audio_voice: { grad:'linear-gradient(135deg,#8B5CF6,#3B82F6)',
+    icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h2.2M6.6 8.5v7M10.2 5v14M13.8 8.5v7M17.4 10.3v3.4M21 12h.01"/></svg>' },
+  tools: { grad:'linear-gradient(135deg,#0EA5E9,#0D9488)',
+    icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 1 0-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2-2 2.6-2.6Z"/></svg>' },
+  research: { grad:'linear-gradient(135deg,#10B981,#047857)',
+    icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6.2L4.8 18a1.6 1.6 0 0 0 1.4 2.4h11.6a1.6 1.6 0 0 0 1.4-2.4L14 9.2V3"/><path d="M7.5 15h9"/></svg>' },
+  business: { grad:'linear-gradient(135deg,#64748B,#334155)',
+    icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V11M10 20V4M16 20v-8M21 20H3"/></svg>' },
+  policy: { grad:'linear-gradient(135deg,#6366F1,#4338CA)',
+    icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v6c0 5 3 7.5 7 9 4-1.5 7-4 7-9V6l-7-3Z"/></svg>' },
+  other: { grad:'linear-gradient(135deg,#C9A227,#8C6A0A)',
+    icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h13a2 2 0 0 1 2 2v13a1 1 0 0 1-1 1H6a2 2 0 0 1-2-2V4Z"/><path d="M17 8h2a2 2 0 0 1 2 2v9a1 1 0 0 1-1 1"/><path d="M7 8h7M7 12h7M7 16h4"/></svg>' },
+};
+const artFor = cat => CAT_ART[cat] || CAT_ART.other;
 
 /* عيّنات لتقييم الشكل — تُستبدل بالكامل عند وجود data/news.json */
 const SAMPLE = { generated_at:new Date().toISOString(), sample:true,
@@ -426,13 +484,20 @@ function renderHeader(){
 }
 
 function renderStrip(){
-  $('#strip').innerHTML = scored().filter(i => i.track !== 'arabic' && i.track !== 'watch').slice(0,3).map((it,i)=>`
+  $('#strip').innerHTML = scored().filter(i => i.track !== 'arabic' && i.track !== 'watch').slice(0,3).map((it,i)=>{
+    const art = artFor(it.category);
+    return `
     <button class="frame" data-goto="${esc(it.id)}">
-      <span class="no">${String(i+1).padStart(2,'0')} / ${esc(CATS[it.category]||'أخرى')}</span>
-      <h2>${esc(it.title_ar)}</h2>
-      <p>${esc((it.summary_ar||'').split('.')[0])}.</p>
-      ${it.title_original ? `<span class="no" dir="ltr" style="color:var(--dimmer);letter-spacing:0">${esc(it.title_original.slice(0,58))}</span>`:''}
-    </button>`).join('');
+      <div class="hero" style="background:${art.grad}">
+        <span class="rank glass" style="color:#241B0A">${String(i+1).padStart(2,'0')}</span>
+        ${art.icon}
+      </div>
+      <div class="body">
+        <h2>${esc(it.title_ar)}</h2>
+        <p>${esc((it.summary_ar||'').split('.')[0])}.</p>
+      </div>
+    </button>`;
+  }).join('');
 }
 
 function renderTabs(){
@@ -463,14 +528,18 @@ function renderFeed(){
   }
   $('#feed').innerHTML = list.map(it=>{
     const fresh = (it.relevance||0) >= 8;
+    const art = artFor(it.category);
     const srcs = (it.sources||[]).map(s =>
       `<span class="chip src"><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a></span>`
     ).join('');
     return `
     <article class="item ${fresh?'fresh':''}" id="${esc(it.id)}">
-      <div class="rail">
-        <span class="tick">${esc(it.published||'--:--')}</span>
-        <span class="dot"></span>
+      <div class="media" style="background:${art.grad}">
+        ${art.icon}
+        ${it.image ? `<img src="${esc(it.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:''}
+        <span class="cat-tag">${esc(CATS[it.category]||'أخرى')}</span>
+        ${fresh ? `<span class="hot">🔥 عاجل</span>`:''}
+        <span class="time">${esc(it.published||'--:--')}</span>
       </div>
       <div class="card">
         <h3>${esc(it.title_ar)}</h3>
@@ -478,7 +547,6 @@ function renderFeed(){
         ${(it.entities||[]).length ? `<div class="ents">${it.entities.map(x=>`<span class="ent" dir="ltr">${esc(x)}</span>`).join('')}</div>`:''}
         <p class="sum">${esc(it.summary_ar)}</p>
         <div class="chips">
-          <span class="chip cat">${esc(CATS[it.category]||'أخرى')}</span>
           <span class="chip">أثر ${esc(it.relevance ?? '؟')}/10</span>
           ${(it.cluster_count>1) ? `<span class="chip cluster">${it.cluster_count} مصادر غطّته</span>`:''}
           ${it.needs_review ? `<span class="chip review">بلا أسماء — راجعي الأصل</span>`:''}
