@@ -1,0 +1,12 @@
+{
+  "fetched_at": "2026-08-09T22:54:06.690034+00:00",
+  "items": [],
+  "needs_js": [
+    {
+      "name": "Midjourney Updates",
+      "url": "https://updates.midjourney.com/",
+      "chars": 575
+    }
+  ],
+  "errors": []
+}

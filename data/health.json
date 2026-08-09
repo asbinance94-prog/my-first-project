@@ -1,0 +1,33 @@
+{
+  "runs": [
+    {
+      "at": "2026-08-09T22:54:21.479590+00:00",
+      "new": 58,
+      "total": 58,
+      "cost_usd": 0.0,
+      "spent_today_usd": 0.0,
+      "feed_errors": [],
+      "api_errors": [
+        "مفتاح ANTHROPIC_API_KEY غير موجود — كُتبت الأخبار بلا ترجمة"
+      ],
+      "generic_titles": 0,
+      "stats": {
+        "sources_total": 19,
+        "sources_unchanged": 6,
+        "sources_failed": 0,
+        "items_new": 89,
+        "items_dropped_by_cap": 29,
+        "clusters": 58,
+        "tracks": [
+          "track_arabic",
+          "track_creative",
+          "track_general_publications",
+          "track_newsletters"
+        ]
+      }
+    }
+  ],
+  "spend": {
+    "2026-08-09": 0.0
+  }
+}
