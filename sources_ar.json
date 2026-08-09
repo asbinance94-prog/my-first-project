@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "why_low_weight": "المصادر العربية في التقنية تشتقّ من الإنجليزية بتأخير يوم إلى ثلاثة. قيمتها ليست السبق — قيمتها أنها تُريك ما وصل جمهورك فعلاً. لهذا وزنها منخفض ومسارها منفصل، ولا تدخل قسم 'الأهم الآن'.",
+    "how_to_use": "افتحي تبويب 'عربي' مرة واحدة أسبوعياً لا يومياً. السؤال الذي يجيب عليه هذا المسار: ما الذي يعرفه متابعوني الآن؟ وليس: ما الجديد؟",
+    "confidence": "كل الروابط أدناه pattern_high أو needs_resolve. لم أفحص أياً منها. validate_feeds.py يفصل الحقيقي عن المفترض."
+  },
+
+  "track_arabic": {
+    "_note": "المسار العربي — وزن منخفض عمداً",
+    "sources": [
+      { "name": "البوابة التقنية", "url": "https://aitnews.com/feed/", "confidence": "pattern_high", "weight": 4, "_track": "arabic", "why": "أوسع تغطية عربية يومية للتقنية. WordPress فنمط /feed/ متوقع" },
+      { "name": "البوابة التقنية — ذكاء اصطناعي", "url": "https://aitnews.com/category/artificial-intelligence/feed/", "confidence": "needs_resolve", "weight": 5, "_track": "arabic", "why": "تصنيف الذكاء الاصطناعي وحده — أقل ضوضاء. تحققي من اسم التصنيف الفعلي في الرابط" },
+      { "name": "عالم التقنية", "url": "https://www.tech-wd.com/wd/feed/", "confidence": "pattern_high", "weight": 3, "_track": "arabic", "why": "موقع عربي قديم، تغطية عامة" },
+      { "name": "العربية — تقنية", "url": "https://www.alarabiya.net/tools/rss/ar/technology", "confidence": "needs_resolve", "weight": 4, "_track": "arabic", "why": "قسم الذكاء الاصطناعي نشط جداً (تحديثات بالساعات). رابط الفيد غير مؤكد — ابحثي عن application/rss+xml في كود الصفحة" },
+      { "name": "الشرق للأخبار — تقنية", "url": "https://asharq.com/technology/feed/", "confidence": "needs_resolve", "weight": 4, "_track": "arabic", "why": "تغطية خليجية جادة بأسماء الشركات الأصلية" },
+      { "name": "Wamda — ريادة أعمال MENA", "url": "https://www.wamda.com/feed", "confidence": "pattern_high", "weight": 3, "_track": "arabic", "why": "شركات ناشئة في المنطقة — مفيد لمعرفة من يشتغل على الذكاء الاصطناعي خليجياً" }
+    ],
+    "no_feed_manual": [
+      { "name": "كونا — وكالة الأنباء الكويتية", "url": "https://www.kuna.net.kw", "why": "أخبار محلية عن مبادرات الذكاء الاصطناعي الحكومية. متابعة يدوية" },
+      { "name": "هيئة الاتصالات وتقنية المعلومات (CITRA) الكويت", "url": "https://citra.gov.kw", "why": "أي تنظيم كويتي يخص الذكاء الاصطناعي يمر من هنا" }
+    ]
+  },
+
+  "_editorial_warning": {
+    "translation_quality": "المواقع العربية تعرّب أسماء الشركات والنماذج: 'أنثروبيك' بدل Anthropic، 'كلود' بدل Claude، 'غوغل ديب مايند' بدل Google DeepMind. هذا يكسر البحث والمطابقة مع المصادر الإنجليزية.",
+    "mitigation": "enrich.py يعيد كتابة العنوان العربي بالأسماء اللاتينية الأصلية، والعنوان الأصلي محفوظ دائماً في title_original. العنقدة تعمل على العنوان الأصلي لا المترجم.",
+    "known_limitation": "خبر عربي عن Seedance مكتوب بـ 'سيدانس' لن يُدمج مع الخبر الإنجليزي — العنقدة تعتمد على تشابه نصي والحروف مختلفة. النتيجة: تكرار محتمل بين المسارين. مقبول لأن المسار العربي منفصل بصرياً أصلاً."
+  }
+}

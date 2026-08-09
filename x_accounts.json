@@ -1,0 +1,63 @@
+{
+  "_meta": {
+    "why_separate_file": "حسابات X لا تُلتقط بـ RSS. طريقة الالتقاط مختلفة جذرياً عن بقية المصادر، لذلك ملف منفصل.",
+    "ingestion_reality": {
+      "x_api": "مدفوع — مستوى القراءة يبدأ حوالي 200 دولار شهرياً. لا يُنصح به لمشروع شخصي.",
+      "nitter_rsshub": "مجاني لكنه ينكسر باستمرار. لا تبني عليه.",
+      "recommended": "الالتقاط عبر القناة البديلة (mirror) لكل شخص: مدونة، Substack، يوتيوب، أو مدونة الشركة. حساب X يبقى للمتابعة اليدوية.",
+      "manual_layer": "أنشئي X List مغلقة باسم AI-Radar وضيفي كل الحسابات. افتحيها مرة يومياً. هذه الطبقة اليدوية أرخص وأثبت من أي حل تقني هش."
+    },
+    "handle_warning": "معرّفات X تتغيّر. أي معرّف معلّم unverified تحققي منه بنفسك قبل الإضافة — لم أخترع أي معرّف، والمعلّمة unverified تعني أنني لست واثقة منها."
+  },
+
+  "researchers": [
+    { "name": "Andrej Karpathy", "x": "@karpathy", "handle_confidence": "high", "mirror": { "type": "youtube", "handle": "@AndrejKarpathy" }, "weight": 9, "why": "تردد منخفض جداً، إشارة أعلى من أي حساب آخر" },
+    { "name": "AK", "x": "@_akhaliq", "handle_confidence": "high", "mirror": { "type": "rss", "url": "https://huggingface.co/blog/feed.xml", "note": "ينشر أوراق Hugging Face — تغطية جزئية" }, "weight": 8, "why": "أسرع حساب ينشر الأوراق والنماذج الجديدة. الأعلى قيمة عملية يومياً" },
+    { "name": "Yann LeCun", "x": "@ylecun", "handle_confidence": "high", "mirror": null, "weight": 7, "why": "موقف نقدي من الاتجاه السائد — يوازن تحيّز باقي المصادر" },
+    { "name": "Demis Hassabis", "x": "@demishassabis", "handle_confidence": "high", "mirror": { "type": "rss", "url": "https://blog.google/technology/ai/rss/" }, "weight": 7, "why": "إعلانات DeepMind" },
+    { "name": "Jim Fan", "x": "@DrJimFan", "handle_confidence": "high", "mirror": null, "weight": 7, "why": "نماذج العالم والروبوتات — الاتجاه القادم في توليد الفيديو" },
+    { "name": "Ethan Mollick", "x": "@emollick", "handle_confidence": "high", "mirror": { "type": "rss", "url": "https://www.oneusefulthing.org/feed" }, "weight": 9, "why": "الأقرب لجمهورك: يحوّل القدرة التقنية إلى تطبيق تعليمي وإداري" },
+    { "name": "Nathan Lambert", "x": "@natolambert", "handle_confidence": "medium", "mirror": { "type": "rss", "url": "https://www.interconnects.ai/feed" }, "weight": 6, "why": "تحليل تدريب النماذج والمفتوح المصدر" }
+  ],
+
+  "journalists": [
+    { "name": "Casey Newton", "x": "@caseynewton", "handle_confidence": "high", "mirror": { "type": "rss", "url": "https://www.platformer.news/rss/" }, "weight": 8, "why": "أثر المنصات والسياسات — تحقيقات لا تجدينها في مكان آخر" },
+    { "name": "Alex Heath", "x": "@alexeheath", "handle_confidence": "medium", "mirror": { "type": "rss", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml" }, "weight": 7, "why": "تسريبات منتجات قبل الإعلان" },
+    { "name": "Stephanie Palazzolo — The Information", "x": null, "handle_confidence": "unverified", "mirror": { "type": "paid", "url": "https://www.theinformation.com" }, "weight": 7, "why": "أدق تسريبات مالية وتقنية. مدفوع" },
+    { "name": "Kyle Wiggers — TechCrunch", "x": null, "handle_confidence": "unverified", "mirror": { "type": "rss", "url": "https://techcrunch.com/category/artificial-intelligence/feed/" }, "weight": 6, "why": "تغطية يومية للشركات الناشئة" },
+    { "name": "Will Knight — WIRED", "x": null, "handle_confidence": "unverified", "mirror": { "type": "rss", "url": "https://www.wired.com/feed/tag/ai/latest/rss" }, "weight": 6, "why": "تحقيقات معمّقة" }
+  ],
+
+  "creators": [
+    { "name": "Bilawal Sidhu", "x": "@bilawalsidhu", "handle_confidence": "high", "mirror": { "type": "youtube", "handle": "@bilawalsidhu" }, "weight": 10, "why": "الأقرب لمجالك تماماً: مؤثرات بصرية + ذكاء اصطناعي + تنسيق TED. تابعيه في كل مكان" },
+    { "name": "Matt Wolfe", "x": "@mreflow", "handle_confidence": "high", "mirror": { "type": "youtube", "handle": "@mreflow" }, "weight": 8, "why": "المرجع الأول لأخبار الأدوات" },
+    { "name": "Rowan Cheung", "x": "@rowancheung", "handle_confidence": "high", "mirror": { "type": "email", "url": "https://www.therundown.ai" }, "weight": 7, "why": "مؤسس The Rundown — ينشر على X قبل النشرة" },
+    { "name": "Min Choi", "x": "@minchoi", "handle_confidence": "high", "mirror": null, "weight": 6, "why": "خيوط تجميعية للأدوات الإبداعية" }
+  ],
+
+  "ai_filmmakers": {
+    "_note": "المجموعة الأعلى قيمة لأكاديمية منارة. هؤلاء يكتشفون كسور النماذج وحلول الاتساق قبل الإعلام بأسابيع.",
+    "accounts": [
+      { "name": "PJ Ace — PJ Accetturo", "x": null, "handle_confidence": "unverified", "mirror": { "type": "rss_try", "url": "https://pjace.beehiiv.com/feed" }, "weight": 10, "why": "رئيس وكالة Genre.ai. نشرته تشرح سير عمل إنتاج فعلي — أقرب مصدر لمنهجيتك في الإخراج" },
+      { "name": "Dave Clark — Promise", "x": null, "handle_confidence": "unverified", "mirror": null, "weight": 9, "why": "مدير إبداعي لاستوديو Promise. فلسفته قريبة من فلسفتك: البرومبت لا يصنع فيلماً، المعرفة الإخراجية تصنعه" },
+      { "name": "The Dor Brothers", "x": null, "handle_confidence": "unverified", "mirror": null, "weight": 8, "why": "أعمال بـ Seedance 2.0 — مرجع بصري مباشر" },
+      { "name": "Kavan the Kid", "x": null, "handle_confidence": "unverified", "mirror": null, "weight": 7, "why": "أعمال روائية بأدوات توليدية" },
+      { "name": "Chad Nelson", "x": null, "handle_confidence": "unverified", "mirror": null, "weight": 7, "why": "Critterz — أول عمل توليدي بتوزيع سينمائي فعلي" }
+    ]
+  },
+
+  "companies": {
+    "_rule": "لا تتابعي حسابات الشركات على X إطلاقاً. مدوناتها لها فيدات رسمية أسرع وأنظف. المتابعة على X تضاعف الضوضاء بلا فائدة. المعرّفات هنا للرجوع فقط.",
+    "accounts": [
+      { "name": "OpenAI", "x": "@OpenAI", "mirror": { "type": "rss", "url": "https://openai.com/news/rss.xml" } },
+      { "name": "Anthropic", "x": "@AnthropicAI", "mirror": { "type": "email", "url": "https://www.anthropic.com/news", "note": "لا يوجد RSS — اشتراك بريدي" } },
+      { "name": "Google DeepMind", "x": "@GoogleDeepMind", "mirror": { "type": "rss", "url": "https://blog.google/technology/ai/rss/" } },
+      { "name": "Runway", "x": "@runwayml", "mirror": { "type": "needs_resolve", "url": "https://runwayml.com/research" } },
+      { "name": "Midjourney", "x": "@midjourney", "mirror": null, "note": "الإعلانات تنزل في Discord أولاً — لا يوجد فيد" },
+      { "name": "Luma AI", "x": "@LumaLabsAI", "mirror": null },
+      { "name": "Kling AI", "x": "@kling_ai", "mirror": null },
+      { "name": "ElevenLabs", "x": "@ElevenLabsio", "mirror": { "type": "rss_try", "url": "https://elevenlabs.io/blog/rss.xml" } },
+      { "name": "Higgsfield", "x": null, "mirror": null, "note": "لا فيد ولا معرّف مؤكد — متابعة يدوية" }
+    ]
+  }
+}
