@@ -1,0 +1,84 @@
+{
+  "_meta": {
+    "project": "AI Radar — لوحة أخبار الذكاء الاصطناعي",
+    "owner": "Asma Alotaibi / Manara Academy",
+    "built": "2026-08-10",
+    "confidence_legend": {
+      "verified_reported": "رابط الفيد مُوثّق من مصدر ثالث أعاد التحقق منه في يوليو 2026 — لكن لم أفحصه بنفسي",
+      "pattern_high": "استنتاج قوي من نمط معروف (WordPress /feed/ أو Substack /feed) — يحتاج فحص",
+      "needs_resolve": "يحتاج استخراج معرّف تلقائي قبل الاستخدام",
+      "no_rss": "لا يوجد فيد — يُلتقط عبر البريد"
+    },
+    "IMPORTANT": "شغّلي validate_feeds.py قبل أي بناء. أي رابط يفشل يُحذف أو يُصحّح — لا تبني الواجهة على مصدر غير مفحوص."
+  },
+
+  "track_creative": {
+    "_note": "المسار الإبداعي — الأولوية القصوى لأكاديمية منارة والدورات",
+    "sources": [
+      { "id": "hf_blog", "name": "Hugging Face Blog", "url": "https://huggingface.co/blog/feed.xml", "confidence": "verified_reported", "weight": 9, "why": "نماذج مفتوحة للصورة والفيديو والصوت قبل ما توصل الإعلام" },
+      { "id": "openai_news", "name": "OpenAI News", "url": "https://openai.com/news/rss.xml", "confidence": "verified_reported", "weight": 9, "why": "إعلانات Sora و GPT Image رسمياً" },
+      { "id": "reddit_sd", "name": "r/StableDiffusion", "url": "https://www.reddit.com/r/StableDiffusion/.rss", "confidence": "pattern_high", "weight": 8, "why": "أسرع مكان تظهر فيه كسور النماذج وحلول الاتساق" },
+      { "id": "reddit_aivideo", "name": "r/aivideo", "url": "https://www.reddit.com/r/aivideo/.rss", "confidence": "pattern_high", "weight": 7, "why": "تجارب عملية على Seedance و Kling و Veo" },
+      { "id": "reddit_comfyui", "name": "r/comfyui", "url": "https://www.reddit.com/r/comfyui/.rss", "confidence": "pattern_high", "weight": 6, "why": "أدوات الإنتاج المتقدمة" },
+      { "id": "runway_releases", "name": "Runway Release Notes", "url": "https://releasebot.io/updates/runwayai", "confidence": "needs_resolve", "weight": 8, "why": "سجل تغييرات Runway — ابحثي عن رابط RSS في الصفحة" },
+      { "id": "hn_aivideo", "name": "Hacker News — AI video", "url": "https://hnrss.org/newest?q=AI+video&points=50", "confidence": "pattern_high", "weight": 6, "why": "فلتر بالكلمة المفتاحية مع حد أدنى للتفاعل" },
+      { "id": "adobe_firefly", "name": "Adobe Blog — Firefly", "url": "https://blog.adobe.com/en/topics/firefly.rss", "confidence": "pattern_high", "weight": 6, "why": "مهم لك تحديداً — تشتغلين مع Adobe عبر MCP" }
+    ],
+    "no_rss_watchlist": [
+      { "name": "Higgsfield", "url": "https://higgsfield.ai", "method": "متابعة يدوية أو scraping خفيف — لا يوجد فيد" },
+      { "name": "ByteDance Seedance", "url": "https://seed.bytedance.com", "method": "لا يوجد فيد" },
+      { "name": "Kling AI", "url": "https://klingai.com", "method": "لا يوجد فيد" },
+      { "name": "HeyGen Changelog", "url": "https://www.heygen.com", "method": "لا يوجد فيد" }
+    ]
+  },
+
+  "track_general_publications": {
+    "_note": "أهم 10 مصادر إخبارية — ترتيب حسب نسبة الإشارة للضجيج",
+    "sources": [
+      { "rank": 1, "name": "MarkTechPost", "url": "https://www.marktechpost.com/feed/", "confidence": "verified_reported", "weight": 8, "why": "أعلى تردد نشر + تغطية إصدارات وأوراق. أفضل فيد مفرد لو تبين واحد فقط" },
+      { "rank": 2, "name": "MIT Technology Review — AI", "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed/", "confidence": "verified_reported", "weight": 9, "why": "تحليل وسياسات — مصدر يصلح للاقتباس في محتواك" },
+      { "rank": 3, "name": "OpenAI News", "url": "https://openai.com/news/rss.xml", "confidence": "verified_reported", "weight": 9, "why": "المصدر الأول (primary source) — لا وسيط" },
+      { "rank": 4, "name": "Google AI Blog", "url": "https://blog.google/technology/ai/rss/", "confidence": "verified_reported", "weight": 8, "why": "إعلانات Gemini و Veo و DeepMind" },
+      { "rank": 5, "name": "The Verge — AI", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", "confidence": "verified_reported", "weight": 7, "why": "زاوية المستهلك. تنبيه: الفيد المجاني مقتطفات فقط" },
+      { "rank": 6, "name": "TechCrunch — AI", "url": "https://techcrunch.com/category/artificial-intelligence/feed/", "confidence": "pattern_high", "weight": 7, "why": "تمويل وشركات ناشئة" },
+      { "rank": 7, "name": "WIRED — AI", "url": "https://www.wired.com/feed/tag/ai/latest/rss", "confidence": "pattern_high", "weight": 7, "why": "تحقيقات وأثر مجتمعي" },
+      { "rank": 8, "name": "VentureBeat — AI", "url": "https://venturebeat.com/category/ai/feed/", "confidence": "pattern_high", "weight": 6, "why": "تبنّي المؤسسات للتقنية" },
+      { "rank": 9, "name": "Ars Technica — AI", "url": "https://arstechnica.com/ai/feed/", "confidence": "pattern_high", "weight": 6, "why": "عمق تقني بدون مبالغة" },
+      { "rank": 10, "name": "arXiv cs.AI", "url": "https://rss.arxiv.org/rss/cs.AI", "confidence": "verified_reported", "weight": 4, "why": "بحث أولي. حجم هائل — لا تفعّليه بدون فلتر كلمات" }
+    ]
+  },
+
+  "track_newsletters": {
+    "_note": "أهم 10 نشرات — العمود method يحدد طريقة الالتقاط",
+    "sources": [
+      { "rank": 1, "name": "The Rundown AI", "subscribers_reported": "2M+", "method": "email", "url": "https://www.therundown.ai", "why": "أوسع تغطية يومية + درس عملي يومي" },
+      { "rank": 2, "name": "TLDR AI", "subscribers_reported": "~1.1M", "method": "rss_try", "url": "https://tldr.tech/api/rss/ai", "confidence": "pattern_high", "why": "تقني بدون تعقيد — الأفضل لأغلب القراء" },
+      { "rank": 3, "name": "The Batch — DeepLearning.AI", "method": "email", "url": "https://www.deeplearning.ai/the-batch/", "confidence": "no_rss", "why": "رسائل Andrew Ng — أعلى مصداقية أكاديمية للاقتباس" },
+      { "rank": 4, "name": "Import AI — Jack Clark", "method": "email", "url": "https://importai.substack.com", "confidence": "no_rss", "why": "سياسات وأبحاث. الفيد القديم مات (404)" },
+      { "rank": 5, "name": "One Useful Thing — Ethan Mollick", "method": "rss_try", "url": "https://www.oneusefulthing.org/feed", "confidence": "pattern_high", "why": "الأقوى للقيادات والتعليم — يترجم القدرة إلى تطبيق. الأقرب لجمهورك" },
+      { "rank": 6, "name": "Superhuman AI", "subscribers_reported": "1.5M+", "method": "email", "url": "https://www.superhuman.ai", "why": "قراءة 3 دقائق صارمة" },
+      { "rank": 7, "name": "Ben's Bites", "method": "email", "url": "https://bensbites.com", "why": "عدسة المؤسسين والمستثمرين" },
+      { "rank": 8, "name": "Ahead of AI — Sebastian Raschka", "method": "rss", "url": "https://magazine.sebastianraschka.com/feed", "confidence": "verified_reported", "why": "معمارية النماذج — عميق وثابت الجودة" },
+      { "rank": 9, "name": "Last Week in AI", "method": "rss", "url": "https://lastweekin.ai/feed", "confidence": "verified_reported", "why": "ملخص أسبوعي + بودكاست" },
+      { "rank": 10, "name": "Interconnects — Nathan Lambert", "method": "rss_try", "url": "https://www.interconnects.ai/feed", "confidence": "pattern_high", "why": "تحليل تدريب النماذج والمفتوح المصدر" }
+    ],
+    "_warning": "تداخل شديد: في صباح إطلاق كبير، Rundown و TLDR و Superhuman و Ben's Bites تغطي نفس الخبر بنسبة تقارب 80%. الاشتراك بكلها بدون طبقة دمج = قراءة نفس الخبر خمس مرات. طبقة الـ deduplication ليست ترفاً — هي سبب وجود المشروع."
+  },
+
+  "track_creators": {
+    "_note": "أهم 10 صناع محتوى. قنوات يوتيوب لها فيد لكن يحتاج channel_id — يستخرجه resolve_youtube.py",
+    "youtube": [
+      { "rank": 1, "name": "Matt Wolfe", "handle": "@mreflow", "why": "المرجع الأول لأخبار الأدوات والمراجعات — الأقرب لمجالك" },
+      { "rank": 2, "name": "Two Minute Papers", "handle": "@TwoMinutePapers", "why": "تلخيص أوراق بصرياً — مادة خام ممتازة للريلز" },
+      { "rank": 3, "name": "AI Explained", "handle": "@aiexplained-official", "why": "تحليل هادئ عميق بدون هايب" },
+      { "rank": 4, "name": "Matthew Berman", "handle": "@matthew_berman", "why": "تجارب عملية على النماذج الجديدة" },
+      { "rank": 5, "name": "The AI Advantage", "handle": "@aiadvantage", "why": "أتمتة وسير عمل تطبيقي" },
+      { "rank": 6, "name": "Andrej Karpathy", "handle": "@AndrejKarpathy", "why": "تردد منخفض، إشارة عالية جداً" },
+      { "rank": 7, "name": "Fireship", "handle": "@Fireship", "why": "شروحات سريعة — مرجع ممتاز لأسلوب الإيقاع السريع" },
+      { "rank": 8, "name": "Google DeepMind", "handle": "@GoogleDeepMind", "why": "مصدر أولي للأبحاث" },
+      { "rank": 9, "name": "Yannic Kilcher", "handle": "@YannicKilcher", "why": "مراجعة أوراق تقنية" },
+      { "rank": 10, "name": "Lex Fridman", "handle": "@lexfridman", "why": "مقابلات طويلة — تردد منخفض، قيمة عالية عند الضيف المهم" }
+    ],
+    "_x_twitter_note": "منصة X لا توفر API مجاني و nitter غير مستقر. لا تبني عليها. الحل الأدوم: أنشئي X List مغلقة وافحصيها يدوياً مرة يومياً — أرخص وأثبت من أي حل تقني هش."
+  }
+}

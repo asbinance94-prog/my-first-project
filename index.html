@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>رشيز — رادار أخبار الذكاء الاصطناعي</title>
+<meta name="theme-color" content="#14110F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14110F;
+  --surface:#1C1815;
+  --surface-2:#231E1A;
+  --line:#332C25;
+  --line-soft:#241F1B;
+  --paper:#EDE6DA;
+  --dim:#96897A;
+  --dimmer:#6B6055;
+  --gold:#C9A227;
+  --gold-deep:#8A701A;
+  --teal:#4FA88B;
+  --rust:#B5563A;
+
+  --display:'Tajawal',system-ui,sans-serif;
+  --body:'IBM Plex Sans Arabic','Tajawal',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+
+  --pad:clamp(16px,4vw,40px);
+  --rail:56px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--ink);
+  color:var(--paper);
+  font-family:var(--body);
+  font-size:15px;
+  line-height:1.7;
+  min-height:100vh;
+  padding-bottom:64px;
+}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+
+/* ---------- الشريط العلوي ---------- */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(20,17,15,.88);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+  padding:12px var(--pad);
+  display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:baseline;gap:10px;margin-inline-end:auto}
+.brand h1{
+  font-family:var(--display);font-weight:800;font-size:20px;
+  letter-spacing:-.01em;line-height:1;
+}
+.brand .sub{
+  font-family:var(--mono);font-size:10px;color:var(--dimmer);
+  letter-spacing:.14em;text-transform:uppercase;
+}
+.meta{display:flex;align-items:center;gap:14px;font-family:var(--mono);font-size:11px;color:var(--dim)}
+.pulse{display:inline-flex;align-items:center;gap:6px}
+.pulse i{
+  width:6px;height:6px;border-radius:50%;background:var(--teal);
+  box-shadow:0 0 0 0 rgba(79,168,139,.6);animation:beat 2.6s infinite;
+}
+@keyframes beat{
+  0%{box-shadow:0 0 0 0 rgba(79,168,139,.5)}
+  70%{box-shadow:0 0 0 7px rgba(79,168,139,0)}
+  100%{box-shadow:0 0 0 0 rgba(79,168,139,0)}
+}
+
+/* ---------- تنبيه البيانات التجريبية ---------- */
+.notice{
+  margin:14px var(--pad) 0;padding:12px 16px;
+  border:1px solid var(--gold-deep);
+  border-inline-start:3px solid var(--gold);
+  background:rgba(201,162,39,.06);
+  font-size:13.5px;color:#E4D6AE;border-radius:3px;
+}
+.notice code{font-family:var(--mono);font-size:12px;color:var(--gold)}
+.notice[hidden]{display:none}
+
+/* ---------- رشيز اليوم ---------- */
+.reel{padding:26px var(--pad) 6px}
+.eyebrow{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--dimmer);
+  display:flex;align-items:center;gap:12px;margin-bottom:14px;
+}
+.eyebrow::after{content:"";flex:1;height:1px;background:var(--line)}
+
+.strip{
+  display:grid;gap:2px;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  border-block:1px solid var(--line);
+  background:var(--line-soft);
+  /* ثقوب الفيلم — العنصر التوقيعي */
+  position:relative;padding-block:9px;
+}
+.strip::before,.strip::after{
+  content:"";position:absolute;inset-inline:0;height:9px;
+  background-image:repeating-linear-gradient(to left,var(--ink) 0 7px,transparent 7px 15px);
+  opacity:.85;pointer-events:none;
+}
+.strip::before{top:0}
+.strip::after{bottom:0}
+
+.frame{
+  background:var(--surface);padding:18px 18px 16px;
+  display:flex;flex-direction:column;gap:9px;min-height:100%;
+  border:none;text-align:start;transition:background .18s ease;
+}
+.frame:hover{background:var(--surface-2)}
+.frame .no{
+  font-family:var(--mono);font-size:10px;color:var(--gold);
+  letter-spacing:.16em;
+}
+.frame h2{
+  font-family:var(--display);font-weight:700;font-size:17px;
+  line-height:1.45;letter-spacing:-.01em;
+}
+.frame p{font-size:13px;color:var(--dim);line-height:1.65}
+
+/* ---------- أدوات التحكم ---------- */
+.controls{
+  padding:22px var(--pad) 0;display:flex;flex-direction:column;gap:12px;
+}
+.tabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.tabs::-webkit-scrollbar{display:none}
+.tab{
+  white-space:nowrap;padding:6px 13px;border:1px solid var(--line);
+  border-radius:2px;font-size:13px;color:var(--dim);
+  transition:all .16s ease;
+}
+.tab:hover{border-color:var(--dimmer);color:var(--paper)}
+.tab[aria-selected="true"]{
+  background:var(--gold);border-color:var(--gold);color:#1A1509;font-weight:500;
+}
+.tab .n{font-family:var(--mono);font-size:10.5px;opacity:.6;margin-inline-start:5px}
+
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.search{
+  flex:1;min-width:200px;background:var(--surface);
+  border:1px solid var(--line);border-radius:2px;
+  padding:9px 13px;color:var(--paper);font-family:var(--body);font-size:14px;
+}
+.search::placeholder{color:var(--dimmer)}
+.search:focus{border-color:var(--gold-deep);outline:none}
+.action{
+  padding:9px 16px;border:1px solid var(--gold-deep);border-radius:2px;
+  color:var(--gold);font-size:13.5px;font-weight:500;
+  transition:all .16s ease;white-space:nowrap;
+}
+.action:hover{background:var(--gold);color:#1A1509;border-color:var(--gold)}
+.action.done{background:var(--teal);border-color:var(--teal);color:#0E1A16}
+
+/* ---------- الخلاصة ---------- */
+.feed{padding:8px var(--pad) 0;position:relative}
+.item{
+  display:grid;grid-template-columns:var(--rail) 1fr;
+  border-bottom:1px solid var(--line-soft);
+}
+.item:last-child{border-bottom:none}
+
+/* ريل التوقيت — العنصر التوقيعي الثاني */
+.rail{
+  position:relative;padding-top:22px;
+  display:flex;flex-direction:column;align-items:center;gap:7px;
+}
+.rail::before{
+  content:"";position:absolute;top:0;bottom:0;
+  inset-inline-start:calc(50% - .5px);width:1px;background:var(--line);
+}
+.rail .tick{
+  position:relative;z-index:1;background:var(--ink);
+  font-family:var(--mono);font-size:10px;color:var(--dimmer);
+  padding-block:4px;letter-spacing:.02em;
+}
+.rail .dot{
+  position:relative;z-index:1;width:7px;height:7px;border-radius:50%;
+  background:var(--surface);border:1px solid var(--dimmer);
+}
+.item.fresh .rail .dot{background:var(--teal);border-color:var(--teal)}
+.item.fresh .rail .tick{color:var(--teal)}
+
+.card{padding:20px 4px 24px}
+.card h3{
+  font-family:var(--display);font-weight:700;font-size:18.5px;
+  line-height:1.5;letter-spacing:-.012em;margin-bottom:8px;
+}
+.card .orig{
+  font-family:var(--mono);font-size:11.5px;line-height:1.55;
+  color:var(--dimmer);direction:ltr;text-align:left;
+  margin:-2px 0 11px;padding-inline-start:9px;
+  border-inline-start:1px solid var(--line);
+}
+.card .sum{color:var(--dim);font-size:14.5px;line-height:1.75;margin-bottom:13px}
+.card .sum b{color:var(--paper)}
+.ents{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:11px}
+.ent{
+  font-family:var(--mono);font-size:11px;direction:ltr;
+  padding:2px 8px;border-radius:2px;
+  background:rgba(201,162,39,.09);color:var(--gold);
+  border:1px solid rgba(201,162,39,.22);
+}
+.chip.review{border-color:var(--rust);color:var(--rust)}
+.chip.unver{border-color:var(--rust);color:var(--rust)}
+.tab.alt{border-style:dashed}
+.tab.alt[aria-selected="true"]{background:var(--teal);border-color:var(--teal);color:#0E1A16}
+.tsep{width:1px;background:var(--line);margin-inline:6px;flex:none}
+.card .sum b{color:var(--paper);font-weight:500}
+
+.chips{display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+.chip{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;
+  padding:3px 8px;border:1px solid var(--line);border-radius:2px;color:var(--dim);
+}
+.chip.cat{border-color:var(--gold-deep);color:var(--gold)}
+.chip.cluster{border-color:var(--teal);color:var(--teal)}
+.chip.sample{border-color:var(--rust);color:var(--rust)}
+.chip.src{border:none;padding-inline:0;color:var(--dimmer)}
+.chip.src a{text-decoration:none;border-bottom:1px solid var(--line)}
+.chip.src a:hover{color:var(--gold);border-color:var(--gold)}
+
+.angle{
+  margin-top:13px;padding:11px 14px;border-radius:2px;
+  background:rgba(201,162,39,.055);
+  border-inline-start:2px solid var(--gold);
+  display:flex;gap:12px;align-items:flex-start;
+  width:100%;text-align:start;transition:background .16s ease;
+}
+.angle:hover{background:rgba(201,162,39,.11)}
+.angle .lbl{
+  font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;
+  color:var(--gold);white-space:nowrap;padding-top:4px;
+}
+.angle .txt{font-size:13.5px;color:#E4D6AE;line-height:1.6}
+
+.empty{
+  padding:70px 20px;text-align:center;color:var(--dimmer);
+}
+.empty strong{display:block;font-family:var(--display);font-size:17px;color:var(--dim);margin-bottom:6px}
+
+footer{
+  margin-top:40px;padding:20px var(--pad);border-top:1px solid var(--line-soft);
+  font-family:var(--mono);font-size:10.5px;color:var(--dimmer);
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+}
+
+@media(max-width:600px){
+  :root{--rail:44px}
+  .card h3{font-size:17px}
+  .brand h1{font-size:18px}
+  .meta{font-size:10px;gap:10px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <h1>رشيز</h1>
+    <span class="sub">AI Radar</span>
+  </div>
+  <div class="meta">
+    <span id="today"></span>
+    <span class="pulse"><i></i><span id="lastFetch">—</span></span>
+    <span id="count">—</span>
+  </div>
+</header>
+
+<div class="notice" id="notice" hidden>
+  <strong>أرشيف، وليست أخبار اليوم.</strong>
+  لم يُربط <code>data/news.json</code> بعد. ما تشوفينه أخبار حقيقية سبق نشرها، معروضة لتقييم الشكل — لا لمتابعتها.
+  شغّلي <code>validate_feeds.py</code> ثم <code>fetch.py</code> وستُستبدل تلقائياً.
+</div>
+
+<section class="reel">
+  <div class="eyebrow">رشيز اليوم — الأعلى أثراً</div>
+  <div class="strip" id="strip"></div>
+</section>
+
+<section class="controls">
+  <div class="tabs" id="tabs" role="tablist"></div>
+  <div class="row">
+    <input class="search" id="search" type="search" placeholder="ابحثي في العناوين والملخصات…" aria-label="بحث">
+    <button class="action" id="copyBtn">نسخ موجز اليوم</button>
+  </div>
+</section>
+
+<main class="feed" id="feed"></main>
+
+<footer>
+  <span id="health">—</span>
+  <span>أكاديمية منارة للإعلام التربوي</span>
+</footer>
+
+<script>
+const CATS = {
+  all:            'الكل',
+  video_models:   'نماذج الفيديو',
+  image_models:   'نماذج الصورة',
+  audio_voice:    'الصوت',
+  tools:          'الأدوات',
+  research:       'البحث',
+  business:       'الأعمال',
+  policy:         'السياسات',
+  other:          'أخرى'
+};
+const TRACK_TABS = { arabic:'عربي', watch:'رصد صفحات', newsletter:'نشرات' };
+
+/* عيّنات لتقييم الشكل — تُستبدل بالكامل عند وجود data/news.json */
+const SAMPLE = { generated_at:new Date().toISOString(), sample:true,
+  health:'أرشيف — أخبار حقيقية سابقة، وليست أخبار اليوم', items:[
+
+  { id:'a1', title_ar:'ByteDance تطلق Seedance 2.0 بمرساة latent-space عبر لقطة 60 ثانية',
+    title_original:'ByteDance releases Seedance 2.0 with native audio, tops video leaderboard',
+    entities:['ByteDance','Seedance 2.0'],
+    summary_ar:'صدر في 12 فبراير 2026، ويستخدم latent-space anchoring للحفاظ على الاتساق عبر مقطع 60 ثانية، وتصدّر لوحة الترتيب بـ 1213 Elo مع الصوت. المعنى العملي: مشاهد الحوار الطويلة صارت ممكنة بلقطة واحدة بدل التقطيع، وهذا يغيّر بنية الـ storyboard من الأساس.',
+    category:'video_models', relevance:10, cluster_count:4, published:'09:12:40',
+    sources:[{name:'ByteDance Seed',url:'#'},{name:'MarkTechPost',url:'#'},{name:'The Verge',url:'#'}],
+    content_angle:'نفس البرومبت على Seedance 1 و 2.0 — الفرق في ثبات الشخصية عبر 60 ثانية يصلح ريلز مقارنة مباشر.' },
+
+  { id:'a2', title_ar:'OpenAI توقف Sora — التطبيق في 26 أبريل والـ API في 24 سبتمبر 2026',
+    title_original:'OpenAI to shut down Sora: app access ends April 26, API ends September 24, 2026',
+    entities:['OpenAI','Sora'],
+    summary_ar:'إيقاف مرحلي لأحد أبرز نماذج الفيديو، مع بقاء الـ API حتى 24 سبتمبر 2026. المعنى العملي: أي درس أو سير عمل مبني على Sora يحتاج بديلاً موثّقاً قبل سبتمبر — Kling أو Veo أو Runway.',
+    category:'video_models', relevance:10, cluster_count:5, published:'08:40:02',
+    sources:[{name:'OpenAI News',url:'#'},{name:'TechCrunch',url:'#'}],
+    content_angle:'منشور عاجل: ماذا يحل محل Sora في سير عملك، ولماذا الاعتماد على أداة واحدة خطأ إخراجي لا تقني.' },
+
+  { id:'a3', title_ar:'Runway تضيف negativePrompt لـ Veo 3.1 عبر الـ API بحد 1000 حرف',
+    title_original:'Runway API adds optional negativePrompt support for Veo3, Veo3.1 and Veo3.1_fast',
+    entities:['Runway','Veo 3','Veo 3.1','negativePrompt'],
+    summary_ar:'الحقل متاح الآن على veo3 و veo3.1 و veo3.1_fast في طلبات text-to-video و image-to-video، ويقبل حتى 1000 حرف. المعنى العملي: تحكم مباشر في استبعاد العناصر غير المرغوبة بدل إعادة التوليد مراراً.',
+    category:'video_models', relevance:8, cluster_count:1, published:'07:15:33',
+    sources:[{name:'Runway Release Notes',url:'#'}],
+    content_angle:'درس قصير: كيف يوفّر negativePrompt نصف محاولاتك — أمثلة كويتية على استبعاد عناصر خلفية.' },
+
+  { id:'a4', title_ar:'Runway تتيح Seedream 5.0 Lite بـ 14 صورة مرجعية ومخرجات 3K',
+    title_original:'Runway API adds Seedream 5.0 Lite for text-to-image with reference images, 2K/3K outputs',
+    entities:['Runway','Seedream 5.0 Lite'],
+    summary_ar:'يقبل برومبتات حتى 4000 حرف و14 صورة مرجعية لدمج متعدد الصور، بمخرجات 2K و3K عبر 8 نسب أبعاد. المعنى العملي: عدد المراجع المرتفع يحسّن اتساق الشخصية في أوراق المرجع.',
+    category:'image_models', relevance:8, cluster_count:2, published:'06:50:18',
+    sources:[{name:'Runway Release Notes',url:'#'},{name:'Hugging Face',url:'#'}],
+    content_angle:'اختبار: 3 مراجع مقابل 14 مرجعاً لنفس الشخصية — أين تنكسر النتيجة فعلياً؟' },
+
+  { id:'a5', title_ar:'Kling 3.0 يدعم ست لقطات متصلة في وضع multi-shot',
+    title_original:'Kling 3.0 supports up to six connected shots in multi-shot mode',
+    entities:['Kling 3.0','Kuaishou'],
+    summary_ar:'الوضع الجديد يربط حتى ست لقطات في تسلسل واحد. المعنى العملي: أقرب شيء لمشهد كامل من نموذج واحد بدل تجميع لقطات منفصلة في المونتاج.',
+    category:'video_models', relevance:9, cluster_count:2, published:'05:22:47',
+    sources:[{name:'Kling AI',url:'#'}],
+    content_angle:'مقارنة: مشهد من 6 لقطات في Kling 3.0 مقابل تجميعه يدوياً — الفرق في الزمن والاتساق.' },
+
+  { id:'a6', title_ar:'Runway تغلق جولة بـ 315 مليون دولار وتقييم Luma يبلغ 4 مليارات',
+    title_original:'Runway closes $315M raise; Luma valuation reported at $4B',
+    entities:['Runway','Luma'],
+    summary_ar:'رأس المال يتجه لطبقة الإنتاج (pre-vis و storyboarding و VFX) لا لطبقة النموذج وحدها. المعنى العملي: إشارة اتجاه فقط — لا أثر تشغيلي قريب على سير عملك.',
+    category:'business', relevance:2, cluster_count:3, published:'04:05:12',
+    sources:[{name:'TechCrunch',url:'#'},{name:'VentureBeat',url:'#'}],
+    content_angle:'' }
+]};
+
+let DATA = SAMPLE, activeCat = 'all', query = '';
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+async function load(){
+  try{
+    const r = await fetch('data/news.json', {cache:'no-store'});
+    if(!r.ok) throw new Error(r.status);
+    const j = await r.json();
+    if(!Array.isArray(j.items) || !j.items.length) throw new Error('فارغ');
+    DATA = j;
+  }catch(e){
+    DATA = SAMPLE;
+    $('#notice').hidden = false;
+  }
+  render();
+}
+
+function scored(){
+  return [...DATA.items].sort((a,b)=>
+    ((b.relevance||0)*2 + (b.cluster_count||1)) -
+    ((a.relevance||0)*2 + (a.cluster_count||1))
+  );
+}
+
+function filtered(){
+  const q = query.trim().toLowerCase();
+  return scored().filter(it=>{
+    if(activeCat.startsWith('t:')){ if(it.track !== activeCat.slice(2)) return false; }
+    else if(activeCat !== 'all' && it.category !== activeCat) return false;
+    if(!q) return true;
+    return ((it.title_ar||'') + ' ' + (it.summary_ar||'')).toLowerCase().includes(q);
+  });
+}
+
+function renderHeader(){
+  $('#today').textContent = new Intl.DateTimeFormat('ar-KW',
+    {weekday:'long', day:'numeric', month:'long'}).format(new Date());
+  const t = DATA.generated_at ? new Date(DATA.generated_at) : null;
+  $('#lastFetch').textContent = t
+    ? 'آخر سحب ' + t.toLocaleTimeString('ar-KW',{hour:'2-digit',minute:'2-digit'})
+    : 'بلا سحب';
+  $('#count').textContent = DATA.items.length + ' خبر';
+  $('#health').textContent = DATA.health || '—';
+}
+
+function renderStrip(){
+  $('#strip').innerHTML = scored().filter(i => i.track !== 'arabic' && i.track !== 'watch').slice(0,3).map((it,i)=>`
+    <button class="frame" data-goto="${esc(it.id)}">
+      <span class="no">${String(i+1).padStart(2,'0')} / ${esc(CATS[it.category]||'أخرى')}</span>
+      <h2>${esc(it.title_ar)}</h2>
+      <p>${esc((it.summary_ar||'').split('.')[0])}.</p>
+      ${it.title_original ? `<span class="no" dir="ltr" style="color:var(--dimmer);letter-spacing:0">${esc(it.title_original.slice(0,58))}</span>`:''}
+    </button>`).join('');
+}
+
+function renderTabs(){
+  const counts = {};
+  DATA.items.forEach(i => counts[i.category] = (counts[i.category]||0)+1);
+  const tcounts = {};
+  DATA.items.forEach(i => { if(i.track) tcounts[i.track] = (tcounts[i.track]||0)+1; });
+  const catTabs = Object.entries(CATS)
+    .filter(([k]) => k === 'all' || counts[k])
+    .map(([k,label]) => `
+      <button class="tab" role="tab" data-cat="${k}" aria-selected="${k===activeCat}">
+        ${label}<span class="n">${k==='all' ? DATA.items.length : counts[k]}</span>
+      </button>`).join('');
+  const trackTabs = Object.entries(TRACK_TABS)
+    .filter(([k]) => tcounts[k])
+    .map(([k,label]) => `
+      <button class="tab alt" role="tab" data-cat="t:${k}" aria-selected="${'t:'+k===activeCat}">
+        ${label}<span class="n">${tcounts[k]}</span>
+      </button>`).join('');
+  $('#tabs').innerHTML = catTabs + (trackTabs ? '<span class="tsep"></span>' + trackTabs : '');
+}
+
+function renderFeed(){
+  const list = filtered();
+  if(!list.length){
+    $('#feed').innerHTML = `<div class="empty"><strong>لا نتائج</strong>جرّبي تصنيفاً آخر أو كلمة أقصر.</div>`;
+    return;
+  }
+  $('#feed').innerHTML = list.map(it=>{
+    const fresh = (it.relevance||0) >= 8;
+    const srcs = (it.sources||[]).map(s =>
+      `<span class="chip src"><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a></span>`
+    ).join('');
+    return `
+    <article class="item ${fresh?'fresh':''}" id="${esc(it.id)}">
+      <div class="rail">
+        <span class="tick">${esc(it.published||'--:--')}</span>
+        <span class="dot"></span>
+      </div>
+      <div class="card">
+        <h3>${esc(it.title_ar)}</h3>
+        ${it.title_original ? `<div class="orig" dir="ltr">${esc(it.title_original)}</div>`:''}
+        ${(it.entities||[]).length ? `<div class="ents">${it.entities.map(x=>`<span class="ent" dir="ltr">${esc(x)}</span>`).join('')}</div>`:''}
+        <p class="sum">${esc(it.summary_ar)}</p>
+        <div class="chips">
+          <span class="chip cat">${esc(CATS[it.category]||'أخرى')}</span>
+          <span class="chip">أثر ${esc(it.relevance ?? '؟')}/10</span>
+          ${(it.cluster_count>1) ? `<span class="chip cluster">${it.cluster_count} مصادر غطّته</span>`:''}
+          ${it.needs_review ? `<span class="chip review">بلا أسماء — راجعي الأصل</span>`:''}
+          ${it.unverified ? `<span class="chip unver">رصد صفحة — غير مؤكد</span>`:''}
+          ${DATA.sample ? `<span class="chip sample">أرشيف</span>`:''}
+          ${srcs}
+        </div>
+        ${it.content_angle ? `
+          <button class="angle" data-copy="${esc(it.content_angle)}">
+            <span class="lbl">زاوية محتوى</span>
+            <span class="txt">${esc(it.content_angle)}</span>
+          </button>`:''}
+      </div>
+    </article>`;
+  }).join('');
+}
+
+function render(){ renderHeader(); renderStrip(); renderTabs(); renderFeed(); }
+
+/* ---------- التفاعل ---------- */
+document.addEventListener('click', e=>{
+  const tab = e.target.closest('.tab');
+  if(tab){ activeCat = tab.dataset.cat; renderTabs(); renderFeed(); return; }
+
+  const frame = e.target.closest('[data-goto]');
+  if(frame){
+    activeCat = 'all'; query = ''; $('#search').value = '';
+    renderTabs(); renderFeed();
+    document.getElementById(frame.dataset.goto)
+      ?.scrollIntoView({behavior:'smooth', block:'center'});
+    return;
+  }
+
+  const angle = e.target.closest('[data-copy]');
+  if(angle){ copy(angle.dataset.copy, angle, 'نُسخت'); }
+});
+
+$('#search').addEventListener('input', e=>{ query = e.target.value; renderFeed(); });
+
+$('#copyBtn').addEventListener('click', ()=>{
+  const top = filtered().slice(0,5);
+  const date = new Intl.DateTimeFormat('ar-KW',{day:'numeric',month:'long',year:'numeric'}).format(new Date());
+  const body = top.map((it,i)=>
+    `${i+1}. ${it.title_ar}\n${it.title_original ? '   ('+it.title_original+')\n' : ''}${it.summary_ar}\nالمصدر: ${(it.sources||[]).map(s=>s.name).join('، ')}`
+  ).join('\n\n');
+  copy(`موجز الذكاء الاصطناعي — ${date}\n\n${body}`, $('#copyBtn'), 'تم النسخ');
+});
+
+function copy(text, el, okLabel){
+  const prev = el.textContent, cls = el.className;
+  navigator.clipboard.writeText(text).then(()=>{
+    if(el.id === 'copyBtn'){ el.textContent = okLabel; el.className = cls + ' done'; }
+    else { el.querySelector('.lbl').textContent = okLabel; }
+    setTimeout(()=>{
+      if(el.id === 'copyBtn'){ el.textContent = prev; el.className = cls; }
+      else { el.querySelector('.lbl').textContent = 'زاوية محتوى'; }
+    }, 1600);
+  }).catch(()=>{ alert('المتصفح منع النسخ. افتحي الصفحة عبر https أو انسخي يدوياً.'); });
+}
+
+load();
+setInterval(load, 15 * 60 * 1000);
+</script>
+</body>
+</html>

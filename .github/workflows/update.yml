@@ -1,0 +1,68 @@
+name: تحديث رادار الأخبار
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: radar-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: تثبيت الاعتماديات
+        run: pip install -r requirements.txt
+
+      - name: التحقق من المصادر (مرة أسبوعياً فقط)
+        if: github.event_name == 'workflow_dispatch'
+        run: python validate_feeds.py
+        continue-on-error: true
+
+      - name: التقاط النشرات البريدية
+        env:
+          MAIL_USER: ${{ secrets.MAIL_USER }}
+          MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
+          MAIL_FOLDER: ${{ secrets.MAIL_FOLDER }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python email_fetch.py
+        continue-on-error: true
+
+      - name: رصد صفحات الأدوات بلا فيدات
+        run: python watch_pages.py
+        continue-on-error: true
+
+      - name: سحب الفيدات
+        run: python fetch.py
+
+      - name: الترجمة والترتيب
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python enrich.py
+
+      - name: حفظ النتيجة
+        run: |
+          git config user.name  "ai-radar-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "لا جديد — لا commit"
+          else
+            git commit -m "رادار: تحديث $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git pull --rebase --autostash origin ${{ github.ref_name }} || true
+            git push
+          fi
