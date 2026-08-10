@@ -2,7 +2,7 @@ name: تحديث رادار الأخبار
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "0 5 * * *"   # 05:00 UTC يومياً — 8:00 صباحاً بتوقيت السعودية/الكويت
   workflow_dispatch:
 
 permissions:
