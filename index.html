@@ -89,6 +89,55 @@ img{max-width:100%;display:block}
   border:1px solid rgba(255,255,255,.08);
 }
 
+/* ---------- الترويسة الكبيرة ---------- */
+.masthead{
+  position:relative;overflow:hidden;text-align:center;
+  padding:52px var(--pad) 40px;
+  background:var(--ink);
+  border-bottom:1px solid var(--line);
+}
+.radar-decor{
+  position:absolute;top:50%;left:50%;
+  width:480px;height:480px;transform:translate(-50%,-50%);
+  pointer-events:none;
+}
+.radar-decor .ring{
+  position:absolute;inset:0;margin:auto;border-radius:50%;
+  border:1px solid color-mix(in srgb, var(--gold) 20%, transparent);
+}
+.radar-decor .ring.r2{inset:68px}
+.radar-decor .ring.r3{inset:140px}
+.radar-decor .sweep{
+  position:absolute;inset:0;border-radius:50%;
+  background:conic-gradient(from 0deg, color-mix(in srgb, var(--gold) 42%, transparent), transparent 28%);
+  -webkit-mask-image:radial-gradient(circle, #000 60%, transparent 61%);
+  mask-image:radial-gradient(circle, #000 60%, transparent 61%);
+  animation:radar-spin 6s linear infinite;
+}
+@keyframes radar-spin{to{transform:rotate(360deg)}}
+.masthead-inner{position:relative;z-index:1;max-width:720px;margin:0 auto}
+.masthead .eyebrow-mini{
+  display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--gold-deep);
+  padding:5px 14px;border:1px solid color-mix(in srgb, var(--gold) 35%, transparent);
+  border-radius:999px;margin-bottom:18px;
+  background:color-mix(in srgb, var(--gold) 8%, transparent);
+}
+.masthead h2{
+  font-family:var(--display);font-weight:800;
+  font-size:clamp(22px,4vw,30px);
+  line-height:1.2;letter-spacing:-.01em;color:var(--dim);
+}
+.masthead h2 .name{
+  display:block;margin-top:4px;
+  font-weight:900;font-size:clamp(40px,8.5vw,72px);letter-spacing:-.02em;
+  background:linear-gradient(90deg,var(--gold-deep),var(--gold) 45%,var(--paper) 88%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.masthead .tag{
+  margin-top:16px;font-size:15.5px;color:var(--dim);line-height:1.75;
+}
+
 /* ---------- الشريط العلوي ---------- */
 .topbar{
   position:sticky;top:0;z-index:50;
@@ -96,20 +145,18 @@ img{max-width:100%;display:block}
   -webkit-backdrop-filter:blur(16px) saturate(160%);
   backdrop-filter:blur(16px) saturate(160%);
   border-bottom:1px solid var(--line);
-  padding:14px var(--pad);
+  padding:12px var(--pad);
   display:flex;align-items:center;gap:14px;flex-wrap:wrap;
 }
-.brand{display:flex;align-items:baseline;gap:10px;margin-inline-end:auto}
+.brand{display:flex;align-items:baseline;gap:9px;margin-inline-end:auto}
 .brand h1{
-  font-family:var(--display);font-weight:900;font-size:21px;
-  letter-spacing:-.01em;line-height:1.2;
-  background:linear-gradient(90deg,var(--paper) 30%,var(--gold-deep));
-  -webkit-background-clip:text;background-clip:text;color:transparent;
+  font-family:var(--display);font-weight:800;font-size:15.5px;
+  letter-spacing:-.005em;line-height:1.2;color:var(--paper);
 }
 .brand .sub{
-  font-family:var(--mono);font-size:10.5px;color:var(--dimmer);
+  font-family:var(--mono);font-size:9.5px;color:var(--dimmer);
   letter-spacing:.14em;text-transform:uppercase;
-  border:1px solid var(--line);border-radius:999px;padding:2px 9px;
+  border:1px solid var(--line);border-radius:999px;padding:2px 8px;
 }
 .meta{display:flex;align-items:center;gap:14px;font-family:var(--mono);font-size:11.5px;color:var(--dim);flex-wrap:wrap}
 .pulse{display:inline-flex;align-items:center;gap:6px}
@@ -340,8 +387,11 @@ footer{
   .feed{grid-template-columns:1fr}
   .card{padding:15px 14px 17px}
   .card h3{font-size:17px}
-  .brand h1{font-size:18px}
   .meta{font-size:10px;gap:10px}
+  .masthead{padding:40px var(--pad) 32px}
+  .radar-decor{width:320px;height:320px}
+  .radar-decor .ring.r2{inset:44px}
+  .radar-decor .ring.r3{inset:92px}
 }
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}
@@ -349,6 +399,20 @@ footer{
 </style>
 </head>
 <body>
+
+<div class="masthead">
+  <div class="radar-decor" aria-hidden="true">
+    <span class="ring"></span>
+    <span class="ring r2"></span>
+    <span class="ring r3"></span>
+    <span class="sweep"></span>
+  </div>
+  <div class="masthead-inner">
+    <span class="eyebrow-mini">لوحة أخبار الذكاء الاصطناعي</span>
+    <h2>رادار<span class="name">أسماء العتيبي</span></h2>
+    <p class="tag">آخر أخبار نماذج الفيديو والصورة والصوت بالذكاء الاصطناعي — مُترجمة ومُرتّبة يومياً بالعربي</p>
+  </div>
+</div>
 
 <header class="topbar">
   <div class="brand">
