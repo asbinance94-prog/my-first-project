@@ -7,7 +7,7 @@
   "https://openai.com/news/rss.xml": {
     "etag": null,
     "modified": null,
-    "checked": "2026-08-09T22:54:12.462912+00:00"
+    "checked": "2026-08-10T00:03:22.188362+00:00"
   },
   "https://www.reddit.com/r/StableDiffusion/.rss": {
     "etag": null,
@@ -27,7 +27,7 @@
   "https://blog.google/technology/ai/rss/": {
     "etag": null,
     "modified": null,
-    "checked": "2026-08-09T22:54:13.522652+00:00"
+    "checked": "2026-08-10T00:03:22.992628+00:00"
   },
   "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml": {
     "etag": "W/\"37089010dedd519e03747eadad18cff6\"",
@@ -42,37 +42,37 @@
   "https://www.wired.com/feed/tag/ai/latest/rss": {
     "etag": null,
     "modified": null,
-    "checked": "2026-08-09T22:54:14.587285+00:00"
+    "checked": "2026-08-10T00:03:23.266991+00:00"
   },
   "https://arstechnica.com/ai/feed/": {
     "etag": "\"a1ee09299d46fc49ec940c3e9dfeddf6\"",
     "modified": "Sun, 09 Aug 2026 11:00:14 GMT",
-    "checked": "2026-08-09T22:54:15.541119+00:00"
+    "checked": "2026-08-10T00:03:23.827312+00:00"
   },
   "https://tldr.tech/api/rss/ai": {
     "etag": null,
     "modified": null,
-    "checked": "2026-08-09T22:54:16.189316+00:00"
+    "checked": "2026-08-10T00:03:24.432343+00:00"
   },
   "https://www.oneusefulthing.org/feed": {
-    "etag": "W/\"df961-UMNkCHv77fvCsQY14V+8FBsdYI0\"",
+    "etag": "W/\"df961-n0ZgipY81eJHCBGmh/YVfmmlwfM\"",
     "modified": null,
-    "checked": "2026-08-09T22:54:16.659420+00:00"
+    "checked": "2026-08-10T00:03:24.897022+00:00"
   },
   "https://magazine.sebastianraschka.com/feed": {
-    "etag": "W/\"265c9b-77wTqZ49yWtS7cDoSQIWziP8Uao\"",
+    "etag": "W/\"265c9b-ZYmUKxU/BlN/bHIRrdocG/tKUTQ\"",
     "modified": null,
-    "checked": "2026-08-09T22:54:16.953963+00:00"
+    "checked": "2026-08-10T00:03:25.166434+00:00"
   },
   "https://lastweekin.ai/feed": {
-    "etag": "W/\"25437-Roy4JNk9w071d8wtmVsSdwpTXqY\"",
+    "etag": "W/\"25437-sYgPlodK3KH17cVpJ+N0LSumJfw\"",
     "modified": null,
-    "checked": "2026-08-09T22:54:17.685407+00:00"
+    "checked": "2026-08-10T00:03:25.784194+00:00"
   },
   "https://www.interconnects.ai/feed": {
-    "etag": "W/\"80fd7-PXSlJlUDZGofb5kRXekohm6DkBM\"",
+    "etag": "W/\"80fd7-paRbMaxmMqXP6hAsGH5ICPl548g\"",
     "modified": null,
-    "checked": "2026-08-09T22:54:17.825123+00:00"
+    "checked": "2026-08-10T00:03:25.916506+00:00"
   },
   "https://aitnews.com/feed/": {
     "etag": "W/\"0ada180530c3c7eb042cafbe0b56cf9e\"",
@@ -87,6 +87,6 @@
   "https://www.wamda.com/feed": {
     "etag": null,
     "modified": null,
-    "checked": "2026-08-09T22:54:20.894912+00:00"
+    "checked": "2026-08-10T00:03:28.553352+00:00"
   }
 }

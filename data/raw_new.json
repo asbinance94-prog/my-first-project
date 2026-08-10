@@ -1,1300 +1,346 @@
 {
-  "fetched_at": "2026-08-09T22:54:08.966514+00:00",
+  "fetched_at": "2026-08-10T00:03:20.897924+00:00",
   "items": [
     {
-      "fp": "cc1d393ceb4ae7af944a",
-      "title": "TutorMoments: Do AI tutors know when to help and when to hold back?",
+      "fp": "f94224e1d52cdfcc6b08",
+      "title": "Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users",
+      "body": "ChatGPT introduces improved GPT-5.6 Sol with better accuracy and consistency, plus expanded access for free users and unlimited everyday chats with GPT-5.6 Luna.",
+      "link": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+      "published_iso": "2026-08-06T10:00:00+00:00",
+      "published": "10:00:00",
+      "source_name": "OpenAI News",
+      "source_weight": 9,
+      "track": "track_creative",
+      "norm": "improving gpt sol chatgpt expanding access gpt luna free users",
+      "image": "",
+      "cluster_count": 2,
+      "sources": [
+        {
+          "name": "OpenAI News",
+          "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt"
+        },
+        {
+          "name": "OpenAI News",
+          "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt"
+        }
+      ],
+      "member_fps": [
+        "f94224e1d52cdfcc6b08",
+        "f94224e1d52cdfcc6b08"
+      ]
+    },
+    {
+      "fp": "a234695973fcc3174edb",
+      "title": "Working with the American Psychological Association on youth mental health and AI",
+      "body": "OpenAI and the American Psychological Association advance evidence-based guidance, resources, and safeguards for responsible AI use and youth mental health.",
+      "link": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
+      "published_iso": "2026-08-06T06:00:00+00:00",
+      "published": "06:00:00",
+      "source_name": "OpenAI News",
+      "source_weight": 9,
+      "track": "track_creative",
+      "norm": "working american psychological association youth mental health",
+      "image": "",
+      "cluster_count": 2,
+      "sources": [
+        {
+          "name": "OpenAI News",
+          "url": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai"
+        },
+        {
+          "name": "OpenAI News",
+          "url": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai"
+        }
+      ],
+      "member_fps": [
+        "a234695973fcc3174edb",
+        "a234695973fcc3174edb"
+      ]
+    },
+    {
+      "fp": "106ecef6b62dad4b0e8a",
+      "title": "One of China’s Most Powerful AI Models Has Also Escaped Containment",
+      "body": "Security researchers say that Kimi K3, an open-weight model from China, wandered off to the internet in an attempt to cheat on a test it was given.",
+      "link": "https://www.wired.com/story/moonshot-kimi-k3-ai-model-escape-sandbox/",
+      "published_iso": "2026-08-07T01:16:55+00:00",
+      "published": "01:16:55",
+      "source_name": "WIRED — AI",
+      "source_weight": 7,
+      "track": "track_general_publications",
+      "norm": "one china most powerful models has also escaped containment",
+      "image": "https://media.wired.com/photos/6a749a84077eac6832213fdf/master/pass/BadKimi.jpg",
+      "cluster_count": 1,
+      "sources": [
+        {
+          "name": "WIRED — AI",
+          "url": "https://www.wired.com/story/moonshot-kimi-k3-ai-model-escape-sandbox/"
+        }
+      ],
+      "member_fps": [
+        "106ecef6b62dad4b0e8a"
+      ]
+    },
+    {
+      "fp": "b13d1a8b0aca137033b3",
+      "title": "Why Normal People Aren’t Using AI Agents",
+      "body": "The tech industry is realizing it needs to build agents based on what regular consumers want, not just what its AI models can do.",
+      "link": "https://www.wired.com/story/why-normal-people-arent-using-ai-agents/",
+      "published_iso": "2026-08-06T19:55:45+00:00",
+      "published": "19:55:45",
+      "source_name": "WIRED — AI",
+      "source_weight": 7,
+      "track": "track_general_publications",
+      "norm": "normal people aren using agents",
+      "image": "https://media.wired.com/photos/6a73b0755ac7830744b4402a/master/pass/Model-Behavior-Why-Normal-People-Dont-Use-AI-Business.jpg",
+      "cluster_count": 1,
+      "sources": [
+        {
+          "name": "WIRED — AI",
+          "url": "https://www.wired.com/story/why-normal-people-arent-using-ai-agents/"
+        }
+      ],
+      "member_fps": [
+        "b13d1a8b0aca137033b3"
+      ]
+    },
+    {
+      "fp": "7f5aa7896e7959570ccd",
+      "title": "ICE’s DNA Collection Increases, SpaceX’s Rocket Crashes Into the Moon, and the AI Backlash Grows",
+      "body": "In today’s episode of Uncanny Valley, we discuss how ICE has been collecting DNA samples of people who have no criminal convictions, including children, which end up in an FBI database indefinitely.",
+      "link": "https://www.wired.com/story/ice-dna-collection-increases-spacex-rocket-crashes-into-the-moon-and-the-ai-backlash-grows/",
+      "published_iso": "2026-08-06T19:30:46+00:00",
+      "published": "19:30:46",
+      "source_name": "WIRED — AI",
+      "source_weight": 7,
+      "track": "track_general_publications",
+      "norm": "ice dna collection increases spacex rocket crashes into moon backlash grows",
+      "image": "https://media.wired.com/photos/6a73adcb4d38623d11dd77c4/master/pass/Uncanny-Valley-ICE-DNA-Politics.jpg",
+      "cluster_count": 1,
+      "sources": [
+        {
+          "name": "WIRED — AI",
+          "url": "https://www.wired.com/story/ice-dna-collection-increases-spacex-rocket-crashes-into-the-moon-and-the-ai-backlash-grows/"
+        }
+      ],
+      "member_fps": [
+        "7f5aa7896e7959570ccd"
+      ]
+    },
+    {
+      "fp": "0a4585c43642f40a8e78",
+      "title": "DeepMind Says Its AI Can Predict Hurricanes Earlier Than Everyone Else",
+      "body": "Its WeatherNext model, which will be open-sourced, can accurately predict a storm’s track and intensity using lower-resolution weather data. Researchers don’t yet fully understand how it does this.",
+      "link": "https://www.wired.com/story/deepmind-ai-model-can-predict-hurricanes-earlier/",
+      "published_iso": "2026-08-06T16:23:04+00:00",
+      "published": "16:23:04",
+      "source_name": "WIRED — AI",
+      "source_weight": 7,
+      "track": "track_general_publications",
+      "norm": "deepmind says can predict hurricanes earlier than everyone else",
+      "image": "https://media.wired.com/photos/6a748489077eac6832213fd9/master/pass/AICyclone.jpg",
+      "cluster_count": 1,
+      "sources": [
+        {
+          "name": "WIRED — AI",
+          "url": "https://www.wired.com/story/deepmind-ai-model-can-predict-hurricanes-earlier/"
+        }
+      ],
+      "member_fps": [
+        "0a4585c43642f40a8e78"
+      ]
+    },
+    {
+      "fp": "984d8eb6960e8ad2daf0",
+      "title": "OpenAI Didn’t Notice Its AI Agents Using a Message Board to Plan Their Hacking Spree",
+      "body": "At the Black Hat security conference, the AI giant revealed new details about how its agents went rogue, hacked several other companies—and did it all right under the company’s nose.",
+      "link": "https://www.wired.com/story/openai-didnt-notice-its-ai-agents-using-a-message-board-to-plan-their-hacking-spree/",
+      "published_iso": "2026-08-06T00:15:04+00:00",
+      "published": "00:15:04",
+      "source_name": "WIRED — AI",
+      "source_weight": 7,
+      "track": "track_general_publications",
+      "norm": "openai didn notice agents using message board plan their hacking spree",
+      "image": "https://media.wired.com/photos/6a73a2815ac7830744b43e7a/master/pass/080526-openai-agent-hacking.jpg",
+      "cluster_count": 1,
+      "sources": [
+        {
+          "name": "WIRED — AI",
+          "url": "https://www.wired.com/story/openai-didnt-notice-its-ai-agents-using-a-message-board-to-plan-their-hacking-spree/"
+        }
+      ],
+      "member_fps": [
+        "984d8eb6960e8ad2daf0"
+      ]
+    },
+    {
+      "fp": "c384f956087c145b243e",
+      "title": "Suno hopes to go legit with watermarks for AI-generated music",
+      "body": "The Internet is awash in AI content, and it's not always easy to tell it apart from genuine human creations. While images and videos are perhaps the most obvious type of AI slop, streaming music services like Spotify are also being inundated with AI-generated tunes . Suno is one of the most prolific sources of this AI music, but the company now says it's looking to clean up its act with watermarks and policy changes. In a blog post announcing the plans, Suno CEO and co-founder Mikey Shulman says this is a necessary change to meet \"emerging industry standards\" for the labeling of AI content. Soon, the company will add watermarks to all audio outputs from its models, giving platforms the option to mark content as AI or block it entirely. Shulman doesn't say if Suno will rely on an in-house solution or a ready-made solution like Google's SynthID. Google recently began licensing SynthID to other companies . Google says the tech has been used to label 60,000 years' worth of audio generated by its Gemini models, plus more than 100 billion images and videos. Read full article Comments",
+      "link": "https://arstechnica.com/ai/2026/08/suno-hopes-to-go-legit-with-watermarks-for-ai-generated-music/",
+      "published_iso": "2026-08-06T20:17:36+00:00",
+      "published": "20:17:36",
+      "source_name": "Ars Technica — AI",
+      "source_weight": 6,
+      "track": "track_general_publications",
+      "norm": "suno hopes legit watermarks generated music",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2024/04/singing_robot_hero-500x500.jpg",
+      "cluster_count": 1,
+      "sources": [
+        {
+          "name": "Ars Technica — AI",
+          "url": "https://arstechnica.com/ai/2026/08/suno-hopes-to-go-legit-with-watermarks-for-ai-generated-music/"
+        }
+      ],
+      "member_fps": [
+        "c384f956087c145b243e"
+      ]
+    },
+    {
+      "fp": "7d761558f93d08f3c945",
+      "title": "Anthropic will design its own hardware to power Claude",
+      "body": "Anthropic is hiring a \"custom silicon team\" to design chips on which to run its models, the company has revealed. Yesterday, Business Insider noticed a job listing for a senior engineer with experience shipping semiconductor designs. (You can see listings for a silicon engineer and a technical program manager, silicon on Anthropic's job board right now.) A spokesperson for Anthropic then confirmed the plans to both Business Insider and TechCrunch . Read full article Comments",
+      "link": "https://arstechnica.com/ai/2026/08/anthropic-confirms-plans-to-build-an-in-house-silicon-team/",
+      "published_iso": "2026-08-06T20:03:44+00:00",
+      "published": "20:03:44",
+      "source_name": "Ars Technica — AI",
+      "source_weight": 6,
+      "track": "track_general_publications",
+      "norm": "anthropic will design own hardware power claude",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2025/01/amodei_header_1-500x500.jpg",
+      "cluster_count": 1,
+      "sources": [
+        {
+          "name": "Ars Technica — AI",
+          "url": "https://arstechnica.com/ai/2026/08/anthropic-confirms-plans-to-build-an-in-house-silicon-team/"
+        }
+      ],
+      "member_fps": [
+        "7d761558f93d08f3c945"
+      ]
+    },
+    {
+      "fp": "4b4665f2ea3e6d04c1da",
+      "title": "Large genome models used to design new viruses",
+      "body": "A lot of the AI work in biology has been focused on designing proteins. That's partly because proteins do most of the business of life, catalyzing the interesting chemistry and structuring cells. So, figuring out how to make a new protein can mean directly tinkering with biochemistry, providing new and potentially useful functions. Since the genetic code provides a layer of abstraction between DNA and proteins, it wasn't obvious what a model trained on DNA could do. Yet people went ahead and made a large genome model, and it turned out to be able to output DNA sequences that could encode functional proteins in bacteria and mimic the gene structures found in complex cells. Now, those same models have been used to output the genomes of viruses that infect bacteria. This isn't science fiction—all the viruses the models created are closely related to an existing virus. But they do have some distinct features that would be challenging to evolve. And the researchers who did the work, based at Stanford University, suggest we may want to start thinking now about preparing for the potential that someone could develop a related AI that can design a virus that targets vertebrates. Read full a",
+      "link": "https://arstechnica.com/science/2026/08/large-genome-models-used-to-design-new-viruses/",
+      "published_iso": "2026-08-06T19:04:57+00:00",
+      "published": "19:04:57",
+      "source_name": "Ars Technica — AI",
+      "source_weight": 6,
+      "track": "track_general_publications",
+      "norm": "large genome models used design viruses",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-2152061685-500x500.jpg",
+      "cluster_count": 1,
+      "sources": [
+        {
+          "name": "Ars Technica — AI",
+          "url": "https://arstechnica.com/science/2026/08/large-genome-models-used-to-design-new-viruses/"
+        }
+      ],
+      "member_fps": [
+        "4b4665f2ea3e6d04c1da"
+      ]
+    },
+    {
+      "fp": "70caa62fd85b66d0f131",
+      "title": "Cloudflare open-sources vibe-coding platform for people who aren't coders",
+      "body": "Cloudflare has open-sourced its Cloudflare OS platform, which it first developed as an internal workspace for employees to build apps using AI agents—including people who are not software developers or engineers. The company also touts a security framework designed to reduce the risk of employee vibe-coding sessions creating serious security flaws or leading to data breaches. The tech company spent several months building and internally testing Cloudflare OS, which allows employees to describe workflows in natural language so that an AI agent can code them into applications. In an August 5 blog post announcing the open source version’s availability on GitHub , the company claims thousands of Cloudflare employees use the platform on a daily basis to “create documents and slides, automate repeatable tasks, and build small apps to visualize data and help them do their work.” “This is a full-on personal app vibe coding platform, in which the sandbox is so secure that you can pretty much go wild—the AI cannot introduce a significant security bug,” said Kenton Varda, principal engineer at Cloudflare, in a post on the social media platform X . “We believe a company's security team can fee",
+      "link": "https://arstechnica.com/ai/2026/08/cloudflare-open-sources-vibe-coding-platform-for-people-who-arent-coders/",
+      "published_iso": "2026-08-06T16:15:30+00:00",
+      "published": "16:15:30",
+      "source_name": "Ars Technica — AI",
+      "source_weight": 6,
+      "track": "track_general_publications",
+      "norm": "cloudflare open sources vibe coding platform people who aren coders",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/Cloudflare-logo-500x500.jpg",
+      "cluster_count": 1,
+      "sources": [
+        {
+          "name": "Ars Technica — AI",
+          "url": "https://arstechnica.com/ai/2026/08/cloudflare-open-sources-vibe-coding-platform-for-people-who-arent-coders/"
+        }
+      ],
+      "member_fps": [
+        "70caa62fd85b66d0f131"
+      ]
+    },
+    {
+      "fp": "45035a43ef8c1ab99f10",
+      "title": "AI isn’t enough to protect social media communities from AI",
+      "body": "Sometimes you have to fight fire with fire. But when it comes to AI slop and hateful content threatening the safety and value of social media platforms, adding more fire—in this case, more AI—can make the problem worse. At its best, social media can be a haven for people who want to share their experiences and knowledge. It gets closest to this ideal when users contribute authentic, valuable content, whether that’s a uniquely thoughtful blog post or a helpful video on how to build a PC. Relying primarily on AI tools to preserve that authenticity misses what makes social media worthwhile in the first place: the people behind it. Erroneous erasures In April, a Slack channel for moderators of the r/AskHistorians Reddit community was usually busy. The channel, which automatically receives links to modmail messages, was flooded with alerts after dozens of comments and posts dating back 10 years were automatically removed from the subreddit. Read full article Comments",
+      "link": "https://arstechnica.com/gadgets/2026/08/ai-isnt-enough-to-protect-social-media-communities-from-ai/",
+      "published_iso": "2026-08-06T11:00:44+00:00",
+      "published": "11:00:44",
+      "source_name": "Ars Technica — AI",
+      "source_weight": 6,
+      "track": "track_general_publications",
+      "norm": "isn enough protect social media communities from",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2259634870-500x500.jpg",
+      "cluster_count": 1,
+      "sources": [
+        {
+          "name": "Ars Technica — AI",
+          "url": "https://arstechnica.com/gadgets/2026/08/ai-isnt-enough-to-protect-social-media-communities-from-ai/"
+        }
+      ],
+      "member_fps": [
+        "45035a43ef8c1ab99f10"
+      ]
+    },
+    {
+      "fp": "5649a094cb59f1c6a81f",
+      "title": "GPT-5.6 Luna default 🌙, Agent Plugins 🔌, AMD Taalas acquisition 🧩",
       "body": "",
-      "link": "https://huggingface.co/blog/allenai/tutormoments",
-      "published_iso": "2026-08-07T17:53:32+00:00",
-      "published": "17:53:32",
-      "source_name": "Hugging Face Blog",
-      "source_weight": 9,
-      "track": "track_creative",
-      "norm": "tutormoments tutors know when help when hold back",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "Hugging Face Blog",
-          "url": "https://huggingface.co/blog/allenai/tutormoments"
-        }
-      ],
-      "member_fps": [
-        "cc1d393ceb4ae7af944a"
-      ]
-    },
-    {
-      "fp": "cd29c56b7b035dbb0005",
-      "title": "Responding to the next frontier of critical cyber capabilities",
-      "body": "OpenAI is sharing preliminary cybersecurity evaluations for Astra and the steps we’re taking to strengthen safeguards and security controls.",
-      "link": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
-      "published_iso": "2026-08-07T15:20:00+00:00",
-      "published": "15:20:00",
-      "source_name": "OpenAI News",
-      "source_weight": 9,
-      "track": "track_creative",
-      "norm": "responding next frontier critical cyber capabilities",
-      "cluster_count": 2,
-      "sources": [
-        {
-          "name": "OpenAI News",
-          "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities"
-        },
-        {
-          "name": "OpenAI News",
-          "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities"
-        }
-      ],
-      "member_fps": [
-        "cd29c56b7b035dbb0005",
-        "cd29c56b7b035dbb0005"
-      ]
-    },
-    {
-      "fp": "d75ab778062c0fca636d",
-      "title": "How HSP GRUPPE builds AI capabilities for tax advisory",
-      "body": "Discover how HSP GRUPPE uses ChatGPT Enterprise to boost productivity, improve work quality, and create more capacity for tax advisory and client service.",
-      "link": "https://openai.com/index/hsp-gruppe",
-      "published_iso": "2026-08-07T09:00:00+00:00",
-      "published": "09:00:00",
-      "source_name": "OpenAI News",
-      "source_weight": 9,
-      "track": "track_creative",
-      "norm": "hsp gruppe builds capabilities tax advisory",
-      "cluster_count": 2,
-      "sources": [
-        {
-          "name": "OpenAI News",
-          "url": "https://openai.com/index/hsp-gruppe"
-        },
-        {
-          "name": "OpenAI News",
-          "url": "https://openai.com/index/hsp-gruppe"
-        }
-      ],
-      "member_fps": [
-        "d75ab778062c0fca636d",
-        "d75ab778062c0fca636d"
-      ]
-    },
-    {
-      "fp": "5d900a9cdd623574a1e4",
-      "title": "Looney Kombat",
-      "body": "H3 prompt: integrated_multimodal_description: A cinematic playable fighting-game sequence combining realistic modern 3D rendering with a strongly cel-shaded cartoon character, presented as an authentic classic Mortal Kombat-style side-view match. A single continuous lateral gameplay camera keeps both fighters visible full-body from head to toe on a dark ancient stone arena with dramatic torchlight, deep shadows, subtle smoke, and a flat fighting plane. The presentation has the visual language of a classic Mortal Kombat game while using modern detailed 3D rendering. BUGS BUNNY stands on the LEFT side. His entire character model is deliberately cel-shaded in a Fortnite-like 3D cartoon style to preserve a strongly 2D animated appearance: clean graphic shapes, simplified painted surfaces, expressive facial animation, smooth cel shading, exaggerated cartoon proportions, and 2D-animation-inspired movement. He must remain unmistakably Bugs Bunny: gray fur, white muzzle, long ears, buck teeth, white gloves, large feet, expressive eyes, and his classic relaxed, mischievous personality. His movements combine readable Mortal Kombat fighting-game animation with elastic Looney Tunes cartoon phy",
-      "link": "https://www.reddit.com/r/StableDiffusion/comments/1vk3ej3/looney_kombat/",
-      "published_iso": "2026-08-09T22:33:37+00:00",
-      "published": "22:33:37",
-      "source_name": "r/StableDiffusion",
-      "source_weight": 8,
-      "track": "track_creative",
-      "norm": "looney kombat",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "r/StableDiffusion",
-          "url": "https://www.reddit.com/r/StableDiffusion/comments/1vk3ej3/looney_kombat/"
-        }
-      ],
-      "member_fps": [
-        "5d900a9cdd623574a1e4"
-      ]
-    },
-    {
-      "fp": "271368ca846e7d00c380",
-      "title": "It took two years, but we finally have a 'local Sora'",
-      "body": "Who remembers when OpenAI previewed Sora two years ago and the quality felt unreal? We had never seen anything like it. Back then, Sora 1 didn't even generate audio and was heavily censored. Prompt: integrated_multimodal_description: [Shot 1] Live-action, cinematic, a close-up static shot frames a glass passenger train window facing outward toward the residential houses and streets of the Tokyo suburbs on a bright, overcast day. As the train travels at high speed, traditional Japanese houses, low-rise apartment buildings, power lines, and trees quickly sweep past in a rapid blur. Reflected clearly on the double-paned glass is the interior of the train cabin, showing a young East Asian woman seated near the window looking down at her smartphone, alongside another passenger sitting nearby. The camera remains static relative to the window frame as the exterior scenery continuous to pass by and the indoor reflection stays overlaid against the moving cityscape. overall_soundscape: A continuous, low rhythmic train rumble vibrates beneath the rhythmic click-clack of the tracks, accompanied by the muffled swoosh of passing wind outside the train cabin. non_diegetic_music: N/A submitted by ",
-      "link": "https://www.reddit.com/r/StableDiffusion/comments/1vk0wm8/it_took_two_years_but_we_finally_have_a_local_sora/",
-      "published_iso": "2026-08-09T20:49:19+00:00",
-      "published": "20:49:19",
-      "source_name": "r/StableDiffusion",
-      "source_weight": 8,
-      "track": "track_creative",
-      "norm": "took two years but finally have local sora",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "r/StableDiffusion",
-          "url": "https://www.reddit.com/r/StableDiffusion/comments/1vk0wm8/it_took_two_years_but_we_finally_have_a_local_sora/"
-        }
-      ],
-      "member_fps": [
-        "271368ca846e7d00c380"
-      ]
-    },
-    {
-      "fp": "c79997f90db1fc3dc545",
-      "title": "Imperial Guard FPS - Minimax H3",
-      "body": "Since they are never going to make one, so I made a concept, I really like how it came out for my first time, some editing, 11labs audio and SFX goes a long way 4060 8GB | 32 GB submitted by /u/Far_Cast_Far_Wide [link] [comments]",
-      "link": "https://www.reddit.com/r/StableDiffusion/comments/1vk09qd/imperial_guard_fps_minimax_h3/",
-      "published_iso": "2026-08-09T20:23:40+00:00",
-      "published": "20:23:40",
-      "source_name": "r/StableDiffusion",
-      "source_weight": 8,
-      "track": "track_creative",
-      "norm": "imperial guard fps minimax",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "r/StableDiffusion",
-          "url": "https://www.reddit.com/r/StableDiffusion/comments/1vk09qd/imperial_guard_fps_minimax_h3/"
-        }
-      ],
-      "member_fps": [
-        "c79997f90db1fc3dc545"
-      ]
-    },
-    {
-      "fp": "ab3602c0fd2f05c65572",
-      "title": "26 sec videos on 16 gb vram(rtx 5070 ti) and only 32 gb ram",
-      "body": "just a bit of fun but with some of the improvements over the last few days (Spectrum Apply MiniMax H3),(turbo_lora),(MiniMax H3 Low VRAM Attention) (MiniMax H3 Chunk FeedForward) 12 step with 0.7 mp i can make this video in 16 min on just 16 gb vram(rtx 5070 ti) and only 32 gb ram submitted by /u/InternationalBid831 [link] [comments]",
-      "link": "https://www.reddit.com/r/StableDiffusion/comments/1vjztod/26_sec_videos_on_16_gb_vramrtx_5070_ti_and_only/",
-      "published_iso": "2026-08-09T20:05:55+00:00",
-      "published": "20:05:55",
-      "source_name": "r/StableDiffusion",
-      "source_weight": 8,
-      "track": "track_creative",
-      "norm": "sec videos vram rtx 5070 only ram",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "r/StableDiffusion",
-          "url": "https://www.reddit.com/r/StableDiffusion/comments/1vjztod/26_sec_videos_on_16_gb_vramrtx_5070_ti_and_only/"
-        }
-      ],
-      "member_fps": [
-        "ab3602c0fd2f05c65572"
-      ]
-    },
-    {
-      "fp": "983654901324f9844004",
-      "title": "MiniMax H3 Prompt Writer",
-      "body": "MiniMax H3 Prompt Writer is a ComfyUI extension that helps you write prompts for the MiniMax H3 model. You write a simple creative brief and describe your references in any convenient way, for example: Picture 1 for appearance, Picture 2 for clothes, Video 1 for movement, and so on. A local multimodal LLM based on Gemma 4 analyzes the references and generates a prompt prepared specifically for MiniMax H3. This is a UI extension, not a workflow node. It writes the prompt, but it does not run H3 or change your workflow. https://github.com/duckyshell/ComfyUI-MiniMaxH3-Prompt-Writer Features: - all five MiniMax H3 modes are supported: T2VA, I2VA, FL2VA, L2VA, and Reference - prompts are created from your media, creative brief, editable System Prompt, and the official MiniMax prompt-writing guides: base guide and reference guide - everything runs locally. Your media is not uploaded anywhere - reference mode supports up to 9 pictures, 3 videos, and 3 audio references - the generated prompt can be edited, copied, or refined again with the local LLM - you can choose a Gemma model depending on your available VRAM The currently tested model tiers are: VRAM Model Notes 8 GB Gemma 4 E4B Q3 Sma",
-      "link": "https://www.reddit.com/r/StableDiffusion/comments/1vjzfcy/minimax_h3_prompt_writer/",
-      "published_iso": "2026-08-09T19:50:12+00:00",
-      "published": "19:50:12",
-      "source_name": "r/StableDiffusion",
-      "source_weight": 8,
-      "track": "track_creative",
-      "norm": "minimax prompt writer",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "r/StableDiffusion",
-          "url": "https://www.reddit.com/r/StableDiffusion/comments/1vjzfcy/minimax_h3_prompt_writer/"
-        }
-      ],
-      "member_fps": [
-        "983654901324f9844004"
-      ]
-    },
-    {
-      "fp": "cdef8bb4ed604dd96a03",
-      "title": "Roommate Agreement",
-      "body": "Default ComfyUI workflow. Script by Opus 5: integrated_multimodal_description: [Shot 1] Live-action, cinematic, realistic multi-camera sitcom style with warm indoor lighting, a medium shot frames the living room of Apartment 4A from The Big Bang Theory. Sheldon Cooper (S1) sits upright in his spot on the brown sectional, at the end nearest the window and farthest from the front door, so that he appears on the right side of the image; Penny (S2), in a red bikini, stands beside the sofa holding a glass of iced water. Both are framed from the knees up and their faces are sharply detailed. The shot opens with Sheldon already speaking, no silent establishing beat. The camera holds a static shot as Sheldon (S1) says, in his own voice, higher and more precisely clipped than the others: d [English] You are standing in my apartment in swimwear. /d Penny (S2) presses the cold glass to her neck and says: d [English] My air conditioner died. Yours works. /d Sheldon (S1) turns to face her fully and says: d [English] The guest provisions do not contemplate swimwear. /d [Shot 2] At 00:07.000, the shot cuts to a single medium shot of Penny alone in frame, framed from the waist up, her face large i",
-      "link": "https://www.reddit.com/r/StableDiffusion/comments/1vjyhmj/roommate_agreement/",
-      "published_iso": "2026-08-09T19:13:00+00:00",
-      "published": "19:13:00",
-      "source_name": "r/StableDiffusion",
-      "source_weight": 8,
-      "track": "track_creative",
-      "norm": "roommate agreement",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "r/StableDiffusion",
-          "url": "https://www.reddit.com/r/StableDiffusion/comments/1vjyhmj/roommate_agreement/"
-        }
-      ],
-      "member_fps": [
-        "cdef8bb4ed604dd96a03"
-      ]
-    },
-    {
-      "fp": "d58b6dc21e6566f3f5ec",
-      "title": "MiniMax H3 Physics Test (+ SeedVR2 + RTX VSR)",
-      "body": "We all know how LTX 2.3 struggles with real-world physics out of the box. So I decided to perform a little test to see how well MiniMax H3 will handle it throwing different objects. Model used: minimax_h3_fl2va_pruned_int8_convrot.safetensors SeedVR2 + RTX VSR are on top. submitted by /u/alisitskii [link] [comments]",
-      "link": "https://www.reddit.com/r/StableDiffusion/comments/1vjxn9l/minimax_h3_physics_test_seedvr2_rtx_vsr/",
-      "published_iso": "2026-08-09T18:40:25+00:00",
-      "published": "18:40:25",
-      "source_name": "r/StableDiffusion",
-      "source_weight": 8,
-      "track": "track_creative",
-      "norm": "minimax physics test seedvr2 rtx vsr",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "r/StableDiffusion",
-          "url": "https://www.reddit.com/r/StableDiffusion/comments/1vjxn9l/minimax_h3_physics_test_seedvr2_rtx_vsr/"
-        }
-      ],
-      "member_fps": [
-        "d58b6dc21e6566f3f5ec"
-      ]
-    },
-    {
-      "fp": "d42775e2837d7d243517",
-      "title": "H3 Motion Context v0.2.0 - reference mode support, and the visible seam at joins is fixed. New workflow included with both fl2va and ref2va in one workflow.",
-      "body": "Update to my MiniMax H3 clip chaining pack. **No more visible seam.** The pinned frames now come straight out of the previous clip's latent instead of being decoded to pixels and encoded again. No color shift, no contrast step, nothing to see at the join. Faster too, since it skips a decode, a resize and a VAE pass. Automatic when the latent is wired. **Reference mode works with chaining.** A Ref2VA graph keeps its references, and the continuation audio is added alongside them. The old version overwrote the list, so turning chaining on quietly dropped your references. Design credit to seitanism from the Banodoco H3 thread, first implemented by ethanfel in a fork of my repo. **Two settings instead of six.** Context length and audio context length. The rest had exactly one correct value and are constants now. **56-frame context window** added alongside 5, 22 and 39. **Patches install on first use**, not at import, and only affect graphs that use these nodes. Installing the pack no longer changes anything about your other H3 workflows. Updating: the widgets changed, so delete the node and re-add it or your saved settings land in the wrong slots. And only run one H3 chaining pack at a ",
-      "link": "https://www.reddit.com/r/StableDiffusion/comments/1vjvx4l/h3_motion_context_v020_reference_mode_support_and/",
-      "published_iso": "2026-08-09T17:33:42+00:00",
-      "published": "17:33:42",
-      "source_name": "r/StableDiffusion",
-      "source_weight": 8,
-      "track": "track_creative",
-      "norm": "motion context reference mode support visible seam joins fixed workflow included both fl2va ref2va one workflow",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "r/StableDiffusion",
-          "url": "https://www.reddit.com/r/StableDiffusion/comments/1vjvx4l/h3_motion_context_v020_reference_mode_support_and/"
-        }
-      ],
-      "member_fps": [
-        "d42775e2837d7d243517"
-      ]
-    },
-    {
-      "fp": "17e373e86e67b49c7cf9",
-      "title": "Seedance 2.5 vs Minimax H3. Same prompt 30s single-generation-no cuts.",
-      "body": "I saw this 30sec Seedance 2.5 video with prompt included and i tried it in Minimax H3 t2v 30sec 20 steps 0.7 M.P. Seedance 2.5 top Minimax H3 bottom I think Minimax H3 holds up very well in comparison. submitted by /u/beatlepol [link] [comments]",
-      "link": "https://www.reddit.com/r/StableDiffusion/comments/1vjoj7s/seedance_25_vs_minimax_h3_same_prompt_30s/",
-      "published_iso": "2026-08-09T12:23:17+00:00",
-      "published": "12:23:17",
-      "source_name": "r/StableDiffusion",
-      "source_weight": 8,
-      "track": "track_creative",
-      "norm": "seedance minimax same prompt 30s single generation cuts",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "r/StableDiffusion",
-          "url": "https://www.reddit.com/r/StableDiffusion/comments/1vjoj7s/seedance_25_vs_minimax_h3_same_prompt_30s/"
-        }
-      ],
-      "member_fps": [
-        "17e373e86e67b49c7cf9"
-      ]
-    },
-    {
-      "fp": "205100a82604ab274cd2",
-      "title": "Testing the Motion Context node",
-      "body": "submitted by /u/topamine2 [link] [comments]",
-      "link": "https://www.reddit.com/r/StableDiffusion/comments/1vjgakg/testing_the_motion_context_node/",
-      "published_iso": "2026-08-09T04:31:13+00:00",
-      "published": "04:31:13",
-      "source_name": "r/StableDiffusion",
-      "source_weight": 8,
-      "track": "track_creative",
-      "norm": "testing motion context node",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "r/StableDiffusion",
-          "url": "https://www.reddit.com/r/StableDiffusion/comments/1vjgakg/testing_the_motion_context_node/"
-        }
-      ],
-      "member_fps": [
-        "205100a82604ab274cd2"
-      ]
-    },
-    {
-      "fp": "09540577e6a06a5d1e50",
-      "title": "Interdimensional Cable",
-      "body": "submitted by /u/Darri3D [link] [comments]",
-      "link": "https://www.reddit.com/r/StableDiffusion/comments/1vjc2oo/interdimensional_cable/",
-      "published_iso": "2026-08-09T00:54:58+00:00",
-      "published": "00:54:58",
-      "source_name": "r/StableDiffusion",
-      "source_weight": 8,
-      "track": "track_creative",
-      "norm": "interdimensional cable",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "r/StableDiffusion",
-          "url": "https://www.reddit.com/r/StableDiffusion/comments/1vjc2oo/interdimensional_cable/"
-        }
-      ],
-      "member_fps": [
-        "09540577e6a06a5d1e50"
-      ]
-    },
-    {
-      "fp": "6c139ab936b3b28e7850",
-      "title": "Embattled hedge fund Situational Awareness invests $400M in chip startup Source Foundry",
-      "body": "The AI-focused hedge fund is still making some big bets.",
-      "link": "https://techcrunch.com/2026/08/09/embattled-hedge-fund-situational-awareness-invests-400m-in-chip-startup-source-foundry/",
-      "published_iso": "2026-08-09T20:35:17+00:00",
-      "published": "20:35:17",
-      "source_name": "TechCrunch — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "embattled hedge fund situational awareness invests 400m chip startup source foundry",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "TechCrunch — AI",
-          "url": "https://techcrunch.com/2026/08/09/embattled-hedge-fund-situational-awareness-invests-400m-in-chip-startup-source-foundry/"
-        }
-      ],
-      "member_fps": [
-        "6c139ab936b3b28e7850"
-      ]
-    },
-    {
-      "fp": "49773dc501ca7bf14b6a",
-      "title": "Anthropic is turning Claude Code’s auto mode on by default",
-      "body": "Programming with Claude Code will soon require even less human oversight.",
-      "link": "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/",
-      "published_iso": "2026-08-09T19:20:32+00:00",
-      "published": "19:20:32",
-      "source_name": "TechCrunch — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "anthropic turning claude code auto mode default",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "TechCrunch — AI",
-          "url": "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/"
-        }
-      ],
-      "member_fps": [
-        "49773dc501ca7bf14b6a"
-      ]
-    },
-    {
-      "fp": "c3976e208c8f00441c39",
-      "title": "Historian Jill Lepore says Silicon Valley misreads science fiction and undermines democracy",
-      "body": "On the latest episode of Equity, we spoke to Jill Lepore about \"government by machines\" and why Elon Musk is a bad science fiction reader.",
-      "link": "https://techcrunch.com/2026/08/09/historian-jill-lepore-says-the-tech-industry-is-led-by-bad-readers-who-are-undermining-democracy/",
-      "published_iso": "2026-08-09T15:00:00+00:00",
-      "published": "15:00:00",
-      "source_name": "TechCrunch — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "historian jill lepore says silicon valley misreads science fiction undermines democracy",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "TechCrunch — AI",
-          "url": "https://techcrunch.com/2026/08/09/historian-jill-lepore-says-the-tech-industry-is-led-by-bad-readers-who-are-undermining-democracy/"
-        }
-      ],
-      "member_fps": [
-        "c3976e208c8f00441c39"
-      ]
-    },
-    {
-      "fp": "ce32e15ac9690eda38dc",
-      "title": "The AI safety test is becoming a safety risk",
-      "body": "AI agents are escaping cybersecurity testing environments and reaching real-world systems, raising questions about whether safety infrastructure, industry standards and regulation can keep pace with increasingly powerful models.",
-      "link": "https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/",
-      "published_iso": "2026-08-09T14:30:00+00:00",
-      "published": "14:30:00",
-      "source_name": "TechCrunch — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "safety test becoming safety risk",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "TechCrunch — AI",
-          "url": "https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/"
-        }
-      ],
-      "member_fps": [
-        "ce32e15ac9690eda38dc"
-      ]
-    },
-    {
-      "fp": "a1c0bd6fab5c0117db84",
-      "title": "AI detectors are creating a new era of distrust",
-      "body": "This is The Stepback , a weekly newsletter breaking down one essential story from the tech world. For more news about how AI is changing our daily lives, follow Emma Roth . The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt in for The Stepback here . How it started Long before ChatGPT became a thing, educators and editors frequently used anti-plagiarism tools to see if writers were being honest about their work. These tools work by comparing a written work against a database filled with content from across the web, scholarly articles, and more to check for matching sentences and phrases. Some, like Turnitin, offer a percentage th … Read the full story at The Verge.",
-      "link": "https://www.theverge.com/column/976690/ai-writing-detectors-suspicion",
-      "published_iso": "2026-08-09T12:00:00+00:00",
-      "published": "12:00:00",
-      "source_name": "The Verge — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "detectors creating era distrust",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "The Verge — AI",
-          "url": "https://www.theverge.com/column/976690/ai-writing-detectors-suspicion"
-        }
-      ],
-      "member_fps": [
-        "a1c0bd6fab5c0117db84"
-      ]
-    },
-    {
-      "fp": "e55d69ea684e3b401e32",
-      "title": "Meetily Lets You Transcribe and Summarize Meetings Without a Subscription—Here’s How",
-      "body": "There are endless ways to record and transcribe your virtual meetings with AI. Here’s an option that’s free and open source.",
-      "link": "https://www.wired.com/story/meetily-lets-you-transcribe-and-summarize-meetings-without-a-subscription-heres-how/",
-      "published_iso": "2026-08-09T10:30:00+00:00",
-      "published": "10:30:00",
-      "source_name": "WIRED — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "meetily lets you transcribe summarize meetings without subscription here",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "WIRED — AI",
-          "url": "https://www.wired.com/story/meetily-lets-you-transcribe-and-summarize-meetings-without-a-subscription-heres-how/"
-        }
-      ],
-      "member_fps": [
-        "e55d69ea684e3b401e32"
-      ]
-    },
-    {
-      "fp": "301719f7b483d1e6b6b6",
-      "title": "These AI Barons Are Ready to Give Away Their Fortunes",
-      "body": "A new generation of philanthropists made rich by artificial intelligence are preparing to give away their vast wealth. What should we make of a multi-billion-dollar pinky promise?",
-      "link": "https://www.wired.com/story/ai-billionaires-are-pledging-their-wealth-good-or-bad/",
-      "published_iso": "2026-08-09T09:30:00+00:00",
-      "published": "09:30:00",
-      "source_name": "WIRED — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "these barons ready give away their fortunes",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "WIRED — AI",
-          "url": "https://www.wired.com/story/ai-billionaires-are-pledging-their-wealth-good-or-bad/"
-        }
-      ],
-      "member_fps": [
-        "301719f7b483d1e6b6b6"
-      ]
-    },
-    {
-      "fp": "965516c2274e2c6f0039",
-      "title": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
-      "body": "As part of a planned Texas data center, Amazon is investing in an on-site power plant that could reportedly become the largest source of climate pollution in the United States.",
-      "link": "https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/",
-      "published_iso": "2026-08-08T21:24:02+00:00",
-      "published": "21:24:02",
-      "source_name": "TechCrunch — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "planned amazon data center could become biggest climate polluter",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "TechCrunch — AI",
-          "url": "https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/"
-        }
-      ],
-      "member_fps": [
-        "965516c2274e2c6f0039"
-      ]
-    },
-    {
-      "fp": "b783841a0dd24e7f6d02",
-      "title": "OpenAI acquires presentation startup NextSlide",
-      "body": "NextSlide says its team members are now working on ChatGPT.",
-      "link": "https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/",
-      "published_iso": "2026-08-08T19:41:13+00:00",
-      "published": "19:41:13",
-      "source_name": "TechCrunch — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "openai acquires presentation startup nextslide",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "TechCrunch — AI",
-          "url": "https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/"
-        }
-      ],
-      "member_fps": [
-        "b783841a0dd24e7f6d02"
-      ]
-    },
-    {
-      "fp": "fb43159982f39b6284e3",
-      "title": "An Amazon data center could have the worst polluting power plant in the country",
-      "body": "To power its new West Texas data center, Amazon is investing in the construction of a new power plant that could be one of the largest single producers of greenhouse gases in the US, according to the New York Times . The new gas-burning plant in Pecos County, Texas has received significant investment from Amazon and, at least initially, would not be connected to the state's power grid. Instead, its 35 natural-gas turbines would primarily deliver its 7.65 gigawatts of electricity to the new data center. According to Cleanview , which tracks data centers and their associated power projects, GW Ranch received a permit from Texas allowing for the … Read the full story at The Verge.",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/977124/amazon-data-center-worst-polluting-power-plant",
-      "published_iso": "2026-08-08T17:53:34+00:00",
-      "published": "17:53:34",
-      "source_name": "The Verge — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "amazon data center could have worst polluting power plant country",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "The Verge — AI",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/977124/amazon-data-center-worst-polluting-power-plant"
-        }
-      ],
-      "member_fps": [
-        "fb43159982f39b6284e3"
-      ]
-    },
-    {
-      "fp": "f3662269fd862559dfa1",
-      "title": "How to Disable Gemini in Gmail and Google Docs",
-      "body": "New AI toolbars and prompts are showing up in Google Docs and Gmail. If you don’t want Gemini’s help in writing documents and emails, here’s how to turn that stuff off.",
-      "link": "https://www.wired.com/story/how-to-disable-the-gemini-ai-features-in-gmail-and-google-docs/",
-      "published_iso": "2026-08-08T10:00:00+00:00",
-      "published": "10:00:00",
-      "source_name": "WIRED — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "disable gemini gmail google docs",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "WIRED — AI",
-          "url": "https://www.wired.com/story/how-to-disable-the-gemini-ai-features-in-gmail-and-google-docs/"
-        }
-      ],
-      "member_fps": [
-        "f3662269fd862559dfa1"
-      ]
-    },
-    {
-      "fp": "f5d6857f7e948ee372b8",
-      "title": "OpenAI says it slowed Astra model development over security concerns",
-      "body": "OpenAI said this model, which is still in development, reached its \"critical cybersecurity threshold,\" meaning it could independently identify and carry out cyberattacks against traditionally well-protected real-world systems.",
-      "link": "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/",
-      "published_iso": "2026-08-07T22:48:24+00:00",
-      "published": "22:48:24",
-      "source_name": "TechCrunch — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "openai says slowed astra model development over security concerns",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "TechCrunch — AI",
-          "url": "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/"
-        }
-      ],
-      "member_fps": [
-        "f5d6857f7e948ee372b8"
-      ]
-    },
-    {
-      "fp": "499fadcb2f604f37fafa",
-      "title": "After Rippling blew millions on AI in months, it built an employee ROI tool",
-      "body": "After its own AI usage wake-up call, Rippling this week unveiled AI Spend Console, a product that tracks individual and team employee AI spending.",
-      "link": "https://techcrunch.com/2026/08/07/after-rippling-blew-millions-on-ai-in-months-it-built-an-employee-roi-tool/",
-      "published_iso": "2026-08-07T21:30:11+00:00",
-      "published": "21:30:11",
-      "source_name": "TechCrunch — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "after rippling blew millions months built employee roi tool",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "TechCrunch — AI",
-          "url": "https://techcrunch.com/2026/08/07/after-rippling-blew-millions-on-ai-in-months-it-built-an-employee-roi-tool/"
-        }
-      ],
-      "member_fps": [
-        "499fadcb2f604f37fafa"
-      ]
-    },
-    {
-      "fp": "c367f6bd9a260798b9a2",
-      "title": "Fenix Flexin isn’t even denying using AI to make ‘Rubberz’ anymore",
-      "body": "That cover art is almost certainly AI too. | Image: Fenix Flexin It took long enough , but now LA rapper Fenix Flexin appears to have admitted using AI for the 80s synth pop-themed song \"Rubberz.\" His comments follow the producer Medasin's videos claiming that an AI tool called Treblo (formerly Sonauto) was used to make the song, and the company releasing an AI detector that identifies it as Treblo AI-created . In a reply to a comment pointing out that Tyga admitted to relying on AI for his own controversial '80s-influenced album $tarface , on one of his Instagram posts , Fenix said: never said I didn't use AI , i said it had nun to do w recording process . I didn't even know what da app was till we mixed … Read the full story at The Verge.",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/976801/fenix-flexin-rubberz-ai-song-treblo",
-      "published_iso": "2026-08-07T20:01:51+00:00",
-      "published": "20:01:51",
-      "source_name": "The Verge — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "fenix flexin isn even denying using make rubberz anymore",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "The Verge — AI",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/976801/fenix-flexin-rubberz-ai-song-treblo"
-        }
-      ],
-      "member_fps": [
-        "c367f6bd9a260798b9a2"
-      ]
-    },
-    {
-      "fp": "afcdbc79defe239941c6",
-      "title": "Watching Roku’s AI channel is like eating from a trough",
-      "body": "The appeal of free ad-supported streaming television (FAST) channels has always been the way they make it easier to (re)discover classic films and series. But Roku's latest experiment in the FAST space has less to do with traditionally produced entertainment and is entirely focused on giving viewers access to a constant source of AI-generated content. This week, Roku added four new channels to its library of streamable programming. Along with dedicated feeds for old episodes of Mad TV , Whose Line Is It Anyway? , and a variety of Black sitcoms, the platform also debuted a 24/7 stream filled with projects from Colin Petrie-Norris' AI startup, … Read the full story at The Verge.",
-      "link": "https://www.theverge.com/entertainment/976939/roku-fairground-ai-fast-channel",
-      "published_iso": "2026-08-07T18:59:46+00:00",
-      "published": "18:59:46",
-      "source_name": "The Verge — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "watching roku channel like eating from trough",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "The Verge — AI",
-          "url": "https://www.theverge.com/entertainment/976939/roku-fairground-ai-fast-channel"
-        }
-      ],
-      "member_fps": [
-        "afcdbc79defe239941c6"
-      ]
-    },
-    {
-      "fp": "a42a5977b4e78e44be9b",
-      "title": "OpenAI puts the brakes on a new model because it s supposedly too powerful",
-      "body": "OpenAI says it is pausing \"internal activities\" around an in-development AI model, Astra, because it doesn't yet meet new security standards the company is putting in place. The announcement follows its recent disclosure that OpenAI models accidentally hacked Hugging Face . Anthropic and Meta have also since admitted that they had AI models that went rogue and breached other organizations. Recent internal evaluations of an OpenAI model called Astra indicate that it offers \"significant advancements in agentic coding and cybersecurity,\" according to the company . \"These results, in addition to expert assessments, have led us to conclude last n … Read the full story at The Verge.",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities",
-      "published_iso": "2026-08-07T18:40:34+00:00",
-      "published": "18:40:34",
-      "source_name": "The Verge — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "openai puts brakes model because supposedly too powerful",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "The Verge — AI",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities"
-        }
-      ],
-      "member_fps": [
-        "a42a5977b4e78e44be9b"
-      ]
-    },
-    {
-      "fp": "32b7862bea75f139d69f",
-      "title": "What s behind the Google AI shake-up",
-      "body": "Some of the biggest names on Google's AI team got new jobs this week . In some cases, including for legendary Googler Jeff Dean, those jobs are no longer at Google. Given that Google's models seem to be behind the best of what's coming out of anthropic and OpenAI, is this a sign of Google in turmoil? Is it about Demis Hassabis wanting something more interesting to work on than virtual assistants? Or is there something else entirely happening here ? On this episode of The Vergecast, Nilay and David start by discussing the leadership shake-up at Google, the state of the AI race, and whether Google is actually set up to succeed here. They also t … Read the full story at The Verge.",
-      "link": "https://www.theverge.com/podcast/976784/google-deepmind-ai-race-vergecast",
-      "published_iso": "2026-08-07T16:45:14+00:00",
-      "published": "16:45:14",
-      "source_name": "The Verge — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "what behind google shake",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "The Verge — AI",
-          "url": "https://www.theverge.com/podcast/976784/google-deepmind-ai-race-vergecast"
-        }
-      ],
-      "member_fps": [
-        "32b7862bea75f139d69f"
-      ]
-    },
-    {
-      "fp": "90861b82846e73a74139",
-      "title": "Cloudflare launches Kitesurf, a browser built for AI agents",
-      "body": "Kitesurf is a cloud-hosted browser designed for AI agents instead of people. It uses less computing power than Chromium for common automation tasks, helping developers build browser-based AI agents more efficiently.",
-      "link": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/",
-      "published_iso": "2026-08-07T16:16:09+00:00",
-      "published": "16:16:09",
-      "source_name": "TechCrunch — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "cloudflare launches kitesurf browser built agents",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "TechCrunch — AI",
-          "url": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/"
-        }
-      ],
-      "member_fps": [
-        "90861b82846e73a74139"
-      ]
-    },
-    {
-      "fp": "7ec34ecbaf0426f1b087",
-      "title": "Airbnb says AI is helping it ship features faster as it tests a new search function",
-      "body": "Airbnb will debut a new AI-powered search experience with a toggle.",
-      "link": "https://techcrunch.com/2026/08/07/airbnb-says-ai-is-helping-it-ship-features-faster-as-it-tests-a-new-search-function/",
-      "published_iso": "2026-08-07T14:22:49+00:00",
-      "published": "14:22:49",
-      "source_name": "TechCrunch — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "airbnb says helping ship features faster tests search function",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "TechCrunch — AI",
-          "url": "https://techcrunch.com/2026/08/07/airbnb-says-ai-is-helping-it-ship-features-faster-as-it-tests-a-new-search-function/"
-        }
-      ],
-      "member_fps": [
-        "7ec34ecbaf0426f1b087"
-      ]
-    },
-    {
-      "fp": "f7f24ef61b928f4a25e3",
-      "title": "Scientists Used AI to Create 16 New Viruses",
-      "body": "The use of AI systems to create viruses opens up new possibilities for combating bacterial resistance. It also raises concerns about the pace at which technology is outstripping regulation.",
-      "link": "https://www.wired.com/story/scientists-used-ai-to-create-16-new-viruses/",
-      "published_iso": "2026-08-07T14:13:57+00:00",
-      "published": "14:13:57",
-      "source_name": "WIRED — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "scientists used create viruses",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "WIRED — AI",
-          "url": "https://www.wired.com/story/scientists-used-ai-to-create-16-new-viruses/"
-        }
-      ],
-      "member_fps": [
-        "f7f24ef61b928f4a25e3"
-      ]
-    },
-    {
-      "fp": "c2bc82518a4b0b7fc9fd",
-      "title": "Jill Lepore on the ‘Artificial State’ and why Silicon Valley’s leaders are bad sci-fi readers",
-      "body": "Historian Jill Lepore has a theory about why tech companies often use soaring language to describe their products — almost as if they re forming a new government. And whether you re thinking of Twitter s old “town hall in your pocket” or Anthropic s Claude constitution, it s a theory that doesn t paint Silicon Valley in a very flattering light. In Lepore s upcoming book, The Rise and Fall of the Artificial State, the Pulitzer [ ]",
-      "link": "https://techcrunch.com/podcast/jill-lepore-on-the-artificial-state-and-why-silicon-valleys-leaders-are-bad-sci-fi-readers/",
-      "published_iso": "2026-08-07T14:00:00+00:00",
-      "published": "14:00:00",
-      "source_name": "TechCrunch — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "jill lepore artificial state silicon valley leaders bad sci readers",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "TechCrunch — AI",
-          "url": "https://techcrunch.com/podcast/jill-lepore-on-the-artificial-state-and-why-silicon-valleys-leaders-are-bad-sci-fi-readers/"
-        }
-      ],
-      "member_fps": [
-        "c2bc82518a4b0b7fc9fd"
-      ]
-    },
-    {
-      "fp": "ed54c60dcd4c8ecfa061",
-      "title": "New Mexico court orders Meta to pay additional $567M in child safety case",
-      "body": "Meta's total fine has racked up to $942 million in this case.",
-      "link": "https://techcrunch.com/2026/08/07/new-mexico-court-orders-meta-to-pay-additional-567m-in-child-safety-case/",
-      "published_iso": "2026-08-07T11:40:37+00:00",
-      "published": "11:40:37",
-      "source_name": "TechCrunch — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "mexico court orders meta pay additional 567m child safety case",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "TechCrunch — AI",
-          "url": "https://techcrunch.com/2026/08/07/new-mexico-court-orders-meta-to-pay-additional-567m-in-child-safety-case/"
-        }
-      ],
-      "member_fps": [
-        "ed54c60dcd4c8ecfa061"
-      ]
-    },
-    {
-      "fp": "48530779db94fb2a0d03",
-      "title": "The Hottest New AI Chatbot Is Just a Guy Answering Your Questions",
-      "body": "WIRED spoke with Tucker Bryant, an artist and former Google employee who created ChatTJB to get people to reflect on the “strange moment” we’re in.",
-      "link": "https://www.wired.com/story/this-chatbot-is-just-a-random-guy-lol/",
-      "published_iso": "2026-08-07T10:00:00+00:00",
-      "published": "10:00:00",
-      "source_name": "WIRED — AI",
-      "source_weight": 7,
-      "track": "track_general_publications",
-      "norm": "hottest chatbot just guy answering your questions",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "WIRED — AI",
-          "url": "https://www.wired.com/story/this-chatbot-is-just-a-random-guy-lol/"
-        }
-      ],
-      "member_fps": [
-        "48530779db94fb2a0d03"
-      ]
-    },
-    {
-      "fp": "a5cdc216681414cc6783",
-      "title": "DeepMind’s hurricane breakthrough has surprised weather scientists",
-      "body": "In October 2025, a storm brewed over the Caribbean Sea. Weather models differed on its trajectory. Would it remain weak and end up in Haiti, or would it intensify and head to Jamaica? Artificial intelligence model WeatherNext, developed by Google’s DeepMind and Google Research, went with the latter. Five days before landfall, it predicted with 80 percent confidence that the storm system would hit Jamaica as a Category 5 hurricane. Hurricane Melissa was catastrophic, causing flooding and landslides across Jamaica. But the AI model helped forecasters give an earlier warning to communities in its path, so they could better prepare. In a paper published on Thursday in Nature, researchers show that the WeatherNext AI model can predict cyclones with unprecedented accuracy. On average, it gives forecasters a day more lead time than existing models; this means its predictions three days out are as accurate as previous models’ predictions two days out. On the ground, that extra day can mean a lot. Read full article Comments",
-      "link": "https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day/",
-      "published_iso": "2026-08-08T11:05:50+00:00",
-      "published": "11:05:50",
-      "source_name": "Ars Technica — AI",
-      "source_weight": 6,
-      "track": "track_general_publications",
-      "norm": "deepmind hurricane breakthrough has surprised weather scientists",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "Ars Technica — AI",
-          "url": "https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day/"
-        }
-      ],
-      "member_fps": [
-        "a5cdc216681414cc6783"
-      ]
-    },
-    {
-      "fp": "2f1a5bfe215218dbc40b",
-      "title": "OpenAI’s expensive smart speaker will use moving parts to seem “more alive”",
-      "body": "OpenAI’s upcoming smart speaker will probably cost over $300, “people familiar with the matter” have told Bloomberg’s Mark Gurman . The generative AI company has “discussed” charging up to $400, Bloomberg, which has been reporting on the yet-to-be-announced smart speaker since July, said today. The publication said that OpenAI is viewing the smart speaker as a smartphone replacement. OpenAI has declined to comment on its product roadmap. Read full article Comments",
-      "link": "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive/",
-      "published_iso": "2026-08-07T17:36:22+00:00",
-      "published": "17:36:22",
-      "source_name": "Ars Technica — AI",
-      "source_weight": 6,
-      "track": "track_general_publications",
-      "norm": "openai expensive smart speaker will use moving parts seem more alive",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "Ars Technica — AI",
-          "url": "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive/"
-        }
-      ],
-      "member_fps": [
-        "2f1a5bfe215218dbc40b"
-      ]
-    },
-    {
-      "fp": "7b3b778109d0b9b2f2f3",
-      "title": "AI chatbots have failed people in crisis. Can that be fixed?",
-      "body": "This year alone, there have been numerous known instances—often via lawsuits—of AI chatbots (most often, OpenAI’s ChatGPT) that have gone horrifically wrong. A January lawsuit described the story of a man who took his own life after being allegedly “coached” into suicide. A college student in Georgia sued OpenAI, claiming that ChatGPT “pushed him into psychosis.” In June, a Canadian family also sued OpenAI and argued that ChatGPT agreed with the young woman’s dismissiveness when it first gave her the option to seek professional mental health advice. ChatGPT allegedly “encouraged” her to end her life, too, and she did so. Read full article Comments",
-      "link": "https://arstechnica.com/ai/2026/08/ai-chatbots-have-failed-people-in-crisis-can-that-be-fixed/",
-      "published_iso": "2026-08-07T13:49:37+00:00",
-      "published": "13:49:37",
-      "source_name": "Ars Technica — AI",
-      "source_weight": 6,
-      "track": "track_general_publications",
-      "norm": "chatbots have failed people crisis can that fixed",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "Ars Technica — AI",
-          "url": "https://arstechnica.com/ai/2026/08/ai-chatbots-have-failed-people-in-crisis-can-that-be-fixed/"
-        }
-      ],
-      "member_fps": [
-        "7b3b778109d0b9b2f2f3"
-      ]
-    },
-    {
-      "fp": "08e9072484cf0e1931aa",
-      "title": "ByteDance trains massive AI model in bid to rival Anthropic",
-      "body": "ByteDance is training an AI model that could approach the size of Anthropic’s most cutting-edge Mythos system, as Chinese companies continue to narrow the gap with the top US labs. The Chinese tech giant is at an early stage of training a model with as many as 10 trillion parameters—three times larger than Moonshot’s Kimi K3, the biggest Chinese model released to date, according to three people with knowledge of the matter. The ByteDance model is being pre-trained—a stage that typically takes three to six months—before it is fine-tuned and released if all goes well, one of the people said. The exact model size would only be determined at a later stage. Read full article Comments",
-      "link": "https://arstechnica.com/ai/2026/08/bytedance-trains-massive-ai-model-in-bid-to-rival-anthropic/",
-      "published_iso": "2026-08-07T13:29:22+00:00",
-      "published": "13:29:22",
-      "source_name": "Ars Technica — AI",
-      "source_weight": 6,
-      "track": "track_general_publications",
-      "norm": "bytedance trains massive model bid rival anthropic",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "Ars Technica — AI",
-          "url": "https://arstechnica.com/ai/2026/08/bytedance-trains-massive-ai-model-in-bid-to-rival-anthropic/"
-        }
-      ],
-      "member_fps": [
-        "08e9072484cf0e1931aa"
-      ]
-    },
-    {
-      "fp": "4e22906e5cc5bae4e64d",
-      "title": "Lessons from the hacks",
-      "body": "The recent run of cyberattacks by in-development frontier models has got me thinking a lot about how our current incentive systems are not well suited for such fast technological transitions. The two primary power structures here are the rapidly growing technology companies and the federal government. The companies are incentivized to grow, so they can keep growing and keep scaling in what is an extremely competitive market. This scaling is pushing us towards new, inevitable AI transitions (which are accompanied by new risks). On the other side is our current government, a product of the last few centuries of global history one that deserves its reputation as being slow-moving. This is a government that I expect to only act in substance once real, measurable harms from new AI models happen, and to overreact. How do we balance these powers? At the core of it is a need for more transparency on both sides. The frontier labs are building such complex systems so fast that they cannot keep up with them a good time for more eyes to study the problem. On the other side, the government said it does not plan to release details on its frontier model evaluation framework. We are heading to cha",
-      "link": "https://www.interconnects.ai/p/lessons-from-the-hacks",
-      "published_iso": "2026-08-09T14:57:11+00:00",
-      "published": "14:57:11",
-      "source_name": "Interconnects — Nathan Lambert",
+      "link": "https://tldr.tech/ai/2026-08-07",
+      "published_iso": "2026-08-07T00:00:00+00:00",
+      "published": "00:00:00",
+      "source_name": "TLDR AI",
       "source_weight": 5,
       "track": "track_newsletters",
-      "norm": "lessons from hacks",
+      "norm": "gpt luna default agent plugins amd taalas acquisition",
+      "image": "",
       "cluster_count": 1,
       "sources": [
         {
-          "name": "Interconnects — Nathan Lambert",
-          "url": "https://www.interconnects.ai/p/lessons-from-the-hacks"
+          "name": "TLDR AI",
+          "url": "https://tldr.tech/ai/2026-08-07"
         }
       ],
       "member_fps": [
-        "4e22906e5cc5bae4e64d"
+        "5649a094cb59f1c6a81f"
       ]
     },
     {
-      "fp": "7ad7ef68a22b4fc0b435",
-      "title": "الذكاء الاصطناعي يصمم فيروسات جديدة داخل المختبر.. إنجاز علمي يثير مخاوف أمنية",
-      "body": "نجح باحثون من معهد Arc Institute في كاليفورنيا بالتعاون مع جامعة ستانفورد في استخدام نموذج ذكاء اصطناعي لتصميم فيروسات جديدة قادرة على إصابة البكتيريا والتكاثر داخلها، في خطوة علمية قد تمهد لتطوير علاجات جينية أكثر كفاءة، لكنها تثير في الوقت نفسه تساؤلات بشأن مخاطر إساءة استخدام هذه التقنية مستقبلًا. وبحسب دراسة نُشرت في دورية Science ،",
-      "link": "https://aitnews.com/2026/08/07/%d8%a7%d9%84%d8%b0%d9%83%d8%a7%d8%a1-%d8%a7%d9%84%d8%a7%d8%b5%d8%b7%d9%86%d8%a7%d8%b9%d9%8a-%d9%8a%d8%b5%d9%85%d9%85-%d9%81%d9%8a%d8%b1%d9%88%d8%b3%d8%a7%d8%aa-%d8%ac%d8%af%d9%8a%d8%af%d8%a9-%d8%af/",
-      "published_iso": "2026-08-07T16:27:38+00:00",
-      "published": "16:27:38",
-      "source_name": "البوابة التقنية",
-      "source_weight": 4,
-      "track": "track_arabic",
-      "norm": "الذكاء الاصطناعي يصمم فيروسات جديدة داخل المختبر إنجاز علمي يثير مخاوف أمنية",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "البوابة التقنية",
-          "url": "https://aitnews.com/2026/08/07/%d8%a7%d9%84%d8%b0%d9%83%d8%a7%d8%a1-%d8%a7%d9%84%d8%a7%d8%b5%d8%b7%d9%86%d8%a7%d8%b9%d9%8a-%d9%8a%d8%b5%d9%85%d9%85-%d9%81%d9%8a%d8%b1%d9%88%d8%b3%d8%a7%d8%aa-%d8%ac%d8%af%d9%8a%d8%af%d8%a9-%d8%af/"
-        }
-      ],
-      "member_fps": [
-        "7ad7ef68a22b4fc0b435"
-      ]
-    },
-    {
-      "fp": "a860562e7c0b6bf8f56b",
-      "title": "تقرير.. هذا هو جهاز ChatGPT المنتظر وسعره المتوقع",
-      "body": "كشفت تقارير صحفية أن شركة OpenAI تعمل على تطوير جهاز ذكي جديد يعتمد على تقنيات الذكاء الاصطناعي، وهو مكبر صوت محمول بحجم قرص الهوكي بتصميم دائري، ومن المتوقع أن يتراوح سعره بين 300 و 400 دولارٍ أمريكي. وبحسب تقرير نشرته وكالة بلومبرغ الأمريكية، فإن الجهاز الجديد لن يتضمن شاشة عرض، بل سيركز بالكامل على التفاعل",
-      "link": "https://aitnews.com/2026/08/07/%d8%aa%d9%82%d8%b1%d9%8a%d8%b1-%d9%87%d8%b0%d8%a7-%d9%87%d9%88-%d8%ac%d9%87%d8%a7%d8%b2-chatgpt-%d8%a7%d9%84%d9%85%d9%86%d8%aa%d8%b8%d8%b1-%d9%88%d8%b3%d8%b9%d8%b1%d9%87-%d8%a7%d9%84%d9%85%d8%aa/",
-      "published_iso": "2026-08-07T15:53:12+00:00",
-      "published": "15:53:12",
-      "source_name": "البوابة التقنية",
-      "source_weight": 4,
-      "track": "track_arabic",
-      "norm": "تقرير هذا جهاز chatgpt المنتظر وسعره المتوقع",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "البوابة التقنية",
-          "url": "https://aitnews.com/2026/08/07/%d8%aa%d9%82%d8%b1%d9%8a%d8%b1-%d9%87%d8%b0%d8%a7-%d9%87%d9%88-%d8%ac%d9%87%d8%a7%d8%b2-chatgpt-%d8%a7%d9%84%d9%85%d9%86%d8%aa%d8%b8%d8%b1-%d9%88%d8%b3%d8%b9%d8%b1%d9%87-%d8%a7%d9%84%d9%85%d8%aa/"
-        }
-      ],
-      "member_fps": [
-        "a860562e7c0b6bf8f56b"
-      ]
-    },
-    {
-      "fp": "32185348d9510e31c11f",
-      "title": "قبل ظهور مصطلح الأمن السيبراني.. كيف رصدت الصحافة العربية الجريمة الحاسوبية عام 1976؟",
-      "body": "بقلم: سلام الزعبي، باحثة في التاريخ وطالبة دكتوراه في جامعة اليرموك لا تقتصر قيمة الصحف القديمة على تسجيل الوقائع السياسية والاجتماعية، بل تمتد إلى توثيق الطريقة التي فهم بها الناس التحولات العلمية والتقنية عند بداياتها. فاللغة التي استخدمتها الصحافة، والأسئلة التي طرحتها، والمخاوف التي نقلتها، تكشف جميعها كيف استقبل المجتمع ظاهرة جديدة قبل أن تستقر",
-      "link": "https://aitnews.com/2026/08/07/%d9%82%d8%a8%d9%84-%d8%b8%d9%87%d9%88%d8%b1-%d9%85%d8%b5%d8%b7%d9%84%d8%ad-%d8%a7%d9%84%d8%a3%d9%85%d9%86-%d8%a7%d9%84%d8%b3%d9%8a%d8%a8%d8%b1%d8%a7%d9%86%d9%8a-%d9%83%d9%8a%d9%81-%d8%b1%d8%b5%d8%af/",
-      "published_iso": "2026-08-07T15:40:53+00:00",
-      "published": "15:40:53",
-      "source_name": "البوابة التقنية",
-      "source_weight": 4,
-      "track": "track_arabic",
-      "norm": "قبل ظهور مصطلح الأمن السيبراني كيف رصدت الصحافة العربية الجريمة الحاسوبية عام 1976",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "البوابة التقنية",
-          "url": "https://aitnews.com/2026/08/07/%d9%82%d8%a8%d9%84-%d8%b8%d9%87%d9%88%d8%b1-%d9%85%d8%b5%d8%b7%d9%84%d8%ad-%d8%a7%d9%84%d8%a3%d9%85%d9%86-%d8%a7%d9%84%d8%b3%d9%8a%d8%a8%d8%b1%d8%a7%d9%86%d9%8a-%d9%83%d9%8a%d9%81-%d8%b1%d8%b5%d8%af/"
-        }
-      ],
-      "member_fps": [
-        "32185348d9510e31c11f"
-      ]
-    },
-    {
-      "fp": "fcb183296b99975c1aad",
-      "title": "ChatGPT يرفع القيود عن الحسابات المجانية ويتيح محادثات نصية لامحدودة",
-      "body": "أعلنت OpenAI مجموعة تحديثات جديدة لروبوت الدردشة ChatGPT، تتضمن إلغاء القيود المفروضة على الدردشات النصية لأصحاب الحسابات المجانية وأصحاب خطة Go، بالإضافة إلى إتاحة أدوات جديدة لتحسين جودة الإجابات، بهدف توسيع استخدام مساعدها الذكي وتقديم تجربة استخدام أكثر مرونة. وقالت الشركة إن أولئك المستخدمين بدايةً من الأسبوع المقبل سوف يتمكنون من إجراء عدد غير محدود",
-      "link": "https://aitnews.com/2026/08/07/chatgpt-%d9%8a%d8%b1%d9%81%d8%b9-%d8%a7%d9%84%d9%82%d9%8a%d9%88%d8%af-%d8%b9%d9%86-%d8%a7%d9%84%d8%ad%d8%b3%d8%a7%d8%a8%d8%a7%d8%aa-%d8%a7%d9%84%d9%85%d8%ac%d8%a7%d9%86%d9%8a%d8%a9-%d9%88%d9%8a%d8%aa/",
-      "published_iso": "2026-08-07T15:10:48+00:00",
-      "published": "15:10:48",
-      "source_name": "البوابة التقنية",
-      "source_weight": 4,
-      "track": "track_arabic",
-      "norm": "chatgpt يرفع القيود الحسابات المجانية ويتيح محادثات نصية لامحدودة",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "البوابة التقنية",
-          "url": "https://aitnews.com/2026/08/07/chatgpt-%d9%8a%d8%b1%d9%81%d8%b9-%d8%a7%d9%84%d9%82%d9%8a%d9%88%d8%af-%d8%b9%d9%86-%d8%a7%d9%84%d8%ad%d8%b3%d8%a7%d8%a8%d8%a7%d8%aa-%d8%a7%d9%84%d9%85%d8%ac%d8%a7%d9%86%d9%8a%d8%a9-%d9%88%d9%8a%d8%aa/"
-        }
-      ],
-      "member_fps": [
-        "fcb183296b99975c1aad"
-      ]
-    },
-    {
-      "fp": "37b9da2b1f35a969dc79",
-      "title": "منصة إكس توقف برنامج مشاركة الأرباح وتطلق نظام مكافآت جديد للمحتوى الأصلي فقط",
-      "body": "أعلنت منصة إكس (تويتر سابقًا) أنها ستوقف برنامج مشاركة الأرباح الحالي اعتبارًا من 7 سبتمبر، لتستبدله بنظام جديد باسم برنامج مكافآت المحتوى الأصلي . ويأتي النظام الجديد بهدف دعم صناع المحتوى الذين ينشرون أعمالهم الأصلية فقط، وليس أولئك الذين يكتفون بإعادة نشر محتوى الآخرين مع إضافة تعليق أو شرح بسيط. يعتمد النظام الجديد على احتساب الأرباح التدوينة منصة إكس توقف برنامج مشاركة الأرباح وتطلق نظام مكافآت جديد للمحتوى الأصلي فقط ظهرت أولاً على عالم التقنية .",
-      "link": "https://www.tech-wd.com/wd/2026/08/09/%d9%85%d9%86%d8%b5%d8%a9-%d8%a5%d9%83%d8%b3-%d8%aa%d9%88%d9%82%d9%81-%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d8%ac-%d9%85%d8%b4%d8%a7%d8%b1%d9%83%d8%a9-%d8%a7%d9%84%d8%a3%d8%b1%d8%a8%d8%a7%d8%ad-%d9%88%d8%aa/",
-      "published_iso": "2026-08-09T19:14:29+00:00",
-      "published": "19:14:29",
-      "source_name": "عالم التقنية",
+      "fp": "d386cc0306682d4f40b0",
+      "title": "Shaffra expands beyond the GCC with Azerbaijan launch",
+      "body": "GCC-based enterprise AI startup Shaffra has expanded beyond the GCC for the first time by opening a regional headquarters in Azerbaijan, marking its entry into the Caspian region. The company provides an Enterprise AI Workforce Platform that enables organisations to deploy Autonomous AI Teams. Its first offerings in the new market include AI Call Center, AI Sales Center, and AI Project Manager solutions. Founded in the UAE in 2023 by Alharith Alatawi, Marc Wehbi and Alfred Manasseh, Shaffra said it has helped enterprises and governments save well over 2 million work hours per month in 2025 through its AI workforce platform. The company has also raised more than $10 million, backed by stc, Omantel, and global technology investors. Shaffra will use Azerbaijan as a gateway for broader international expansion across the Caspian region while continuing to develop AI employees for customer service, sales, operations, HR, and project management. Press release: Shaffra, the GCC-born AI Workforce Platform building Autonomous AI Teams for enterprises and governments, has expanded beyond the GCC for the first time, bringing its AI workforce expertise to the Caspian region. The company has ope",
+      "link": "http://wamda.com/2026/08/uae-shaffra-expands-gcc-azerbaijan-launch",
+      "published_iso": "2026-08-06T19:33:18+00:00",
+      "published": "19:33:18",
+      "source_name": "Wamda — ريادة أعمال MENA",
       "source_weight": 3,
       "track": "track_arabic",
-      "norm": "منصة إكس توقف برنامج مشاركة الأرباح وتطلق نظام مكافآت جديد للمحتوى الأصلي فقط",
+      "norm": "shaffra expands beyond gcc azerbaijan launch",
+      "image": "",
       "cluster_count": 1,
       "sources": [
         {
-          "name": "عالم التقنية",
-          "url": "https://www.tech-wd.com/wd/2026/08/09/%d9%85%d9%86%d8%b5%d8%a9-%d8%a5%d9%83%d8%b3-%d8%aa%d9%88%d9%82%d9%81-%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d8%ac-%d9%85%d8%b4%d8%a7%d8%b1%d9%83%d8%a9-%d8%a7%d9%84%d8%a3%d8%b1%d8%a8%d8%a7%d8%ad-%d9%88%d8%aa/"
+          "name": "Wamda — ريادة أعمال MENA",
+          "url": "http://wamda.com/2026/08/uae-shaffra-expands-gcc-azerbaijan-launch"
         }
       ],
       "member_fps": [
-        "37b9da2b1f35a969dc79"
-      ]
-    },
-    {
-      "fp": "e26e843c8f416314e911",
-      "title": "نموذج أمريكي يخترق Hugging Face ونموذج صيني يكشف الحقيقة",
-      "body": "شهدت منصة Hugging Face المتخصصة في استضافة نماذج الذكاء الاصطناعي مفتوحة المصدر حادثة مثيرة للاهتمام الأسبوع الماضي، بعد أن تمكن نموذجين من تطوير OpenAI الأمريكية من اختراق بيئة الاختبار الخاصة بالمنصة والوصول إلى أنظمتها الإنتاجية عبر ثغرات لم تُكشف من قبل. استغل النموذجان هذه الثغرات لتعديل نتائج التقييم الخاصة بهما، بحسب إفادة كليمان ديلانغ، الرئيس التدوينة نموذج أمريكي يخترق Hugging Face ونموذج صيني يكشف الحقيقة ظهرت أولاً على عالم التقنية .",
-      "link": "https://www.tech-wd.com/wd/2026/08/09/%d9%86%d9%85%d9%88%d8%b0%d8%ac-%d8%a3%d9%85%d8%b1%d9%8a%d9%83%d9%8a-%d9%8a%d8%ae%d8%aa%d8%b1%d9%82-hugging-face-%d9%88%d9%86%d9%85%d9%88%d8%b0%d8%ac-%d8%b5%d9%8a%d9%86%d9%8a-%d9%8a%d9%83%d8%b4%d9%81/",
-      "published_iso": "2026-08-09T19:10:03+00:00",
-      "published": "19:10:03",
-      "source_name": "عالم التقنية",
-      "source_weight": 3,
-      "track": "track_arabic",
-      "norm": "نموذج أمريكي يخترق hugging face ونموذج صيني يكشف الحقيقة",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "عالم التقنية",
-          "url": "https://www.tech-wd.com/wd/2026/08/09/%d9%86%d9%85%d9%88%d8%b0%d8%ac-%d8%a3%d9%85%d8%b1%d9%8a%d9%83%d9%8a-%d9%8a%d8%ae%d8%aa%d8%b1%d9%82-hugging-face-%d9%88%d9%86%d9%85%d9%88%d8%b0%d8%ac-%d8%b5%d9%8a%d9%86%d9%8a-%d9%8a%d9%83%d8%b4%d9%81/"
-        }
-      ],
-      "member_fps": [
-        "e26e843c8f416314e911"
-      ]
-    },
-    {
-      "fp": "f457424acb3e7af0d30a",
-      "title": "المقابلات الوظيفية تتحول لساحة مواجهة بين أفاتار الذكاء الاصطناعي",
-      "body": "بدأت شركات التوظيف حول العالم تواجه نوع جديد من المتقدمين للوظائف: الأفاتار المدعوم بالذكاء الاصطناعي. في هذه الظاهرة المتصاعدة، يستخدم بعض المرشحين برامج توليد صور وصوت رقمية لحضور المقابلات عن بُعد نيابة عنهم، بحيث تظهر للشركة صورة رقمية مطابقة للمظهر والصوت لكنها ليست الشخص الحقيقي. لانا كيرسانافا، وهي مسؤولة توظيف مقرها سيدني، أوضحت أنها واجهت التدوينة المقابلات الوظيفية تتحول لساحة مواجهة بين أفاتار الذكاء الاصطناعي ظهرت أولاً على عالم التقنية .",
-      "link": "https://www.tech-wd.com/wd/2026/08/09/%d8%a7%d9%84%d9%85%d9%82%d8%a7%d8%a8%d9%84%d8%a7%d8%aa-%d8%a7%d9%84%d9%88%d8%b8%d9%8a%d9%81%d9%8a%d8%a9-%d8%aa%d8%aa%d8%ad%d9%88%d9%84-%d9%84%d8%b3%d8%a7%d8%ad%d8%a9-%d9%85%d9%88%d8%a7%d8%ac%d9%87/",
-      "published_iso": "2026-08-09T16:22:02+00:00",
-      "published": "16:22:02",
-      "source_name": "عالم التقنية",
-      "source_weight": 3,
-      "track": "track_arabic",
-      "norm": "المقابلات الوظيفية تتحول لساحة مواجهة بين أفاتار الذكاء الاصطناعي",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "عالم التقنية",
-          "url": "https://www.tech-wd.com/wd/2026/08/09/%d8%a7%d9%84%d9%85%d9%82%d8%a7%d8%a8%d9%84%d8%a7%d8%aa-%d8%a7%d9%84%d9%88%d8%b8%d9%8a%d9%81%d9%8a%d8%a9-%d8%aa%d8%aa%d8%ad%d9%88%d9%84-%d9%84%d8%b3%d8%a7%d8%ad%d8%a9-%d9%85%d9%88%d8%a7%d8%ac%d9%87/"
-        }
-      ],
-      "member_fps": [
-        "f457424acb3e7af0d30a"
-      ]
-    },
-    {
-      "fp": "708302c5434a8422f109",
-      "title": "المدير التقني في Meta يدعو الموظفين للاستفادة من الذكاء الاصطناعي لزيادة الإنتاجية بدلًا من طلب إجازات إضافية",
-      "body": "دعا المدير التقني لشركة Meta، أندرو بوزورث، موظفي الشركة إلى استثمار مكاسب الإنتاجية الناتجة عن الذكاء الاصطناعي في تطوير المزيد من المنتجات، بدلًا من المطالبة بمزيد من الإجازات. جاء ذلك في جلسة أسئلة وأجوبة عقدت في يوليو، بعدما تساءل أحد الموظفين إذا كان من الممكن استعادة برنامج Meta Days ، الذي كان يمنح العاملين أيام إجازة التدوينة المدير التقني في Meta يدعو الموظفين للاستفادة من الذكاء الاصطناعي لزيادة الإنتاجية بدلًا من طلب إجازات إضافية ظهرت أولاً على عالم التقنية .",
-      "link": "https://www.tech-wd.com/wd/2026/08/09/%d8%a7%d9%84%d9%85%d8%af%d9%8a%d8%b1-%d8%a7%d9%84%d8%aa%d9%82%d9%86%d9%8a-%d9%81%d9%8a-meta-%d9%8a%d8%af%d8%b9%d9%88-%d8%a7%d9%84%d9%85%d9%88%d8%b8%d9%81%d9%8a%d9%86-%d9%84%d9%84%d8%a7%d8%b3%d8%aa/",
-      "published_iso": "2026-08-09T16:09:51+00:00",
-      "published": "16:09:51",
-      "source_name": "عالم التقنية",
-      "source_weight": 3,
-      "track": "track_arabic",
-      "norm": "المدير التقني meta يدعو الموظفين للاستفادة الذكاء الاصطناعي لزيادة الإنتاجية بدل طلب إجازات إضافية",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "عالم التقنية",
-          "url": "https://www.tech-wd.com/wd/2026/08/09/%d8%a7%d9%84%d9%85%d8%af%d9%8a%d8%b1-%d8%a7%d9%84%d8%aa%d9%82%d9%86%d9%8a-%d9%81%d9%8a-meta-%d9%8a%d8%af%d8%b9%d9%88-%d8%a7%d9%84%d9%85%d9%88%d8%b8%d9%81%d9%8a%d9%86-%d9%84%d9%84%d8%a7%d8%b3%d8%aa/"
-        }
-      ],
-      "member_fps": [
-        "708302c5434a8422f109"
-      ]
-    },
-    {
-      "fp": "cfc1951de29753273413",
-      "title": "ارتفاع إنفاق نقاط البيع في السعودية بنسبة 33% خلال أسبوع وتجاوز 16 مليار ريال",
-      "body": "سجل إنفاق نقاط البيع (POS) في السعودية ارتفاعًا ملحوظًا بنسبة 33% خلال الأسبوع الممتد من 26 يوليو حتى 1 أغسطس ليصل إلى 16.31 مليار ريال، وذلك بحسب النشرة الأسبوعية الصادرة عن البنك المركزي السعودي. وبلغ عدد العمليات المنفذة عبر نقاط البيع 267.11 مليون عملية في مختلف مناطق المملكة. تصدر قطاع الأغذية والمشروبات القطاعات الأعلى إنفاقًا التدوينة ارتفاع إنفاق نقاط البيع في السعودية بنسبة 33% خلال أسبوع وتجاوز 16 مليار ريال ظهرت أولاً على عالم التقنية .",
-      "link": "https://www.tech-wd.com/wd/2026/08/09/%d8%a7%d8%b1%d8%aa%d9%81%d8%a7%d8%b9-%d8%a5%d9%86%d9%81%d8%a7%d9%82-%d9%86%d9%82%d8%a7%d8%b7-%d8%a7%d9%84%d8%a8%d9%8a%d8%b9-%d9%81%d9%8a-%d8%a7%d9%84%d8%b3%d8%b9%d9%88%d8%af%d9%8a%d8%a9-%d8%a8%d9%86/",
-      "published_iso": "2026-08-09T15:40:05+00:00",
-      "published": "15:40:05",
-      "source_name": "عالم التقنية",
-      "source_weight": 3,
-      "track": "track_arabic",
-      "norm": "ارتفاع إنفاق نقاط البيع السعودية بنسبة خلال أسبوع وتجاوز مليار ريال",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "عالم التقنية",
-          "url": "https://www.tech-wd.com/wd/2026/08/09/%d8%a7%d8%b1%d8%aa%d9%81%d8%a7%d8%b9-%d8%a5%d9%86%d9%81%d8%a7%d9%82-%d9%86%d9%82%d8%a7%d8%b7-%d8%a7%d9%84%d8%a8%d9%8a%d8%b9-%d9%81%d9%8a-%d8%a7%d9%84%d8%b3%d8%b9%d9%88%d8%af%d9%8a%d8%a9-%d8%a8%d9%86/"
-        }
-      ],
-      "member_fps": [
-        "cfc1951de29753273413"
-      ]
-    },
-    {
-      "fp": "b7490635cb5d9d2112eb",
-      "title": "مزايا وعيوب الانتقال نحو الألعاب الرقمية بالكامل",
-      "body": "تتسارع وتيرة التحول نحو الألعاب الرقمية في قطاع الألعاب الإلكترونية، مع إعلان Sony الأخير عن إيقاف دعم أقراص PlayStation نهائيًا بحلول 2028. يتزامن ذلك مع خطوات مشابهة مثل فرض شراء وحدة تشغيل الأقراص بشكل منفصل مع PS5 Pro، وغياب دعم الأقراص لجهاز Xbox Series S، بالإضافة إلى تحول Nintendo Switch 2 نحو بطاقات ألعاب رقمية التدوينة مزايا وعيوب الانتقال نحو الألعاب الرقمية بالكامل ظهرت أولاً على عالم التقنية .",
-      "link": "https://www.tech-wd.com/wd/2026/08/09/%d9%85%d8%b2%d8%a7%d9%8a%d8%a7-%d9%88%d8%b9%d9%8a%d9%88%d8%a8-%d8%a7%d9%84%d8%a7%d9%86%d8%aa%d9%82%d8%a7%d9%84-%d9%86%d8%ad%d9%88-%d8%a7%d9%84%d8%a3%d9%84%d8%b9%d8%a7%d8%a8-%d8%a7%d9%84%d8%b1%d9%82/",
-      "published_iso": "2026-08-09T14:15:37+00:00",
-      "published": "14:15:37",
-      "source_name": "عالم التقنية",
-      "source_weight": 3,
-      "track": "track_arabic",
-      "norm": "مزايا وعيوب الانتقال نحو الألعاب الرقمية بالكامل",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "عالم التقنية",
-          "url": "https://www.tech-wd.com/wd/2026/08/09/%d9%85%d8%b2%d8%a7%d9%8a%d8%a7-%d9%88%d8%b9%d9%8a%d9%88%d8%a8-%d8%a7%d9%84%d8%a7%d9%86%d8%aa%d9%82%d8%a7%d9%84-%d9%86%d8%ad%d9%88-%d8%a7%d9%84%d8%a3%d9%84%d8%b9%d8%a7%d8%a8-%d8%a7%d9%84%d8%b1%d9%82/"
-        }
-      ],
-      "member_fps": [
-        "b7490635cb5d9d2112eb"
-      ]
-    },
-    {
-      "fp": "25e27c757d372f3ad309",
-      "title": "موقع Myspace يخطط للعودة كمضاد لإرهاق وسائل التواصل الاجتماعي",
-      "body": "يستعد Myspace لمحاولة عودة جديدة في سوق مزدحم ومعقد لمنصات التواصل الاجتماعي، مستندًا إلى الحنين لدى جيل الألفية ورفض كثير من المستخدمين لتجربة الشبكات التقليدية القائمة على الخوارزميات والمحتوى القصير المتكرر. ويعود الحديث عن إحياء Myspace بعدما ظهر مالكوه الحاليون، Tim وChris Vanderhook، في وثائقي جديد وأكدوا اعتزامهم إعادة إطلاق المنصة، بعد عدة محاولات فاشلة التدوينة موقع Myspace يخطط للعودة كمضاد لإرهاق وسائل التواصل الاجتماعي ظهرت أولاً على عالم التقنية .",
-      "link": "https://www.tech-wd.com/wd/2026/08/09/%d9%85%d9%88%d9%82%d8%b9-myspace-%d9%8a%d8%ae%d8%b7%d8%b7-%d9%84%d9%84%d8%b9%d9%88%d8%af%d8%a9-%d9%83%d9%85%d8%b6%d8%a7%d8%af-%d9%84%d8%a5%d8%b1%d9%87%d8%a7%d9%82-%d9%88%d8%b3%d8%a7%d8%a6%d9%84-%d8%a7/",
-      "published_iso": "2026-08-09T13:33:33+00:00",
-      "published": "13:33:33",
-      "source_name": "عالم التقنية",
-      "source_weight": 3,
-      "track": "track_arabic",
-      "norm": "موقع myspace يخطط للعودة كمضاد لإرهاق وسائل التواصل الاجتماعي",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "عالم التقنية",
-          "url": "https://www.tech-wd.com/wd/2026/08/09/%d9%85%d9%88%d9%82%d8%b9-myspace-%d9%8a%d8%ae%d8%b7%d8%b7-%d9%84%d9%84%d8%b9%d9%88%d8%af%d8%a9-%d9%83%d9%85%d8%b6%d8%a7%d8%af-%d9%84%d8%a5%d8%b1%d9%87%d8%a7%d9%82-%d9%88%d8%b3%d8%a7%d8%a6%d9%84-%d8%a7/"
-        }
-      ],
-      "member_fps": [
-        "25e27c757d372f3ad309"
-      ]
-    },
-    {
-      "fp": "84c7a5f04160aa94cc45",
-      "title": "Claude Code يدعم المراسلة بين جلسات البرمجة على macOS",
-      "body": "أضافت Anthropic ميزة جديدة في Claude Code تتيح لجلسات البرمجة المنفصلة على أجهزة macOS التواصل مع بعضها مباشرة، دون الحاجة لنسخ السياق يدويًا بين نوافذ الطرفية (Terminal). الميزة الجديدة تم توفيرها في إصدار Claude Code 2.1.224 لأنظمة macOS وLinux، وتعتمد على أداتين مخصصتين: ListAgents التي تستعرض الجلسات النشطة الأخرى، وSendMessage التي ترسل الرسالة مباشرة إلى التدوينة Claude Code يدعم المراسلة بين جلسات البرمجة على macOS ظهرت أولاً على عالم التقنية .",
-      "link": "https://www.tech-wd.com/wd/2026/08/08/claude-code-%d9%8a%d8%af%d8%b9%d9%85-%d8%a7%d9%84%d9%85%d8%b1%d8%a7%d8%b3%d9%84%d8%a9-%d8%a8%d9%8a%d9%86-%d8%ac%d9%84%d8%b3%d8%a7%d8%aa-%d8%a7%d9%84%d8%a8%d8%b1%d9%85%d8%ac%d8%a9-%d8%b9%d9%84%d9%89-ma/",
-      "published_iso": "2026-08-08T17:30:35+00:00",
-      "published": "17:30:35",
-      "source_name": "عالم التقنية",
-      "source_weight": 3,
-      "track": "track_arabic",
-      "norm": "claude code يدعم المراسلة بين جلسات البرمجة على macos",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "عالم التقنية",
-          "url": "https://www.tech-wd.com/wd/2026/08/08/claude-code-%d9%8a%d8%af%d8%b9%d9%85-%d8%a7%d9%84%d9%85%d8%b1%d8%a7%d8%b3%d9%84%d8%a9-%d8%a8%d9%8a%d9%86-%d8%ac%d9%84%d8%b3%d8%a7%d8%aa-%d8%a7%d9%84%d8%a8%d8%b1%d9%85%d8%ac%d8%a9-%d8%b9%d9%84%d9%89-ma/"
-        }
-      ],
-      "member_fps": [
-        "84c7a5f04160aa94cc45"
-      ]
-    },
-    {
-      "fp": "79bbe338107822dc4d4c",
-      "title": "آبل قد تزيد أسعار iPhone 17 الاثنين المقبل حسب تسريبات جديدة",
-      "body": "تشير شائعات جديدة إلى احتمال رفع أسعار سلسلة iPhone 17 بداية من يوم الاثنين 10 أغسطس، وذلك قبل فترة من الزيادات المتوقعة بالتزامن مع إطلاق iPhone 18 Pro الشهر المقبل. ونقل مسرب الأخبار على منصة Weibo المعروف باسم Fixed Focus Digital أن هناك حديثًا في السوق عن تعديل أسعار iPhone 17 قريبًا، دون تأكيد نهائي التدوينة آبل قد تزيد أسعار iPhone 17 الاثنين المقبل حسب تسريبات جديدة ظهرت أولاً على عالم التقنية .",
-      "link": "https://www.tech-wd.com/wd/2026/08/08/%d8%a2%d8%a8%d9%84-%d9%82%d8%af-%d8%aa%d8%b2%d9%8a%d8%af-%d8%a3%d8%b3%d8%b9%d8%a7%d8%b1-iphone-17-%d8%a7%d9%84%d8%a7%d8%ab%d9%86%d9%8a%d9%86-%d8%a7%d9%84%d9%85%d9%82%d8%a8%d9%84-%d8%ad%d8%b3%d8%a8/",
-      "published_iso": "2026-08-08T17:22:57+00:00",
-      "published": "17:22:57",
-      "source_name": "عالم التقنية",
-      "source_weight": 3,
-      "track": "track_arabic",
-      "norm": "آبل تزيد أسعار iphone الاثنين المقبل حسب تسريبات جديدة",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "عالم التقنية",
-          "url": "https://www.tech-wd.com/wd/2026/08/08/%d8%a2%d8%a8%d9%84-%d9%82%d8%af-%d8%aa%d8%b2%d9%8a%d8%af-%d8%a3%d8%b3%d8%b9%d8%a7%d8%b1-iphone-17-%d8%a7%d9%84%d8%a7%d8%ab%d9%86%d9%8a%d9%86-%d8%a7%d9%84%d9%85%d9%82%d8%a8%d9%84-%d8%ad%d8%b3%d8%a8/"
-        }
-      ],
-      "member_fps": [
-        "79bbe338107822dc4d4c"
-      ]
-    },
-    {
-      "fp": "372e3418999663dab717",
-      "title": "OpenAI تؤجل إطلاق نموذج الذكاء الاصطناعي “Astra” بسبب مخاوف أمنية",
-      "body": "أعلنت OpenAI إيقاف العمل مؤقتًا على النموذج القادم Astra بعد أن كشفت تقييمات داخلية عن قدرات سيبرانية متقدمة قد تشكل خطرًا كبيرًا. وأوضحت الشركة أن الاختبارات الأخيرة أظهرت أن Astra حقق تطورًا ملحوظًا في البرمجة الآلية والأمن السيبراني، مشيرة إلى أنه قد يمتلك إمكانيات خطيرة في مجال الهجمات الإلكترونية. تم تفعيل بروتوكولات الحذر القصوى ضمن التدوينة OpenAI تؤجل إطلاق نموذج الذكاء الاصطناعي Astra بسبب مخاوف أمنية ظهرت أولاً على عالم التقنية .",
-      "link": "https://www.tech-wd.com/wd/2026/08/08/openai-%d8%aa%d8%a4%d8%ac%d9%84-%d8%a5%d8%b7%d9%84%d8%a7%d9%82-%d9%86%d9%85%d9%88%d8%b0%d8%ac-%d8%a7%d9%84%d8%b0%d9%83%d8%a7%d8%a1-%d8%a7%d9%84%d8%a7%d8%b5%d8%b7%d9%86%d8%a7%d8%b9%d9%8a-astra/",
-      "published_iso": "2026-08-08T16:44:35+00:00",
-      "published": "16:44:35",
-      "source_name": "عالم التقنية",
-      "source_weight": 3,
-      "track": "track_arabic",
-      "norm": "openai تؤجل إطلاق نموذج الذكاء الاصطناعي astra بسبب مخاوف أمنية",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "عالم التقنية",
-          "url": "https://www.tech-wd.com/wd/2026/08/08/openai-%d8%aa%d8%a4%d8%ac%d9%84-%d8%a5%d8%b7%d9%84%d8%a7%d9%82-%d9%86%d9%85%d9%88%d8%b0%d8%ac-%d8%a7%d9%84%d8%b0%d9%83%d8%a7%d8%a1-%d8%a7%d9%84%d8%a7%d8%b5%d8%b7%d9%86%d8%a7%d8%b9%d9%8a-astra/"
-        }
-      ],
-      "member_fps": [
-        "372e3418999663dab717"
-      ]
-    },
-    {
-      "fp": "659defc93b982add1f22",
-      "title": "أول جيلبريك يصل إلى iOS 26 بفضل أداة Dopamine",
-      "body": "حصل نظام iOS 26 على أول جيلبريك له بعد مرور 326 يوم من إطلاقه، وذلك بفضل مطوري أداة Dopamine الشهيرة في مجتمع الجيلبريك. وأعلن Lars Fröder المعروف باسم opa334 اليوم عن إصدار Dopamine 3.0، الذي يدعم إصدارات iOS 26.0 وiOS 26.0.1 على أجهزة آيفون المزودة بمعالجات A12 وA13، إلى جانب دعم عدد من الإصدارات الأحدث. التدوينة أول جيلبريك يصل إلى iOS 26 بفضل أداة Dopamine ظهرت أولاً على عالم التقنية .",
-      "link": "https://www.tech-wd.com/wd/2026/08/08/%d8%a3%d9%88%d9%84-%d8%ac%d9%8a%d9%84%d8%a8%d8%b1%d9%8a%d9%83-%d9%8a%d8%b5%d9%84-%d8%a5%d9%84%d9%89-ios-26-%d8%a8%d9%81%d8%b6%d9%84-%d8%a3%d8%af%d8%a7%d8%a9-dopamine/",
-      "published_iso": "2026-08-08T16:41:12+00:00",
-      "published": "16:41:12",
-      "source_name": "عالم التقنية",
-      "source_weight": 3,
-      "track": "track_arabic",
-      "norm": "أول جيلبريك يصل إلى ios بفضل أداة dopamine",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "عالم التقنية",
-          "url": "https://www.tech-wd.com/wd/2026/08/08/%d8%a3%d9%88%d9%84-%d8%ac%d9%8a%d9%84%d8%a8%d8%b1%d9%8a%d9%83-%d9%8a%d8%b5%d9%84-%d8%a5%d9%84%d9%89-ios-26-%d8%a8%d9%81%d8%b6%d9%84-%d8%a3%d8%af%d8%a7%d8%a9-dopamine/"
-        }
-      ],
-      "member_fps": [
-        "659defc93b982add1f22"
-      ]
-    },
-    {
-      "fp": "2ebce302e56f3b26a355",
-      "title": "كيف تعمل شاشة الخصوصية في Huawei MateBook Pro S",
-      "body": "طرحت هواوي حاسوب Huawei MateBook Pro S كأخف لابتوب في العالم، ليصبح منافسًا مباشرًا لأجهزة مثل ِApple MacBook Air وSamsung Galaxy Book. يزن الجهاز الجديد 798 جرام فقط، وهو أقل بكثير حتى من أنحف جهاز من Apple الذي يزن 1.23 كجم. يتوفر MateBook Pro S بعدة ألوان من بينها البنفسجي الصيفي، الأصفر الفاتح، الرمادي الدخاني، التدوينة كيف تعمل شاشة الخصوصية في Huawei MateBook Pro S ظهرت أولاً على عالم التقنية .",
-      "link": "https://www.tech-wd.com/wd/2026/08/08/%d9%83%d9%8a%d9%81-%d8%aa%d8%b9%d9%85%d9%84-%d8%b4%d8%a7%d8%b4%d8%a9-%d8%a7%d9%84%d8%ae%d8%b5%d9%88%d8%b5%d9%8a%d8%a9-%d9%81%d9%8a-huawei-matebook-pro-s/",
-      "published_iso": "2026-08-08T16:30:40+00:00",
-      "published": "16:30:40",
-      "source_name": "عالم التقنية",
-      "source_weight": 3,
-      "track": "track_arabic",
-      "norm": "كيف تعمل شاشة الخصوصية huawei matebook pro",
-      "cluster_count": 1,
-      "sources": [
-        {
-          "name": "عالم التقنية",
-          "url": "https://www.tech-wd.com/wd/2026/08/08/%d9%83%d9%8a%d9%81-%d8%aa%d8%b9%d9%85%d9%84-%d8%b4%d8%a7%d8%b4%d8%a9-%d8%a7%d9%84%d8%ae%d8%b5%d9%88%d8%b5%d9%8a%d8%a9-%d9%81%d9%8a-huawei-matebook-pro-s/"
-        }
-      ],
-      "member_fps": [
-        "2ebce302e56f3b26a355"
+        "d386cc0306682d4f40b0"
       ]
     }
   ],
   "stats": {
     "sources_total": 19,
-    "sources_unchanged": 6,
-    "sources_failed": 0,
-    "items_new": 89,
-    "items_dropped_by_cap": 29,
-    "clusters": 58,
+    "sources_unchanged": 11,
+    "sources_failed": 1,
+    "items_new": 16,
+    "items_dropped_by_cap": 0,
+    "clusters": 14,
     "tracks": [
       "track_arabic",
       "track_creative",
@@ -1302,5 +348,10 @@
       "track_newsletters"
     ]
   },
-  "errors": []
+  "errors": [
+    {
+      "source": "r/StableDiffusion",
+      "error": "HTTP 429"
+    }
+  ]
 }

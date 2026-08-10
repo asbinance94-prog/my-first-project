@@ -1,6 +1,35 @@
 {
   "runs": [
     {
+      "at": "2026-08-10T00:04:49.455348+00:00",
+      "new": 14,
+      "total": 72,
+      "cost_usd": 0.07644,
+      "spent_today_usd": 0.07644,
+      "feed_errors": [
+        {
+          "source": "r/StableDiffusion",
+          "error": "HTTP 429"
+        }
+      ],
+      "api_errors": [],
+      "generic_titles": 0,
+      "stats": {
+        "sources_total": 19,
+        "sources_unchanged": 11,
+        "sources_failed": 1,
+        "items_new": 16,
+        "items_dropped_by_cap": 0,
+        "clusters": 14,
+        "tracks": [
+          "track_arabic",
+          "track_creative",
+          "track_general_publications",
+          "track_newsletters"
+        ]
+      }
+    },
+    {
       "at": "2026-08-09T22:54:21.479590+00:00",
       "new": 58,
       "total": 58,
@@ -28,6 +57,7 @@
     }
   ],
   "spend": {
-    "2026-08-09": 0.0
+    "2026-08-09": 0.0,
+    "2026-08-10": 0.07644
   }
 }
